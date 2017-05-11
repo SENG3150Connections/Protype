@@ -5,4 +5,54 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
+
+    <!-- Verbose errors are cool -->
+    <constant name="struts.devMode" value="true" />
+
+    <package name="default" extends="struts-default">
+        <action name="home">
+            <result>/WEB-INF/jsp/home.jsp</result>
+        </action>
+    </package>
+
+    <package name="packages" extends="struts-default">
+
+        <!-- TODO: Global result for survey and interceptors -->
+        <!-- <global-results>
+            <result name="surveyrequired" type="dispatcher">/WEB-INF/jsp/survey.jsp</result>
+        </global-results> -->
+
+        <action name="profile">
+            <result>/WEB-INF/jsp/profile.jsp</result>
+        </action>
+
+        <action name="survey">
+            <result>/WEB-INF/jsp/survey.jsp</result>
+        </action>
+
+        <action name="offers">
+            <result>/WEB-INF/jsp/offers.jsp</result>
+        </action>
+
+        <action name="offerDetails">
+            <result>/WEB-INF/jsp/offerDetails.jsp</result>
+        </action>
+
+        <action name="merchantPortal">
+            <result>/WEB-INF/jsp/merchantPortal.jsp</result>
+        </action>
+    </package>
+
+    <package name="management" extends="struts-default">
+
+        <!-- TODO: Global result for non-staff and interceptors -->
+        <!-- <global-results>
+            <result name="stafflogin" type="dispatcher">/WEB-INF/jsp/staffLogin.jsp</result>
+        </global-results> -->
+
+        <action name="management">
+            <result>/WEB-INF/jsp/management.jsp</result>
+        </action>
+    </package>
+
 </struts>
