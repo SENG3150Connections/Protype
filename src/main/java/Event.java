@@ -11,7 +11,7 @@ public class Event {
         description = "";
         location = "";
         date = "";
-        price = 0.0;
+        price = (float)0.0;
         imageDir = "";
     }
 

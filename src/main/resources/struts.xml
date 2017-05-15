@@ -13,6 +13,15 @@
         <action name="home">
             <result>/WEB-INF/jsp/home.jsp</result>
         </action>
+
+        <action name="login">
+            <result>/WEB-INF/jsp/login.jsp</result>
+        </action>
+
+        <action name="signup">
+            <result>/WEB-INF/jsp/signUp.jsp</result>
+        </action>
+
     </package>
 
     <package name="packages" extends="struts-default">

@@ -13,7 +13,7 @@ public class Package {
         description = "";
         location = "";
         date = "";
-        price = 0.0;
+        price = (float)0.0;
         imageDir = "";
         events = new ArrayList<Event>();
     }
