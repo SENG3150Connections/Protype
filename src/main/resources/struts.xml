@@ -9,6 +9,10 @@
     <!-- Verbose errors are cool -->
     <constant name="struts.devMode" value="true" />
 
+    <bean name="user"
+          class="me.seng3150.User"
+          scope="default" />
+
     <package name="default" extends="struts-default">
         <action name="home">
             <result>/WEB-INF/jsp/home.jsp</result>
@@ -22,21 +26,31 @@
             <result>/WEB-INF/jsp/signUp.jsp</result>
         </action>
 
+        <action name="survey">
+            <result>/WEB-INF/jsp/survey.jsp</result>
+        </action>
+
     </package>
 
     <package name="packages" extends="struts-default">
 
-        <!-- TODO: Global result for survey and interceptors -->
-        <!-- <global-results>
-            <result name="surveyrequired" type="dispatcher">/WEB-INF/jsp/survey.jsp</result>
-        </global-results> -->
+        <interceptors>
+            <interceptor name="survey" class="me.seng3150.interceptors.SurveryInterceptor" />
+            <interceptor-stack name="surveyStack">
+                <interceptor-ref name="defaultStack"/>
+                <interceptor-ref name="survey"/>
+            </interceptor-stack>
+        </interceptors>
+
+        <default-interceptor-ref name="surveyStack"/>
+
+        <!-- TODO: Global result for survey-->
+        <global-results>
+            <result name="surveyrequired" type="redirect">survey</result>
+        </global-results>
 
         <action name="profile">
             <result>/WEB-INF/jsp/profile.jsp</result>
-        </action>
-
-        <action name="survey">
-            <result>/WEB-INF/jsp/survey.jsp</result>
         </action>
 
         <action name="offers">
