@@ -86,7 +86,7 @@
                     <scanIntervalSeconds>10</scanIntervalSeconds>
                     <webAppSourceDirectory>${basedir}/src/main/webapp/</webAppSourceDirectory>
                     <webAppConfig>
-                        <contextPath>/jsonexample</contextPath>
+                        <contextPath>/prototype</contextPath>
                         <descriptor>${basedir}/src/main/webapp/WEB-INF/web.xml</descriptor>
                     </webAppConfig>
                 </configuration>
