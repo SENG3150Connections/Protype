@@ -10,6 +10,10 @@
 <body>
 <div class="container">
     <p>Survey</p>
+    <form>
+        <input type="text" name="name" value="<%= request.getParameter("name") %>"/>
+        <input type="submit" value="submit"/>
+    </form>
 </div>
 </body>
 </html>
