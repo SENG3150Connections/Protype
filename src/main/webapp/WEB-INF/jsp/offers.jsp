@@ -19,7 +19,7 @@
 <body onload="init()">
     <nav class="light-blue lighten-1" role="navigation">
         <div class="nav-wrapper container">
-            <a id="logo-container" href="#" class="brand-logo">Logo</a>
+            <a id="logo-container" href="#" class="brand-logo"><img class="activator" src="images/logoLong.png" height='64px'></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">Login</a></li>
             </ul>
@@ -49,7 +49,7 @@
                 <li class="ui-widget-content">
                     <div class="card col m4">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/events/sample-2.jpg">
+                            <img class="activator" src="images/events/sample-5.jpg">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Offer 1</span>
@@ -127,20 +127,21 @@
             </ul>
         </div>
 
-        <div id="packageInformation" class="col m3 light-blue lighten-5 container" style="height: 600px;">
+        <div id="packageInformation" class="col m3 light-blue lighten-5 container" style="height: 700px;">
             <h5 class="center">Package</h5>
 
             <p class="light">Display the current events in the package and the running cost</p>
             
             <div class="divider"></div>
             
-            <ul id="addedOffers" class='gallery ui-helper-reset'>
+            <ul id="addedOffers" class='gallery ui-helper-reset' style='overflow-y: scroll; height: 450px'>
             </ul>
             
             <div class="divider"></div>
             
             <div>
                 <h5 class="valign">Total: $100.95</h5>
+                <a href="survey.jsp" class="btn waves-effect waves-light orange">Customise</a>
             </div>
         </div>
 
