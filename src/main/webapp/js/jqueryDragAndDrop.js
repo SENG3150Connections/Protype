@@ -36,29 +36,19 @@ function init() {
                     "<img class='col m6 activator' src='" + imageSrc + "'>" +
                 "</div>" +
                 "<span class='card-title grey-text text-darken-4'>" + offerName + "</span>" +
+                "<a onclick='removeOffer(this)' class='material-icons right'><img src='images/icons/cross.png'></a>" +
                 "</div>" +
             "</div>" +
         "</li>");
         
-        $('#addedOffers').append(newCard);
+        $('#addedOffers').prepend(newCard);
         console.log("Added");
     }
+}
     
-    
-    function sideCard( $item ) {
-        console.log( $item );
-        return $("<li class='ui-widget-content'> <div class='card col m4'> <div class='card-image'> <img class='activator' src='images/events/sample-3.jpg'> </div> </div> </li>");
-        /*
-            <li class='ui-widget-content'>
-                <div class='card col m4'>
-                    <div class='card-image waves-effect waves-block waves-light'>
-                        <img class='activator' src='images/events/sample-3.jpg'>
-                    </div>
-                    <div class='card-content'>
-                        <span class='card-title activator grey-text text-darken-4'>Card Title</span>
-                    </div>
-                </div>
-            </li>
-        ");*/
-    }
+function removeOffer( $item ) {
+    console.log("removeOffer()");
+    $('#addedOffers').splice($item, 1);
+    console.log($item);
+    console.log("Removed");
 }
