@@ -13,7 +13,7 @@
 <body>
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Login</a></li>
       </ul>
@@ -22,53 +22,58 @@
         <li><a href="#">Login</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
     </div>
   </nav>
+
   <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
+    <div class="container center">
       <br><br>
-      <h1 class="header center orange-text">Newcastle Connections</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">A dirty business man's idea of a quick buck and cheap labor</h5>
+      <div class="row">
+        <a href="home">
+          <img class="hide-on-small-and-down col m12 l8 offset-l2 responsive-img" src="images/LogoBanner.png" />
+          <img class="hide-on-med-and-up col s12 responsive-img" src="images/LogoSquare.png" />
+        </a>
       </div>
-      <div class="row center">
-        <a href="survey.jsp" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+      <div class="row">
+        <h5 class="header col s12 light">Getting you where you need to go</h5>
       </div>
-      <br><br>
+      <div class="row">
+        <a href="survey" class="btn-large waves-effect waves-light orange">Get Started</a>
+      </div>
 
     </div>
   </div>
 
-
-  <div class="container">
-    <div class="section">
+  <div class="section" style="background-image: url('images/events/sample-1.jpg');">
+    <div class="container">
+      <br><br>
 
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speed up holiday planning</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a selection of events and packages to entertain you around Newcastle.</p>
+        <div class="col s12 m4 center">
+          <div class="card-panel darken-1">
+            <h2 class="light-blue-text"><i class="material-icons large">fast_forward</i></h2>
+            <h5>Speed up holiday planning</h5>
+            <p class="card-content light">We did most of the heavy lifting for you to provide a selection of events and packages to entertain you around Newcastle.</p>
           </div>
         </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
+        <div class="col s12 m4 center">
+          <div class="card-panel darken-1">
+            <h2 class="light-blue-text"><i class="material-icons large">group</i></h2>
+            <h5>User-focused experiences</h5>
 
-            <p class="light">By focusing on local buisnesses around Newcastle we can ensure you will have a great time getting to know the locals.</p>
+            <p class="card-content light">By focusing on local buisnesses around Newcastle we can ensure you will have a great time getting to know the locals.</p>
           </div>
         </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
+        <div class="col s12 m4 center">
+          <div class="card-panel darken-1">
+            <h2 class="light-blue-text"><i class="material-icons large">settings</i></h2>
+            <h5>Simple to use</h5>
 
-            <p class="light">Our simple click and drag environment makes organising your package super easy and fun to design!.</p>
+            <p class="card-content light">Our simple click and drag environment makes organising your package super easy and fun to design!</p>
           </div>
         </div>
       </div>
@@ -76,45 +81,43 @@
     </div>
     <br><br>
 
-    <div class="section">
-
-    </div>
   </div>
 
   <footer class="page-footer orange">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
+        <div class="col l6 m9 s12">
           <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">Newcastle Connections is a dedicated airport shuttle bus service running 12 trips daily between Newcastle Airport, Newcastle CBD and major Newcastle Hotels. Our professional drivers are available for private and combined bookings, from as early as necessary to meet primary flights arriving at, and departing from, Newcastle Airport.
-
-We provide a Shuttle Bus service from Newcastle and the Central Coast to Newcastle Airport, and Private Transfers between Newcastle and Sydney Airports and Cruise Terminal. We offer an unrivalled, door-to-door airport transfer, where our experienced drivers take all the stress out of getting to and from your destination.</p>
+          <p class="grey-text text-lighten-4">Newcastle Connections is a dedicated airport shuttle bus service running 12 trips daily between
+            Newcastle Airport, Newcastle CBD and major Newcastle Hotels. Our professional drivers are available for private and combined bookings,
+            from as early as necessary to meet primary flights arriving at, and departing from, Newcastle Airport.</p>
 
 
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
+
+        <div class="col offset-l3 l3 m3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="https://www.facebook.com/newcastleconnections/">
+              <i class="material-icons">account_box</i> Facebook
+            </a></li>
+            <li><a class="white-text" href="https://www.instagram.com/newcastleconnections/">
+              <i class="material-icons">photo_camera</i> Instagram
+            </a></li>
+            <li><a class="white-text" href="mailto:bookings@newcastleconnections.com.au">
+              <i class="material-icons">email</i> E-Mail
+            </a></li>
+            <li><a class="white-text" href="tel:1300715552">
+              <i class="material-icons">phone</i> Call Now
+            </a></li>
           </ul>
         </div>
       </div>
     </div>
+
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Copyright &copy; SENG3150 Group 1 2017
       </div>
     </div>
   </footer>
