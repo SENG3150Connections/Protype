@@ -29,7 +29,7 @@
                     <li><a class="light-blue darken-1 waves-effect waves-light" href="survey.jsp"><i class="material-icons left">assignment</i>Survey</a></li>
                     <li><a class="waves-effect waves-light" href="#"><i class="material-icons left">schedule</i>Dates</a></li>
                     <li><a class="waves-effect waves-light" href="offers.jsp"><i class="material-icons left">view_module</i>Events</a></li>
-                    <li><a class="waves-effect waves-light" href="#"><i class="material-icons left">cloud</i>Accomidation</a></li>
+                    <li><a class="waves-effect waves-light" href="#"><i class="material-icons left">cloud</i>Accommodation</a></li>
                     <li><a class="waves-effect waves-light" href="#"><i class="material-icons left">language</i>Transport</a></li>
                     <li><a class="waves-effect waves-light" href="pay.jsp"><i class="material-icons left">payment</i>Pay</a></li>
                 </ul>
@@ -43,21 +43,25 @@
         <div class="divider"></div>
         <br>
         
-        <form>
-            <div class="input-field">
-                <select>
-                    <option value="" disabled selected>Select your Age Group at heart</option>
-                    <option value="1">Toddler (Energy for days)</option>
-                    <option value="2">Teen (Lethargic)</option>
-                    <option value="3">Twenties (Active and outgoing)</option>
-                    <option value="4">Midlife crisis (Ready to try new things)</option>
-                    <option value="5">Retired (Happy to explore culture)</option>
-                </select>
-                <label>Age Group</label>
+        <form action="survey-submit">
+            <div class="input-field col s6">
+                <input name="name" type="text">
+                <label>Your Name</label>
             </div>
             <div class="input-field">
-                <select>
-                    <option value="" disabled selected>Location</option>
+                <select name="age">
+                    <option value="" disabled selected>Select...</option>
+                    <option value="1">Under 18 (Energy for days)</option>
+                    <option value="2">18-25 (Lethargic)</option>
+                    <option value="3">26-40 (Active and outgoing)</option>
+                    <option value="4">41-60 (Ready to try new things)</option>
+                    <option value="5">Over 60 (Happy to explore culture)</option>
+                </select>
+                <label>Age</label>
+            </div>
+            <div class="input-field">
+                <select name="location">
+                    <option value="" disabled selected>Location...</option>
                     <option value="1">Local</option>
                     <option value="2">Hunter Valley</option>
                     <option value="3">Out of State</option>
@@ -66,8 +70,8 @@
                 <label>Location</label>
             </div>
             <div class="input-field">
-                <select>
-                    <option value="" disabled selected>Money willing to spend</option>
+                <select name="spending">
+                    <option value="" disabled selected>Amount...</option>
                     <option value="1">~$20</option>
                     <option value="2">~$50</option>
                     <option value="3">~$100</option>
@@ -78,12 +82,14 @@
                 <label>Spending Money</label>
             </div>
             <div class="input-field col s6">
-                <input type="tel" class="validate">
+                <input name="size" type="number" class="validate" value="1" min="1">
                 <label>Group size</label>
             </div>
-            
-            <a action="submit" href="offers.jsp" class="waves-effect waves-light btn"><i class="material-icons right">play_circle_outline</i>button</a>
+
+            <input type="submit" class="waves-effect waves-light btn" value="Submit" />
+            <input type="submit" class="waves-effect waves-light btn" value="Skip Survey" />
         </form>
+        <br><br>
     </div>
 
     <footer class="page-footer orange">

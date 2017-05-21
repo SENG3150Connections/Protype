@@ -26,8 +26,13 @@
             <result>/WEB-INF/jsp/signUp.jsp</result>
         </action>
 
-        <action name="survey" class="me.seng3150.actions.SurveyAction">
+        <action name="survey">
             <result>/WEB-INF/jsp/survey.jsp</result>
+        </action>
+
+        <action name="survey-submit" class="me.seng3150.actions.SurveyAction">
+            <result name="success" type="redirect">offers</result>
+            <result name="input" type="redirect">survey</result>
         </action>
 
     </package>
