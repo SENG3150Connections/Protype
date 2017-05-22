@@ -45,7 +45,7 @@
     </div>
   </div>
 
-  <div class="section" style="background-image: url('images/events/sample-1.jpg');">
+  <div class="section background-banner">
     <div class="container">
       <br><br>
 

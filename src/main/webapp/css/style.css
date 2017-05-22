@@ -1,0 +1,15 @@
+.background-banner {
+    background-size: cover;
+    animation-name: background-banner;
+    animation-duration: 32s;
+    animation-iteration-count: infinite;
+    transition: background-image 1s;
+}
+
+@keyframes background-banner {
+    0% {background-image: url('../images/backgrounds/home-1.jpg');}
+    25% {background-image: url('../images/backgrounds/home-2.jpg');}
+    50% {background-image: url('../images/backgrounds/home-3.jpg');}
+    75% {background-image: url('../images/backgrounds/home-4.jpg');}
+    100% {background-image: url('../images/backgrounds/home-1.jpg');}
+}
