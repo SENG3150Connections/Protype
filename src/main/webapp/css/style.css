@@ -1,9 +1,6 @@
 .background-banner {
     background-size: cover;
-    animation-name: background-banner;
-    animation-duration: 32s;
-    animation-iteration-count: infinite;
-    transition: background-image 1s;
+    animation: background-banner 32s ease infinite;
 }
 
 @keyframes background-banner {
