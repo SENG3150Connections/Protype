@@ -47,23 +47,23 @@
 
 
                 <div class="col s6">
-                    <h4>City Tram Tours</h4>
-                    <h5>$64</h5>
+                    <h4>Hunter Vally Wine Tours</h4>
+                    <h5>$150</h5>
 
-                    <p> A tour around the Newcastle CBD, learn about the cities rich history as you travel the streets in style!</p>
+                    <p> Taste the best wine in the state during a tour of our finest wineries.</p>
 
-                    <p> Everything about Newcastle’s Famous Tram is unique. Built from scratch in 1994, the tram is a genuine replica of the original Newcastle working tram, which was in service in 1923.
+                    <p>
+                        The Hunter Valley is the perfect place to explore country byways, put up your feet and indulge in fine food and wine. Scenic drives past endless rows of gnarly vines are a given, so are sweeping views of lush farmland with grazing cattle and mobs of kangaroos, and sundowners as the sun sets behind the rugged Brokenback Range.
 
-                        Newcastle’s Famous Tram has become a tourist ‘icon’ within Newcastle and the Hunter Valley.
+                        Ask any local and they ll give you a hit list of must-do experiences longer than your arm. Everything from tutored wine-tastings and boutique brews to cooking classes, championship golf and spa treatments.
 
-                        It is a novel and nostalgic way to explore the city, it’s beautiful beaches and historical sights.
-
-                        The famous tram is also available for Weddings, Hunter Valley wine tours, school formals, Christmas parties, birthday party transfers and other events. </p>
+                        What are you waiting for? Come, discover what this magical region has to offer.
+                    </p>
 
                 </div>
 
                 <div class="col s6">
-                    <img ALIGN="right" style="margin-top:110px; width: 340px; height: 250px;" src="images/events/tram.jpg">
+                    <img ALIGN="right" style="margin-top:110px; width: 340px; height: 250px;" src="images/events/hunterVally.jpg">
                 </div>
 
 

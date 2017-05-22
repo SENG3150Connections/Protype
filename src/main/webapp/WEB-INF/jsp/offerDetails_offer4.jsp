@@ -47,23 +47,19 @@
 
 
                 <div class="col s6">
-                    <h4>City Tram Tours</h4>
-                    <h5>$64</h5>
+                    <h4>Hunter Vally Balloon Ride</h4>
+                    <h5>$535</h5>
 
-                    <p> A tour around the Newcastle CBD, learn about the cities rich history as you travel the streets in style!</p>
+                    <p> See the beautiful Hunter Vally from above and experience flight like never before.</p>
 
-                    <p> Everything about Newcastle’s Famous Tram is unique. Built from scratch in 1994, the tram is a genuine replica of the original Newcastle working tram, which was in service in 1923.
-
-                        Newcastle’s Famous Tram has become a tourist ‘icon’ within Newcastle and the Hunter Valley.
-
-                        It is a novel and nostalgic way to explore the city, it’s beautiful beaches and historical sights.
-
-                        The famous tram is also available for Weddings, Hunter Valley wine tours, school formals, Christmas parties, birthday party transfers and other events. </p>
+                    <p>  Balloon Aloft sunrise hot air balloon flights depart daily from some of Australias most spectacular locations including Camden Valley (Sydney-Macarthur Region),
+                        the Hunter Valley,Mudgee, Canberra, Melbourne and the Yarra Valley.
+                        Balloon Aloft vouchers can be transferred between locations offering you the greatest options and flexibility. </p>
 
                 </div>
 
                 <div class="col s6">
-                    <img ALIGN="right" style="margin-top:110px; width: 340px; height: 250px;" src="images/events/tram.jpg">
+                    <img ALIGN="right" style="margin-top:110px; width: 340px; height: 250px;" src="images/events/Balloon.jpg">
                 </div>
 
 

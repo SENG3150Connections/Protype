@@ -47,23 +47,22 @@
 
 
                 <div class="col s6">
-                    <h4>City Tram Tours</h4>
-                    <h5>$64</h5>
+                    <h4>That thing you love</h4>
+                    <h5>$100,000,000</h5>
 
-                    <p> A tour around the Newcastle CBD, learn about the cities rich history as you travel the streets in style!</p>
+                    <p> Look! Two tickets to that thing you love!</p>
 
-                    <p> Everything about Newcastle’s Famous Tram is unique. Built from scratch in 1994, the tram is a genuine replica of the original Newcastle working tram, which was in service in 1923.
-
-                        Newcastle’s Famous Tram has become a tourist ‘icon’ within Newcastle and the Hunter Valley.
-
-                        It is a novel and nostalgic way to explore the city, it’s beautiful beaches and historical sights.
-
-                        The famous tram is also available for Weddings, Hunter Valley wine tours, school formals, Christmas parties, birthday party transfers and other events. </p>
+                    <p>
+                        ...
+                    </p>
+                    <p>
+                        Those tickets are now diamonds.
+                    </p>
 
                 </div>
 
                 <div class="col s6">
-                    <img ALIGN="right" style="margin-top:110px; width: 340px; height: 250px;" src="images/events/tram.jpg">
+                    <img ALIGN="right" style="margin-top:110px; width: 340px; height: 250px;" src="images/events/twoTickets.jpg">
                 </div>
 
 
