@@ -30,7 +30,6 @@
                 <ul class="hide-on-med-and-down">
                     <li><a class="waves-effect waves-light" href="home"><i class="material-icons left">home</i>Home</a></li>
                     <li><a class="waves-effect waves-light" href="survey"><i class="material-icons left">assignment</i>Survey</a></li>
-                    <li><a class="waves-effect waves-light" href="#"><i class="material-icons left">schedule</i>Dates</a></li>
                     <li><a class="light-blue darken-1 waves-effect waves-light" href="offers"><i class="material-icons left">view_module</i>Events</a></li>
                     <li><a class="waves-effect waves-light" href="#"><i class="material-icons left">cloud</i>Accommodation</a></li>
                     <li><a class="waves-effect waves-light" href="#"><i class="material-icons left">language</i>Transport</a></li>

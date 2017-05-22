@@ -30,7 +30,6 @@
                 <ul class="hide-on-med-and-down">
                     <li><a class="waves-effect waves-light" href="home"><i class="material-icons left">home</i>Home</a></li>
                     <li><a class="waves-effect waves-light" href="survey"><i class="material-icons left">assignment</i>Survey</a></li>
-                    <li><a class="waves-effect waves-light" href="#"><i class="material-icons left">schedule</i>Dates</a></li>
                     <li><a class="light-blue darken-1 waves-effect waves-light" href="offers"><i class="material-icons left">view_module</i>Events</a></li>
                     <li><a class="waves-effect waves-light" href="#"><i class="material-icons left">cloud</i>Accommodation</a></li>
                     <li><a class="waves-effect waves-light" href="#"><i class="material-icons left">language</i>Transport</a></li>
@@ -138,11 +137,11 @@
                         <div class="card-content activator">
                             <span class="card-title activator grey-text text-darken-4">That thing you like!</span>
                             <i class="material-icons right">more_vert</i>
-                            <p><a href="offerDetails">More Details</a></p>
+                            <p><a href="offerDetails_twoTickets">More Details</a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Hunter Vally Wine Tours $150<i class="material-icons right">close</i></span>
-                            <p>Taste the best wine in the state during a tour of our finest wineries. </p>
+                            <span class="card-title grey-text text-darken-4">That thing you like! $100<i class="material-icons right">close</i></span>
+                            <p>Look at your man *Looks at empty wall*</p>
                         </div>
                     </div>
                 </li>
