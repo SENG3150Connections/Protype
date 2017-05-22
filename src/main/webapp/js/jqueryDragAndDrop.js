@@ -40,7 +40,7 @@ function init() {
                 "<div class='card-image'>" +
                     "<img class='left col m6' src='" + imageSrc + "'>" +
                 "</div>" +
-                "<span class='card-title grey-text text-darken-4'>" + offerName + " $" + offerPrice + "</span>" +
+                "<span style='font-size:20px' class='card-title grey-text text-darken-4'>" + offerName + " $" + offerPrice + "</span>" +
                 "</div>" +
             "</div>" +
         "</li>");
@@ -81,7 +81,7 @@ function updateCost() {
     
     // Set the price
     $('#totalPrice')[0].textContent = "Total: $" + cost;
-    $('#totalSavings')[0].textContent = "Savings: $" + cost*0.2;
+    $('#totalSavings')[0].textContent = "Savings: $" + Math.floor(cost*0.2);
     
     console.log("Updated");
 }
