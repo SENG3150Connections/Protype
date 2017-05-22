@@ -52,7 +52,7 @@
                 
             </div>
             <div align="right">
-                <a href="survey" class="btn-large waves-effect waves-light orange"><i class="material-icons right">add</i>Add to Package</a>
+                <a href="offers" class="btn-large waves-effect waves-light orange"><i class="material-icons right">add</i>Add to Package</a>
                 <a href="offers" class="btn-large waves-effect waves-light orange"><i class="material-icons right">replay</i>Back</a>
             </div>
         </div>
