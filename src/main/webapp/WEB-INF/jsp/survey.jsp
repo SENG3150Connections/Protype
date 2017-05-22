@@ -43,46 +43,64 @@
         <br>
         
         <form action="survey-submit">
-            <div class="input-field col s6">
-                <input name="name" type="text">
+            <div class="input-field col s12 l6">
+                <input id="name" name="name" type="text">
                 <label>Your Name</label>
             </div>
-            <div class="input-field">
-                <select name="age">
-                    <option value="" disabled selected>Select...</option>
-                    <option value="1">Under 18 (Energy for days)</option>
-                    <option value="2">18-25 (Lethargic)</option>
-                    <option value="3">26-40 (Active and outgoing)</option>
-                    <option value="4">41-60 (Ready to try new things)</option>
-                    <option value="5">Over 60 (Happy to explore culture)</option>
-                </select>
-                <label>Age</label>
+
+            <div class="row">
+                <div class="input-field col s12 l6">
+                    <select id="age" name="age">
+                        <option value="" disabled selected>Select...</option>
+                        <option value="1">Under 18 (Energy for days)</option>
+                        <option value="2">18-25 (Lethargic)</option>
+                        <option value="3">26-40 (Active and outgoing)</option>
+                        <option value="4">41-60 (Ready to try new things)</option>
+                        <option value="5">Over 60 (Happy to explore culture)</option>
+                    </select>
+                    <label>Age</label>
+                </div>
+                <div class="input-field col s12 l6">
+                    <select id="location" name="location">
+                        <option value="" disabled selected>Location...</option>
+                        <option value="1">Local</option>
+                        <option value="2">Hunter Valley</option>
+                        <option value="3">Elsewhere in Australia</option>
+                        <option value="4">Local International</option>
+                        <option value="5">International</option>
+                    </select>
+                    <label>Location</label>
+                </div>
             </div>
-            <div class="input-field">
-                <select name="location">
-                    <option value="" disabled selected>Location...</option>
-                    <option value="1">Local</option>
-                    <option value="2">Hunter Valley</option>
-                    <option value="3">Out of State</option>
-                    <option value="4">International</option>
-                </select>
-                <label>Location</label>
-            </div>
-            <div class="input-field">
-                <select name="spending">
-                    <option value="" disabled selected>Amount...</option>
-                    <option value="1">~$20</option>
-                    <option value="2">~$50</option>
-                    <option value="3">~$100</option>
-                    <option value="4">~$150</option>
-                    <option value="5">~$200</option>
-                    <option value="6">> $200</option>
-                </select>
-                <label>Spending Money</label>
-            </div>
-            <div class="input-field col s6">
-                <input name="size" type="number" class="validate" value="1" min="1">
-                <label>Group size</label>
+
+            <div class="row">
+                <div class="input-field col s12 l6">
+                    <select id="spending" name="spending">
+                        <option value="" disabled selected>Amount...</option>
+                        <option value="1">Less Than $50</option>
+                        <option value="2">About $50</option>
+                        <option value="3">About $100</option>
+                        <option value="4">About $150</option>
+                        <option value="5">About $200</option>
+                        <option value="6">Over $200</option>
+                    </select>
+                    <label>Spending Money</label>
+                </div>
+                <div class="input-field col s3">
+                    <select id="groupType" name="groupType" onchange="updateGroupSize()">
+                        <option value="" disabled selected>Type...</option>
+                        <option value="1">Solo</option>
+                        <option value="2">Couple</option>
+                        <option value="3">Family</option>
+                        <option value="4">Multiple families</option>
+                        <option value="5">Other</option>
+                    </select>
+                    <label>Group Type</label>
+                </div>
+                <div class="input-field col s3">
+                    <input id="groupSize" name="size" type="number" class="validate" value="1" min="1">
+                    <label>Group size</label>
+                </div>
             </div>
 
             <input type="submit" class="waves-effect waves-light btn" value="Submit" />
@@ -136,6 +154,7 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
+    <script src="js/survey.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
           $('select').material_select();
