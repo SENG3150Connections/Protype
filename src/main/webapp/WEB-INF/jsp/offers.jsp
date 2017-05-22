@@ -53,7 +53,7 @@
                         <div class="card-content activator">
                             <span class="card-title activator grey-text text-darken-4">Fort Scratchley</span>
                             <i class="material-icons right">more_vert</i>
-                            <p><a href="#">More Details</a></p>
+                            <p><a href="offer1Details">More Details</a></p>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Fort Scratchley Tours $36<i class="material-icons right">close</i></span>
@@ -70,7 +70,7 @@
                         <div class="card-content activator">
                             <span class="card-title activator grey-text text-darken-4">City Tram Tour</span>
                             <i class="material-icons right">more_vert</i>
-                            <p><a href="offerDetails">More Details</a></p>
+                            <p><a href="offer2Details">More Details</a></p>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">City Tram Tours $64<i class="material-icons right">close</i></span>
@@ -87,7 +87,7 @@
                         <div class="card-content activator">
                             <span class="card-title activator grey-text text-darken-4">Harbour Tour</span>
                             <i class="material-icons right">more_vert</i>
-                            <p><a href="offerDetails">More Details</a></p>
+                            <p><a href="offer3Details">More Details</a></p>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Harbour Tour $124<i class="material-icons right">close</i></span>
@@ -104,7 +104,7 @@
                         <div class="card-content activator">
                             <span class="card-title activator grey-text text-darken-4">Balloon Ride</span>
                             <i class="material-icons right">more_vert</i>
-                            <p><a href="offerDetails">More Details</a></p>
+                            <p><a href="offer4Details">More Details</a></p>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Hunter Vally Balloon Ride $535<i class="material-icons right">close</i></span>
@@ -121,7 +121,7 @@
                         <div class="card-content activator">
                             <span class="card-title activator grey-text text-darken-4">Wine Tours</span>
                             <i class="material-icons right">more_vert</i>
-                            <p><a href="offerDetails">More Details</a></p>
+                            <p><a href="offer5Details">More Details</a></p>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Hunter Vally Wine Tours $150<i class="material-icons right">close</i></span>
@@ -138,7 +138,7 @@
                         <div class="card-content activator">
                             <span class="card-title activator grey-text text-darken-4">That thing you like!</span>
                             <i class="material-icons right">more_vert</i>
-                            <p><a href="offerDetails_twoTickets">More Details</a></p>
+                            <p><a href="offer6Details">More Details</a></p>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">That thing you like! $100<i class="material-icons right">close</i></span>

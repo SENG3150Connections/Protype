@@ -87,7 +87,7 @@
         </action>
 
         <action name="offer6Details">
-            <result>/WEB-INF/jsp/offerDetails_offer6.jsp</result>
+            <result>/WEB-INF/jsp/offerDetails_twoTickets.jsp</result>
         </action>
 
         <action name="customise">
