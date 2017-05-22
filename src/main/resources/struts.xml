@@ -66,6 +66,10 @@
             <result>/WEB-INF/jsp/offerDetails.jsp</result>
         </action>
 
+        <action name="customise">
+            <result>/WEB-INF/jsp/customise.jsp</result>
+        </action>
+
         <action name="pay">
             <result>/WEB-INF/jsp/pay.jsp</result>
         </action>
