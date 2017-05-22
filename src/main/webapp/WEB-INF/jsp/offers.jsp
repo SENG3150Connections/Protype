@@ -45,20 +45,37 @@
       <div class="row">
         <div id="offersContainer" class="col m9">
             <ul id="gallery" class="row gallery ui-helper-reset ui-helper-clearfix">
-                
+
                 <li class="ui-widget-content">
                     <div class="card col m4">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/events/sample-5.jpg">
+                            <img class="activator" src="images/events/Fort-Scratchley.jpg">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Offer 1</span>
+                            <span class="card-title activator grey-text text-darken-4">Fort Scratchley</span>
                             <i class="material-icons right">more_vert</i>
-                            <p><a href="#">This is a link</a></p>
+                            <p><a href="#">More information</a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            <span class="card-title grey-text text-darken-4">Fort Scratchley Tours<i class="material-icons right">Close</i></span>
+                            <p>Visit the historic Fort Scratchley for a guided tour. Learn about the rich history of this historic building.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="ui-widget-content">
+                    <div class="card col m4">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/events/tram.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">City Tram Tour</span>
+                            <i class="material-icons right">more_vert</i>
+                            <p><a href="#">More Information</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">City Tram Tours<i class="material-icons right">Close</i></span>
+                            <p> A tour around the Newcastle CBD, learn about the cities rich history as you travel the streets in style!</p>
                         </div>
                     </div>
                 </li>
@@ -66,16 +83,16 @@
                 <li class="ui-widget-content">
                     <div class="card col m4">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/events/sample-2.jpg">
+                            <img class="activator" src="images/events/harbour tours.jpg">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Offer 2</span>
+                            <span class="card-title activator grey-text text-darken-4">Harbour Tour</span>
                             <i class="material-icons right">more_vert</i>
-                            <p><a href="#">This is a link</a></p>
+                            <p><a href="#">More Information</a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Offer 2<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            <span class="card-title grey-text text-darken-4">Harbour Tour<i class="material-icons right">Close</i></span>
+                            <p>An idyllic cruse around Newcastle harbour, see our city in a whole new way from the water. Available for private events.</p>
                         </div>
                     </div>
                 </li>
@@ -83,33 +100,33 @@
                 <li class="ui-widget-content">
                     <div class="card col m4">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/events/sample-3.jpg">
+                            <img class="activator" src="images/events/Balloon.jpg">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Offer 3</span>
+                            <span class="card-title activator grey-text text-darken-4">Balloon Ride</span>
                             <i class="material-icons right">more_vert</i>
-                            <p><a href="#">This is a link</a></p>
+                            <p><a href="#">More Information</a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            <span class="card-title grey-text text-darken-4">Hunter Vally Balloon Ride<i class="material-icons right">Close</i></span>
+                            <p>See the beautiful Hunter Vally from above and experience flight like never before. </p>
                         </div>
                     </div>
                 </li>
-                
+
                 <li class="ui-widget-content">
                     <div class="card col m4">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/events/sample-3.jpg">
+                            <img class="activator" src="images/events/hunterVally.jpg">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Offer 4</span>
+                            <span class="card-title activator grey-text text-darken-4">Wine Tours</span>
                             <i class="material-icons right">more_vert</i>
-                            <p><a href="#">This is a link</a></p>
+                            <p><a href="#">More Information</a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            <span class="card-title grey-text text-darken-4">Hunter Vally Wine Tours<i class="material-icons right">Close</i></span>
+                            <p>Taste the best wine in the state during a tour of our finest wineries. </p>
                         </div>
                     </div>
                 </li>
