@@ -66,8 +66,8 @@
             <result>/WEB-INF/jsp/offerDetails.jsp</result>
         </action>
 
-        <action name="merchantPortal">
-            <result>/WEB-INF/jsp/merchantPortal.jsp</result>
+        <action name="pay">
+            <result>/WEB-INF/jsp/pay.jsp</result>
         </action>
     </package>
 
