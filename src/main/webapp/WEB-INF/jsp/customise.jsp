@@ -15,12 +15,12 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="js/jqueryDragAndDrop.js"></script>
 
-    <link href='./calendar/fullcalendar.min.css' rel='stylesheet' />
-    <link href='./calendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
-    <script src='./calendar/lib/moment.min.js'></script>
-    <script src='./calendar/lib/jquery.min.js'></script>
-    <script src='./calendar/fullcalendar.min.js'></script>
-    <script src='./calendar/calendar.js'></script>
+    <link href='calendar/fullcalendar.min.css' rel='stylesheet' />
+    <link href='calendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+    <script src='calendar/lib/moment.min.js'></script>
+    <script src='calendar/lib/jquery.min.js'></script>
+    <script src='calendar/fullcalendar.min.js'></script>
+    <script src='calendar/calendar.js'></script>
     <style>
         #calendar {
             max-width: 900px;
