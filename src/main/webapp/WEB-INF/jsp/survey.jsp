@@ -82,7 +82,7 @@
                     </select>
                     <label>Spending Money</label>
                 </div>
-                <div class="input-field col s3">
+                <div class="input-field col s6 l3">
                     <select id="groupType" name="groupType" onchange="updateGroupSize()">
                         <option value="" disabled selected>Type...</option>
                         <option value="1">Solo</option>
@@ -93,7 +93,7 @@
                     </select>
                     <label>Group Type</label>
                 </div>
-                <div class="input-field col s3">
+                <div class="input-field col s6 l3">
                     <input id="groupSize" name="groupSize" type="number" class="validate" value="1" min="1">
                     <label>Group size</label>
                 </div>
