@@ -19,6 +19,7 @@
 <body onload="init()">
     <nav class="light-blue lighten-1" role="navigation">
         <div class="nav-wrapper container">
+            <a href="home"><img height="32px" src="images/LogoBanner.png"></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">Login</a></li>
             </ul>
@@ -47,7 +48,7 @@
                 <li id="offer_1" title="Fort Scratchley" price="36" class="ui-widget-content">
                     <div class="card col m4 activator">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/events/Fort-Scratchley.jpg">
+                            <img height="220px" class="activator" src="images/events/Fort-Scratchley.jpg">
                         </div>
                         <div class="card-content activator">
                             <span class="card-title activator grey-text text-darken-4">Fort Scratchley</span>
@@ -64,7 +65,7 @@
                 <li id="offer_2" title="City Tram Tour" price="64" class="ui-widget-content">
                     <div class="card col m4 activator">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/events/tram.jpg">
+                            <img height="220px" class="activator" src="images/events/tram.jpg">
                         </div>
                         <div class="card-content activator">
                             <span class="card-title activator grey-text text-darken-4">City Tram Tour</span>
@@ -81,7 +82,7 @@
                 <li id="offer_3" title="Harbour Tour" price="124" class="ui-widget-content">
                     <div class="card col m4 activator">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/events/harbour tours.jpg">
+                            <img height="220px" class="activator" src="images/events/harbour tours.jpg">
                         </div>
                         <div class="card-content activator">
                             <span class="card-title activator grey-text text-darken-4">Harbour Tour</span>
@@ -98,7 +99,7 @@
                 <li id="offer_4" title="Balloon Ride" price="535" class="ui-widget-content">
                     <div class="card col m4 activator">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/events/Balloon.jpg">
+                            <img height="220px" class="activator" src="images/events/Balloon.jpg">
                         </div>
                         <div class="card-content activator">
                             <span class="card-title activator grey-text text-darken-4">Balloon Ride</span>
@@ -115,7 +116,7 @@
                 <li id="offer_5" title="Wine Tours" price="150" class="ui-widget-content">
                     <div class="card col m4 activator">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/events/hunterVally.jpg">
+                            <img height="220px" class="activator" src="images/events/hunterVally.jpg">
                         </div>
                         <div class="card-content activator">
                             <span class="card-title activator grey-text text-darken-4">Wine Tours</span>
@@ -132,7 +133,7 @@
                 <li id="offer_6" title="That thing you like!" price="100" class="ui-widget-content">
                     <div class="card col m4 activator">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/events/twoTickets.jpg">
+                            <img height="220px" class="activator" src="images/events/twoTickets.jpg">
                         </div>
                         <div class="card-content activator">
                             <span class="card-title activator grey-text text-darken-4">That thing you like!</span>

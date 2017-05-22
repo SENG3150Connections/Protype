@@ -32,6 +32,7 @@
 <body onload="init()">
     <nav class="light-blue lighten-1" role="navigation">
         <div class="nav-wrapper container">
+            <a href="home"><img height="32px" src="images/LogoBanner.png"></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">Login</a></li>
             </ul>
