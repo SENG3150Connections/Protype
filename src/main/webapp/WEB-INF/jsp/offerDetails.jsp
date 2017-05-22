@@ -9,9 +9,12 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+  <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/loadBody.js"></script>
 </head>
 
-<body>
+<body onLoad="loadBody()">
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">Logo</a>
@@ -22,41 +25,54 @@
     </div>
   </nav>
   <div class="section no-pad-bot" id="index-banner">
-    <div class="container col m12">
-      <nav class="light-blue lighten-1" role="navigation">
-        <ul class="hide-on-med-and-down">
-          <li><a class="waves-effect waves-light" href="#"><i class="material-icons left">home</i>Home</a></li>
-          <li><a class="waves-effect waves-light" href="#"><i class="material-icons left">schedule</i>Dates</a></li>
-          <li><a class="waves-effect waves-light" href="#"><i class="material-icons left">assignment</i>Events</a></li>
-          <li><a class="waves-effect waves-light" href="#"><i class="material-icons left">cloud</i>Accomidation</a></li>
-          <li><a class="waves-effect waves-light" href="#"><i class="material-icons left">language</i>Transport</a></li>
-          <li><a class="waves-effect waves-light" href="#"><i class="material-icons left">payment</i>Pay</a></li>
-        </ul>
-      </nav>
+        <div class="container col m12">
+            <nav class="light-blue lighten-1" role="navigation">
+                <ul class="hide-on-med-and-down">
+                    <li><a class="waves-effect waves-light" href="home"><i class="material-icons left">home</i>Home</a></li>
+                    <li><a class="waves-effect waves-light" href="survey"><i class="material-icons left">assignment</i>Survey</a></li>
+                    <li><a class="waves-effect waves-light" href="#"><i class="material-icons left">schedule</i>Dates</a></li>
+                    <li><a class="light-blue darken-1 waves-effect waves-light" href="offers"><i class="material-icons left">view_module</i>Events</a></li>
+                    <li><a class="waves-effect waves-light" href="#"><i class="material-icons left">cloud</i>Accommodation</a></li>
+                    <li><a class="waves-effect waves-light" href="#"><i class="material-icons left">language</i>Transport</a></li>
+                    <li><a class="waves-effect waves-light" href="pay"><i class="material-icons left">payment</i>Pay</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-  </div>
 
   <div class="container col m12">
       <div class="row">
-        <div class="container col m9 light-blue lighten-4">
-            <div>
-                <h4> Event $100.95</h4>
+        <div class="container col m9 light-blue lighten-4" style="height: 600px;">
+            <div style="height: 520px">
+                <h4>Offer 1 $100.95</h4>
+                
+                <div class="card-image">
+                    <img ALIGN="right" src="images/events/sample-2.jpg">
+                    Details: A bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
+                </div>
+                
             </div>
-            
-            <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="images/events/sample-1.jpg">
+            <div align="right">
+                <a href="survey" class="btn-large waves-effect waves-light orange"><i class="material-icons right">add</i>Add to Package</a>
+                <a href="offers" class="btn-large waves-effect waves-light orange"><i class="material-icons right">replay</i>Back</a>
             </div>
         </div>
 
-        <div class="col m3 light-blue lighten-5" style="height: 626px;">
+
+        <div id="packageInformation" class="col m3 light-blue lighten-5 container" style="height: 600px;">
             <h5 class="center">Package</h5>
 
             <p class="light">Display the current events in the package and the running cost</p>
             
             <div class="divider"></div>
-            <div>
-                <p class="light">Display the current events in the package and the running cost</p>
             
+            <ul id="addedOffers" class='gallery ui-helper-reset' style='overflow-y: scroll; height: 400px'>
+            </ul>
+            
+            <div class="divider"></div>
+            
+            <div>
+                <h5 class="center">Total: $100.95</h5>
             </div>
         </div>
 
@@ -68,37 +84,38 @@
   <footer class="page-footer orange">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
+        <div class="col l6 m9 s12">
           <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">Newcastle Connections is a dedicated airport shuttle bus service running 12 trips daily between Newcastle Airport, Newcastle CBD and major Newcastle Hotels. Our professional drivers are available for private and combined bookings, from as early as necessary to meet primary flights arriving at, and departing from, Newcastle Airport.
-
-We provide a Shuttle Bus service from Newcastle and the Central Coast to Newcastle Airport, and Private Transfers between Newcastle and Sydney Airports and Cruise Terminal. We offer an unrivalled, door-to-door airport transfer, where our experienced drivers take all the stress out of getting to and from your destination.</p>
+          <p class="grey-text text-lighten-4">Newcastle Connections is a dedicated airport shuttle bus service running 12 trips daily between
+            Newcastle Airport, Newcastle CBD and major Newcastle Hotels. Our professional drivers are available for private and combined bookings,
+            from as early as necessary to meet primary flights arriving at, and departing from, Newcastle Airport.</p>
 
 
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
+
+        <div class="col offset-l3 l3 m3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="https://www.facebook.com/newcastleconnections/">
+              <i class="material-icons">account_box</i> Facebook
+            </a></li>
+            <li><a class="white-text" href="https://www.instagram.com/newcastleconnections/">
+              <i class="material-icons">photo_camera</i> Instagram
+            </a></li>
+            <li><a class="white-text" href="mailto:bookings@newcastleconnections.com.au">
+              <i class="material-icons">email</i> E-Mail
+            </a></li>
+            <li><a class="white-text" href="tel:1300715552">
+              <i class="material-icons">phone</i> Call Now
+            </a></li>
           </ul>
         </div>
       </div>
     </div>
+
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Copyright &copy; SENG3150 Group 1 2017
       </div>
     </div>
   </footer>
