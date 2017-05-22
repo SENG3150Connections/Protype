@@ -64,7 +64,7 @@
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4 center">
-          <div class="card-panel darken-1 column">
+          <div class="card-panel grey lighten-5 hoverable column">
             <h2 class="light-blue-text"><i class="material-icons large">fast_forward</i></h2>
             <h5>Speed up holiday planning</h5>
             <p class="card-content light">We did most of the heavy lifting for you to provide a selection of events and packages to entertain you around Newcastle.</p>
@@ -72,7 +72,7 @@
         </div>
 
         <div class="col s12 m4 center">
-          <div class="card-panel darken-1 column">
+          <div class="card-panel grey lighten-5 hoverable column">
             <h2 class="light-blue-text"><i class="material-icons large">group</i></h2>
             <h5>User-focused experiences</h5>
 
@@ -81,7 +81,7 @@
         </div>
 
         <div class="col s12 m4 center ">
-          <div class="card-panel darken-1 column">
+          <div class="card-panel grey lighten-5 hoverable column">
             <h2 class="light-blue-text"><i class="material-icons large">settings</i></h2>
             <h5>Simple to use</h5>
 
