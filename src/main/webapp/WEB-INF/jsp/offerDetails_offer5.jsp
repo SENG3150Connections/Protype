@@ -55,7 +55,7 @@
                     <p>
                         The Hunter Valley is the perfect place to explore country byways, put up your feet and indulge in fine food and wine. Scenic drives past endless rows of gnarly vines are a given, so are sweeping views of lush farmland with grazing cattle and mobs of kangaroos, and sundowners as the sun sets behind the rugged Brokenback Range.
 
-                        Ask any local and they ll give you a hit list of must-do experiences longer than your arm. Everything from tutored wine-tastings and boutique brews to cooking classes, championship golf and spa treatments.
+                        Ask any local and they&#39;ll give you a hit list of must-do experiences longer than your arm. Everything from tutored wine-tastings and boutique brews to cooking classes, championship golf and spa treatments.
 
                         What are you waiting for? Come, discover what this magical region has to offer.
                     </p>
@@ -90,7 +90,7 @@
             <div class="divider"></div>
 
             <div>
-                <h5 class="center">Total: $100.95</h5>
+                <h5 class="center">Total: $0.00</h5>
             </div>
         </div>
 

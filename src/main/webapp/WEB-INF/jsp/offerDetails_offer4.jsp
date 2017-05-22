@@ -52,8 +52,8 @@
 
                     <p> See the beautiful Hunter Vally from above and experience flight like never before.</p>
 
-                    <p>  Balloon Aloft sunrise hot air balloon flights depart daily from some of Australias most spectacular locations including Camden Valley (Sydney-Macarthur Region),
-                        the Hunter Valley,Mudgee, Canberra, Melbourne and the Yarra Valley.
+                    <p>  Balloon Aloft sunrise hot air balloon flights depart daily from some of Australia&#39;s most spectacular locations including Camden Valley (Sydney-Macarthur Region),
+                        the Hunter Valley, Mudgee, Canberra, Melbourne and the Yarra Valley.
                         Balloon Aloft vouchers can be transferred between locations offering you the greatest options and flexibility. </p>
 
                 </div>
@@ -86,7 +86,7 @@
             <div class="divider"></div>
 
             <div>
-                <h5 class="center">Total: $100.95</h5>
+                <h5 class="center">Total: $0.00</h5>
             </div>
         </div>
 

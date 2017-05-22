@@ -95,7 +95,7 @@
             <div class="divider"></div>
 
             <div>
-                <h5 class="center">Total: $100.95</h5>
+                <h5 class="center">Total: $0.00</h5>
             </div>
         </div>
 
