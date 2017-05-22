@@ -19,7 +19,6 @@
 <body onload="init()">
     <nav class="light-blue lighten-1" role="navigation">
         <div class="nav-wrapper container">
-            <a id="logo-container" href="#" class="brand-logo"><img class="activator" src="images/logoLong.png" height='64px'></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">Login</a></li>
             </ul>
@@ -114,7 +113,6 @@
                     </div>
                 </li>
 
-
                 <li id="offer_5" title="Wine Tours" price="150" class="ui-widget-content">
                     <div class="card col m4 activator">
                         <div class="card-image waves-effect waves-block waves-light">
@@ -122,6 +120,23 @@
                         </div>
                         <div class="card-content activator">
                             <span class="card-title activator grey-text text-darken-4">Wine Tours</span>
+                            <i class="material-icons right">more_vert</i>
+                            <p><a href="offerDetails">More Details</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Hunter Vally Wine Tours $150<i class="material-icons right">close</i></span>
+                            <p>Taste the best wine in the state during a tour of our finest wineries. </p>
+                        </div>
+                    </div>
+                </li>
+                
+                <li id="offer_6" title="That thing you like!" price="100" class="ui-widget-content">
+                    <div class="card col m4 activator">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/events/twoTickets.jpg">
+                        </div>
+                        <div class="card-content activator">
+                            <span class="card-title activator grey-text text-darken-4">That thing you like!</span>
                             <i class="material-icons right">more_vert</i>
                             <p><a href="offerDetails">More Details</a></p>
                         </div>
