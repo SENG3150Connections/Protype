@@ -43,10 +43,6 @@
         <br>
         
         <form action="survey-submit">
-            <div class="input-field col s12 l6">
-                <input id="name" name="name" type="text">
-                <label>Your Name</label>
-            </div>
 
             <div class="row">
                 <div class="input-field col s12 l6">
@@ -98,7 +94,7 @@
                     <label>Group Type</label>
                 </div>
                 <div class="input-field col s3">
-                    <input id="groupSize" name="size" type="number" class="validate" value="1" min="1">
+                    <input id="groupSize" name="groupSize" type="number" class="validate" value="1" min="1">
                     <label>Group size</label>
                 </div>
             </div>

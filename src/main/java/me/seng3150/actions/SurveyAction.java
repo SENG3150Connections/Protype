@@ -8,15 +8,14 @@ public class SurveyAction extends ActionSupport {
 
     private User user;
 
-    private String name;
+    private int groupSize;
 
     @Override
     public String execute() {
 
-        if (name == null)
+        if (groupSize == 0)
             return SUCCESS;
 
-        getUser().setName(name);
         getUser().setSurveyCompleted(true);
         return SUCCESS;
     }
@@ -30,11 +29,11 @@ public class SurveyAction extends ActionSupport {
         this.user = user;
     }
 
-    public String getName() {
-        return name;
+    public int getGroupSize() {
+        return groupSize;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setGroupSize(int groupSize) {
+        this.groupSize = groupSize;
     }
 }
