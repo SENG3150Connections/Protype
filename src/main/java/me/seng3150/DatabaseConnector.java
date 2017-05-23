@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Random;
 
 public class DatabaseConnector {
 
@@ -54,6 +55,62 @@ public class DatabaseConnector {
         } catch ( Exception e ) {
 
         }
+
+    }
+
+
+    public void insertNewEntry(String firstName, String tableName) {
+
+        /*
+
+        A function that calls an SQL query to insert a new customer into the database.
+        IN: Takes the customer input as attributes (Strings)
+        OUT: Returns true if query ran successfully, false if not.
+
+         */
+
+        try {
+
+            Class.forName("org.sqlite.JDBC");
+            Connection connection = getConnection();
+            connection.setAutoCommit(false);
+
+            // First generate a new primary key
+
+            Random r = new Random();
+
+
+
+            int key = r.nextInt(100000);
+
+
+
+            Statement statement = connection.createStatement();
+            // Now construct the query
+            String query = "INSERT INTO " + tableName + " (ID,LastName,FirstName,PhoneNumber,EmailAddress,StreetAddress,DOB,DateSigned,Children)" +
+                    " VALUES ("+ key +",'"+
+                    "x"+"','"
+                    +firstName+"','"+
+                    "x"+"','"+
+                    "x"+"','"+
+                    "x"+"','"+
+                    "x"+"','" +
+                    "x"+ "','" +
+                    "x" + "');";
+
+            statement.executeUpdate(query);
+
+            // Important, connection must be closed or things will break.
+            statement.close();
+            connection.commit();
+            connection.close();
+
+        } catch ( Exception e ) {
+
+
+
+        }
+
 
     }
 

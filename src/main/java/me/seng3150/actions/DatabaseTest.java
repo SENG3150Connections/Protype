@@ -17,9 +17,9 @@ public class DatabaseTest extends ActionSupport {
 
         DatabaseConnector databaseConnector = new DatabaseConnector();
 
-        databaseConnector.createTable("First");
+        databaseConnector.createTable("FirstTable");
 
-
+        databaseConnector.insertNewEntry("Name","FirstTable");
 
         return SUCCESS;
     }
