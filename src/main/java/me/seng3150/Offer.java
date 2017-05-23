@@ -1,9 +1,13 @@
 package me.seng3150;
 
+import java.util.ArrayList;
+import java.math.BigDecimal;
+
 public class Offer {
 
     private String title, description, location, date, imageDir;
-    private float price;
+    private BigDecimal price;
+    private ArrayList<String> tags;
 
     Offer()
     {
@@ -11,8 +15,9 @@ public class Offer {
         description = "";
         location = "";
         date = "";
-        price = (float)0.0;
+        price = new BigDecimal("0.0");
         imageDir = "";
+        tags = new ArrayList<String>();
     }
 
     public String getTitle() { return title; }
@@ -31,11 +36,15 @@ public class Offer {
 
     public void setDate(String date) { this.date = date; }
 
-    public float getPrice() { return price; }
+    public BigDecimal getPrice() { return price; }
 
-    public void setPrice(float price) { this.price = price; }
+    public void setPrice(float price) { this.price = new BigDecimal(price); }
 
     public String getImageDir() { return imageDir; }
 
     public void setImageDir(String imageDir) { this.imageDir = imageDir; }
+
+    public ArrayList<String> getTags() { return tags; }
+
+    public void setTags(ArrayList<String> tags) {  this.tags = tags; }
 }
