@@ -49,7 +49,6 @@
 
         <default-interceptor-ref name="surveyStack"/>
 
-        <!-- TODO: Global result for survey-->
         <global-results>
             <result name="surveyrequired" type="redirect">survey</result>
         </global-results>
@@ -62,7 +61,7 @@
             <result>/WEB-INF/jsp/offers.jsp</result>
         </action>
 
-        <action name="offerDetails">
+        <action name="offerDetails" class="me.seng3150.actions.OfferDetailsAction">
             <result>/WEB-INF/jsp/offerDetails.jsp</result>
         </action>
 

@@ -6,13 +6,14 @@ import java.util.List;
 
 public class Offer {
 
-    private String title, description, location, imagePath;
+    private String title, location, imagePath;
+    private List<String> description;
     private BigDecimal price;
     private List<String> tags;
 
     Offer() {
         title = "";
-        description = "";
+        description = new ArrayList<>();
         location = "";
         price = new BigDecimal("0.0");
         imagePath = "";
@@ -27,11 +28,11 @@ public class Offer {
         this.title = title;
     }
 
-    public String getDescription() {
+    public List<String> getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
+    public void setDescription(List<String> description) {
         this.description = description;
     }
 

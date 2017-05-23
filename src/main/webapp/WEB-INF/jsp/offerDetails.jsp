@@ -1,3 +1,5 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,20 +47,12 @@
         
         <div id="offerPannel" style="min-height:inherit" class="col m9 container light-blue">
             <div style="min-height:550px" class="light-blue darken-1">
-                <img class="col s6 right responsive-img" src="images/events/Balloon.jpg">
-                <h3 class="header">Balloon Trip</h3>
+                <img class="col s6 right responsive-img" src=<s:property value="offer.imagePath"/>>
+                <h3 class="header"><s:property value="offer.title"/></h3>
                 <span>
-                    <p>Visit the historic Fort Scratchley for a guided tour. Learn about the rich history of this historic building.</p>
-
-                    <p>Guided tours are led by passionate Fort Scratchley Historical Society volunteers with a wealth of knowledge about the site.</p>
-
-                    <p>There are two types of tours:</p>
-
-                    <p>Site and full tunnel tour: Runs around 90 minutes. Allow two hours on site.
-                    Tunnel tour: Runs around 60 minutes. Allow 90 minutes on site.</p>
-                        
-                    <p>Tours are available at regular intervals each day the Fort is open (6 days a week, 10am to 4pm closed Tuesdays). 
-                    You can purchase your tour tickets at the Artillery Store on the day.</p>
+                    <s:iterator value="offer.description">
+                        <p><s:property/></p>
+                    </s:iterator>
                 </span>
             </div>
             <div style="min-height:50px" class="light-blue darken-2">
