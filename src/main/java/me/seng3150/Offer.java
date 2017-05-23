@@ -1,11 +1,11 @@
 package me.seng3150;
 
-public class Event {
+public class Offer {
 
     private String title, description, location, date, imageDir;
     private float price;
 
-    Event()
+    Offer()
     {
         title = "";
         description = "";
