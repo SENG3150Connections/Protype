@@ -3,7 +3,6 @@ package me.seng3150;
 public class User {
 
     private boolean surveyCompleted;
-    private String name;
     private int age;
     private int location;
     private int spending;
@@ -15,14 +14,6 @@ public class User {
 
     public void setSurveyCompleted(boolean surveyCompleted) {
         this.surveyCompleted = surveyCompleted;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public int getAge() {
