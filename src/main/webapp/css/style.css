@@ -10,3 +10,12 @@
     75% {background-image: url('../images/backgrounds/home-4.jpg');}
     100% {background-image: url('../images/backgrounds/home-1.jpg');}
 }
+
+.form-pad .row, .form-pad button {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+form {
+    clear: both;
+}
