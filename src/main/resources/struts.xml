@@ -54,6 +54,11 @@
             <result name="surveyrequired" type="redirect">survey</result>
         </global-results>
 
+
+        <action name="databaseTest" class="me.seng3150.actions.DatabaseTest">
+            <result>/WEB-INF/jsp/databaseTest.jsp</result>
+        </action>
+
         <action name="profile">
             <result>/WEB-INF/jsp/profile.jsp</result>
         </action>
