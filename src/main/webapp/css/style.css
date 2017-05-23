@@ -44,4 +44,5 @@
 }
 .img-crop img {
     position: absolute;
+    width: 100%;
 }
