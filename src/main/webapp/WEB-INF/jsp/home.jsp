@@ -95,27 +95,29 @@
   <div class="section">
     <div class="container">
 
-      <ul id="tabs" class="tabs tabs-fixed-width">
+      <ul id="tabs-home" class="tabs tabs-fixed-width">
         <li class="tab col l3 s6"><a class="active" href="#swipe-1">Upcoming Events</a></li>
         <li class="tab col l3 s6"><a href="#swipe-2">Popular Events</a></li>
       </ul>
       <div id="swipe-1" class="col s12 grey lighten-4">
         <div class="row">
-          <div class="col s4">
-            <img src="images/events/Balloon.jpg" class="img-crop">
+          <div class="col s12 l5">
+            <img src="images/NewcastleSupercars.jpg" class="img-crop">
           </div>
-          <div class="col s8">
-            <p>Balloons</p>
+          <div class="col s12 l7">
+            <p>The announcement in September that Newcastle would host the Supercars finale for at least the next five years
+              sparked celebrations in the Hunter motor sport community and outrage among many residents directly affected by
+              the race.</p>
           </div>
         </div>
       </div>
 
       <div id="swipe-2" class="col s12 grey lighten-4">
         <div class="row">
-          <div class="col s4">
+          <div class="col s5">
             <img src="images/events/BogieHole.jpg" class="img-crop">
           </div>
-          <div class="col s8">
+          <div class="col s7">
             <p>Not balloons</p>
           </div>
         </div>
@@ -134,7 +136,7 @@
           way to plan your trips through our flexible package deals</p>
         </div>
 
-        <div class="col l3 m6 s12">
+        <div class="col l3 m6 s6">
           <h5 class="white-text">Connect</h5>
           <ul>
             <li><a class="white-text" href="https://www.facebook.com/newcastleconnections/">
@@ -152,7 +154,7 @@
           </ul>
         </div>
 
-        <div class="col l3 m6 s12">
+        <div class="col l3 m6 s6">
           <h5 class="white-text">Legal</h5>
           <ul>
             <li><a class="white-text">About Us</a></li>

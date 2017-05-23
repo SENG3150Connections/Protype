@@ -16,23 +16,23 @@
     margin-bottom: 25px;
 }
 
-.tabs .tab a{
+#tabs-home .tab a{
     background-color: #eeeeee;
     color:#000;
     font-size: larger;
 } /*Black color to the text*/
 
-.tabs .tab a:hover {
+#tabs-home .tab a:hover {
     background-color:#bdbdbd;
     color:#000;
 } /*Text color on hover*/
 
-.tabs .tab a.active {
+#tabs-home .tab a.active {
     background-color:#e0e0e0;
     color:#000;
 } /*Background and text color when a tab is active*/
 
-.tabs .indicator {
+#tabs-home .indicator {
     background-color: #2196f3;
 } /*Color of underline*/
 
