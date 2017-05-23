@@ -55,7 +55,7 @@
         </div>
     </div>
 
-  <div id="mainContainer" class="row container" style="min-height:650px">
+  <div id="mainContainer" class="row container" style="min-height:650px;margin-top:-20px;">
         
         <div id="offerPannel" style="min-height:inherit" class="col m9 container light-blue">
             <p> Drag and drop Offers you like from the pannel into the side bar </p>
