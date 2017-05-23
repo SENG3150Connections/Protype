@@ -2,51 +2,72 @@ package me.seng3150;
 
 import java.util.ArrayList;
 import java.math.BigDecimal;
+import java.util.List;
 
 public class Offer {
 
-    private String title, description, location, date, imageDir;
+    private String title, description, location, imagePath;
     private BigDecimal price;
-    private ArrayList<String> tags;
+    private List<String> tags;
 
-    Offer()
-    {
+    Offer() {
         title = "";
         description = "";
         location = "";
-        date = "";
         price = new BigDecimal("0.0");
-        imageDir = "";
-        tags = new ArrayList<String>();
+        imagePath = "";
+        tags = new ArrayList<>();
     }
 
-    public String getTitle() { return title; }
+    public String getTitle() {
+        return title;
+    }
 
-    public void setTitle(String title) { this.title = title; }
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
-    public String getDescription() { return description; }
+    public String getDescription() {
+        return description;
+    }
 
-    public void setDescription(String description) { this.description = description; }
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
-    public String getLocation() { return location; }
+    public String getLocation() {
+        return location;
+    }
 
-    public void setLocation(String location) { this.location = location; }
+    public void setLocation(String location) {
+        this.location = location;
+    }
 
-    public String getDate() { return date; }
+    public BigDecimal getPrice() {
+        return price;
+    }
 
-    public void setDate(String date) { this.date = date; }
+    public void setPrice(float price) {
+        this.price = new BigDecimal(price);
+    }
 
-    public BigDecimal getPrice() { return price; }
+    public String getImagePath() {
+        return imagePath;
+    }
 
-    public void setPrice(float price) { this.price = new BigDecimal(price); }
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
+    }
 
-    public String getImageDir() { return imageDir; }
+    public List<String> getTags() {
+        return tags;
+    }
 
-    public void setImageDir(String imageDir) { this.imageDir = imageDir; }
+    public void addTag(String tag) {
+        this.tags.add(tag);
+    }
 
-    public ArrayList<String> getTags() { return tags; }
-
-    public void addTags(String tag) {  this.tags.add(tag); }
-
-    public void removeTags(String tag) {  this.tags.remove(tag); }
+    public void removeTag(String tag) {
+        this.tags.remove(tag);
+    }
 }
