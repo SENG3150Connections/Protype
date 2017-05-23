@@ -105,6 +105,7 @@
             <img src="images/NewcastleSupercars.jpg" class="img-crop">
           </div>
           <div class="col s12 l7">
+            <h5>V8 Supercars</h5>
             <p>The announcement in September that Newcastle would host the Supercars finale for at least the next five years
               sparked celebrations in the Hunter motor sport community and outrage among many residents directly affected by
               the race.</p>
@@ -118,6 +119,7 @@
             <img src="images/events/BogieHole.jpg" class="img-crop">
           </div>
           <div class="col s7">
+            <h5>Bogie Hole</h5>
             <p>Not balloons</p>
           </div>
         </div>
