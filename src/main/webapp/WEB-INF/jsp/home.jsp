@@ -102,7 +102,9 @@
       <div id="swipe-1" class="col s12 grey lighten-4">
         <div class="row">
           <div class="col s12 l5">
-            <img src="images/NewcastleSupercars.jpg" class="img-crop">
+            <div class="img-crop">
+              <img src="images/events/NewcastleSupercars.jpg">
+            </div>
           </div>
           <div class="col s12 l7">
             <h5>V8 Supercars</h5>
@@ -115,12 +117,16 @@
 
       <div id="swipe-2" class="col s12 grey lighten-4">
         <div class="row">
-          <div class="col s5">
-            <img src="images/events/BogieHole.jpg" class="img-crop">
+          <div class="col s12 l5">
+            <div class="img-crop">
+              <img src="images/events/BogeyHole.jpg">
+            </div>
           </div>
-          <div class="col s7">
-            <h5>Bogie Hole</h5>
-            <p>Not balloons</p>
+          <div class="col s12 l7">
+            <h5>Bogey Hole</h5>
+            <p>The Bogey Hole was constructed by order of Commandant Morisset in about 1820 for his own personal use.
+              Morisset was Commandant of Newcastle from 1819 to 1822. It was known, originally as the "Commandants Baths".
+              The name "Bogey Hole" was applied afterwards and comes from the indigenous word meaning "to bathe".</p>
           </div>
         </div>
       </div>

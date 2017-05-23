@@ -36,7 +36,12 @@
     background-color: #2196f3;
 } /*Color of underline*/
 
-img.img-crop {
+.img-crop {
     width: 100%;
+    padding-bottom: 75%;
+    position: relative;
     overflow: hidden;
+}
+.img-crop img {
+    position: absolute;
 }
