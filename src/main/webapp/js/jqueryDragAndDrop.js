@@ -1,7 +1,7 @@
 function init() {
     // Variables
     var $gallery = $( "#gallery" );
-    var $packageInformation = $( "#packageInformation" );
+    var $packageInformation = $( "#packagePannel" );
     
     
     // All the offer cards have the id "offerDragable" - Allows all of them to be dragged
@@ -9,7 +9,6 @@ function init() {
         revert: "invalid", // when not dropped, the item will revert back to its initial position
         containment: "document",
         cursor: "move",
-        cursorAt: { top: -5, left: -5 },
         helper: "clone"
     });
     
@@ -26,10 +25,10 @@ function init() {
     
     // Add offers to the sidebar
     function addOffer( $item ) {
-        var imageSrc = $item.context.childNodes[1].children[0].children[0].getAttribute("src");
+        var imageSrc = "images/events/Balloon.jpg";
         var offerID = $item.context.getAttribute("id");
-        var offerName = $item.context.getAttribute("title");
-        var offerPrice = $item.context.getAttribute("price");
+        var offerName = "Title";
+        var offerPrice = "Price";
         var onclick = "removeOffer(" + '"' + offerID + '"' + ")";
         
         Materialize.toast(offerName + " Added!", 4000) // 4000 is the duration of the toast
