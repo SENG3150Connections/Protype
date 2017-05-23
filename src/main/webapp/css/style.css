@@ -16,6 +16,27 @@
     margin-bottom: 25px;
 }
 
-form {
-    clear: both;
+.tabs .tab a{
+    background-color: #eeeeee;
+    color:#000;
+    font-size: larger;
+} /*Black color to the text*/
+
+.tabs .tab a:hover {
+    background-color:#bdbdbd;
+    color:#000;
+} /*Text color on hover*/
+
+.tabs .tab a.active {
+    background-color:#e0e0e0;
+    color:#000;
+} /*Background and text color when a tab is active*/
+
+.tabs .indicator {
+    background-color: #2196f3;
+} /*Color of underline*/
+
+img.img-crop {
+    width: 100%;
+    overflow: hidden;
 }

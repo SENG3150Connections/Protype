@@ -14,11 +14,8 @@
 <style>
 
   .column {
-
-    height:360px;
-
+    min-height:360px;
   }
-
 
 </style>
 
@@ -38,7 +35,7 @@
     </div>
   </nav>
 
-  <div class="section no-pad-bot" id="index-banner">
+  <div class="section">
     <div class="container center">
       <br><br>
       <div class="row">
@@ -95,35 +92,75 @@
 
   </div>
 
+  <div class="section">
+    <div class="container">
+
+      <ul id="tabs" class="tabs tabs-fixed-width">
+        <li class="tab col l3 s6"><a class="active" href="#swipe-1">Upcoming Events</a></li>
+        <li class="tab col l3 s6"><a href="#swipe-2">Popular Events</a></li>
+      </ul>
+      <div id="swipe-1" class="col s12 grey lighten-4">
+        <div class="row">
+          <div class="col s4">
+            <img src="images/events/Balloon.jpg" class="img-crop">
+          </div>
+          <div class="col s8">
+            <p>Balloons</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="swipe-2" class="col s12 grey lighten-4">
+        <div class="row">
+          <div class="col s4">
+            <img src="images/events/BogieHole.jpg" class="img-crop">
+          </div>
+          <div class="col s8">
+            <p>Not balloons</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   <footer class="page-footer orange">
     <div class="container">
       <div class="row">
-        <div class="col l6 m9 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">Newcastle Connections is a dedicated airport shuttle bus service running 12 trips daily between
-            Newcastle Airport, Newcastle CBD and major Newcastle Hotels. Our professional drivers are available for private and combined bookings,
-            from as early as necessary to meet primary flights arriving at, and departing from, Newcastle Airport.</p>
 
-
+        <div class="col l6 m12 s12">
+          <h5 class="white-text">About Newcastle Connections</h5>
+          <p class="grey-text text-lighten-4">At Newcastle Connections we aim to provide to you the easiest and best priced
+          way to plan your trips through our flexible package deals</p>
         </div>
 
-        <div class="col offset-l3 l3 m3 s12">
+        <div class="col l3 m6 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
             <li><a class="white-text" href="https://www.facebook.com/newcastleconnections/">
-              <i class="material-icons">account_box</i> Facebook
+              <span class="valign-wrapper"><i class="material-icons">account_box</i> Facebook</span>
             </a></li>
             <li><a class="white-text" href="https://www.instagram.com/newcastleconnections/">
-              <i class="material-icons">photo_camera</i> Instagram
+              <span class="valign-wrapper"><i class="material-icons">photo_camera</i> Instagram</span>
             </a></li>
             <li><a class="white-text" href="mailto:bookings@newcastleconnections.com.au">
-              <i class="material-icons">email</i> E-Mail
+              <span class="valign-wrapper"><i class="material-icons">email</i> E-Mail</span>
             </a></li>
             <li><a class="white-text" href="tel:1300715552">
-              <i class="material-icons">phone</i> Call Now
+              <span class="valign-wrapper"><i class="material-icons">phone</i> Call Now</span>
             </a></li>
           </ul>
         </div>
+
+        <div class="col l3 m6 s12">
+          <h5 class="white-text">Legal</h5>
+          <ul>
+            <li><a class="white-text">About Us</a></li>
+            <li><a class="white-text">Privacy</a></li>
+            <li><a class="white-text">Sitemap</a></li>
+          </ul>
+        </div>
+
       </div>
     </div>
 
