@@ -21,6 +21,8 @@ public class DatabaseTest extends ActionSupport {
 
         databaseConnector.insertNewEntry("Name","FirstTable");
 
+        result = databaseConnector.queryDatabase("FirstTable");
+
         return SUCCESS;
     }
 
