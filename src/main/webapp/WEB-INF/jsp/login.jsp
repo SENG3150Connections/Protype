@@ -34,7 +34,7 @@
         <br><br>
 
         <div class="row">
-            <div class="col s6 offset-s3">
+            <div class="col s6 grey lighten-4 offset-s3">
 
         <s:form action="home" namespace="/" >
             <div class="form-group">
