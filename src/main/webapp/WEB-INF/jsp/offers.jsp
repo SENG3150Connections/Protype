@@ -14,160 +14,118 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="js/jqueryDragAndDrop.js"></script>
+    <script type="text/javascript" src="js/searchTags.js"></script>
 </head>
 
-<body onload="init()">
-    <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container">
-            <a href="home"><img height="32px" src="images/LogoBanner.png"></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#">Login</a></li>
+<body onload="init(); init_tags()">
+    <nav class="light-blue lighten-1">
+        <div class="container hide-on-med-and-down">
+            <a href="home"><img class="responsive-img center" style="max-height:64px" src="images/LogoBanner.png"></a>
+            <ul class="right">
+                <li><a href="login">Login</a></li>
             </ul>
         </div>
     </nav>
-    <div class="section no-pad-bot" id="index-banner">
-        <div class="container col m12">
-            <nav class="light-blue lighten-1" role="navigation">
+    <div class="section no-pad-bot">
+        <div class="row container">
+            <nav class="light-blue lighten-1">
                 <ul class="hide-on-med-and-down">
-                    <li><a class="waves-effect waves-light" href="home"><i class="material-icons left">home</i>Home</a></li>
-                    <li><a class="waves-effect waves-light" href="survey"><i class="material-icons left">assignment</i>Survey</a></li>
-                    <li><a class="light-blue darken-1 waves-effect waves-light" href="offers"><i class="material-icons left">view_module</i>Events</a></li>
-                    <li><a class="waves-effect waves-light" href=""><i class="material-icons left">cloud</i>Accommodation</a></li>
-                    <li><a class="waves-effect waves-light" href=""><i class="material-icons left">language</i>Transport</a></li>
-                    <li><a class="waves-effect waves-light" href="pay"><i class="material-icons left">payment</i>Pay</a></li>
+                    <li class="waves-effect waves-light"><a href="home"><i class="material-icons left">home</i>Home</a></li>
+                    <li class="waves-effect waves-light" ><a href="survey"><i class="material-icons left">assignment</i>Survey</a></li>
+                    <li class="active waves-effect waves-light"><a href="offers"><i class="material-icons left">view_module</i>Events</a></li>
+                    <li class="waves-effect waves-light"><a href="accommodation"><i class="material-icons left">cloud</i>Accommodation</a></li>
+                    <li class="waves-effect waves-light"><a href="transport"><i class="material-icons left">language</i>Transport</a></li>
+                    <li class="waves-effect waves-light"><a href="pay"><i class="material-icons left">payment</i>Pay</a></li>
                 </ul>
+            </nav>
+            <nav class="light-blue darken-1 nav-extended">
+                <div>
+                  <ul class="tabs tabs-transparent">
+                    <li class="tab"><a class="active" href="#category_1">Food</a></li>
+                    <li class="tab"><a href="#category_2">Entertainment</a></li>
+                    <li class="tab"><a href="#category_3">Sight seeing</a></li>
+                    <li class="tab">
+                        <i class="material-icons left">search</i>
+                        <div class="chips chips-initial"></div>
+                    </li>
+                    
+                  </ul>
+                </div>
             </nav>
         </div>
     </div>
 
-  <div id="mainContainer" class="container" style="height: 100%;">
-      <div class="row">
-        <div id="offersContainer" class="col m9">
-            <ul id="gallery" class="row gallery ui-helper-reset ui-helper-clearfix">
+  <div id="mainContainer" class="row container" style="min-height:650px">
+        
+        <div id="offerPannel" style="min-height:inherit" class="col m9 container light-blue">
+            <p> Drag and drop Offers you like from the pannel into the side bar
+            <div id="category_1" class="col s12">
                 
-                <li id="offer_1" title="Fort Scratchley" price="36" class="ui-widget-content">
-                    <div class="card col m4 activator">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img height="220px" class="activator" src="images/events/Fort-Scratchley.jpg">
-                        </div>
-                        <div class="card-content activator">
-                            <span class="card-title activator grey-text text-darken-4">Fort Scratchley</span>
-                            <i class="material-icons right">more_vert</i>
-                            <p><a href="offer1Details">More Details</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Fort Scratchley Tours $36<i class="material-icons right">close</i></span>
-                            <p>Visit the historic Fort Scratchley for a guided tour. Learn about the rich history of this historic building.</p>
-                        </div>
-                    </div>
-                </li>
-                                
-                <li id="offer_2" title="City Tram Tour" price="64" class="ui-widget-content">
-                    <div class="card col m4 activator">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img height="220px" class="activator" src="images/events/tram.jpg">
-                        </div>
-                        <div class="card-content activator">
-                            <span class="card-title activator grey-text text-darken-4">City Tram Tour</span>
-                            <i class="material-icons right">more_vert</i>
-                            <p><a href="offer2Details">More Details</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">City Tram Tours $64<i class="material-icons right">close</i></span>
-                            <p> A tour around the Newcastle CBD, learn about the cities rich history as you travel the streets in style!</p>
-                        </div>
-                    </div>
-                </li>    
+                <ul id="gallery">
                 
-                <li id="offer_3" title="Harbour Tour" price="124" class="ui-widget-content">
-                    <div class="card col m4 activator">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img height="220px" class="activator" src="images/events/harbour tours.jpg">
+                    <li id="offer_5" class="card col s3" style="min-width:250px; margin:7.5px">
+                        <div class="card-image">
+                            <img class="activator" src="images/events/Balloon.jpg">
                         </div>
-                        <div class="card-content activator">
-                            <span class="card-title activator grey-text text-darken-4">Harbour Tour</span>
-                            <i class="material-icons right">more_vert</i>
-                            <p><a href="offer3Details">More Details</a></p>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Baloon Trip<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">More Details</a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Harbour Tour $124<i class="material-icons right">close</i></span>
-                            <p>An idyllic cruse around Newcastle harbour, see our city in a whole new way from the water. Available for private events.</p>
+                            <span class="card-title grey-text text-darken-4">Baloon Trip<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
                         </div>
-                    </div>
-                </li>
-                                
-                <li id="offer_4" title="Balloon Ride" price="535" class="ui-widget-content">
-                    <div class="card col m4 activator">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img height="220px" class="activator" src="images/events/Balloon.jpg">
+                    </li>
+                    
+                    <li class="card col s3" style="min-width:250px; margin:7.5px">
+                        <div class="card-image">
+                            <img class="activator" src="images/events/Balloon.jpg">
                         </div>
-                        <div class="card-content activator">
-                            <span class="card-title activator grey-text text-darken-4">Balloon Ride</span>
-                            <i class="material-icons right">more_vert</i>
-                            <p><a href="offer4Details">More Details</a></p>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Baloon Trip<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">More Details</a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Hunter Vally Balloon Ride $535<i class="material-icons right">close</i></span>
-                            <p>See the beautiful Hunter Vally from above and experience flight like never before. </p>
+                            <span class="card-title grey-text text-darken-4">Baloon Trip<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
                         </div>
-                    </div>
-                </li>
-
-                <li id="offer_5" title="Wine Tours" price="150" class="ui-widget-content">
-                    <div class="card col m4 activator">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img height="220px" class="activator" src="images/events/hunterVally.jpg">
+                    </li>
+                    
+                    <li class="card col s3" style="min-width:250px; margin:7.5px">
+                        <div class="card-image">
+                            <img class="activator" src="images/events/Balloon.jpg">
                         </div>
-                        <div class="card-content activator">
-                            <span class="card-title activator grey-text text-darken-4">Wine Tours</span>
-                            <i class="material-icons right">more_vert</i>
-                            <p><a href="offer5Details">More Details</a></p>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Baloon Trip<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">More Details</a></p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Hunter Vally Wine Tours $150<i class="material-icons right">close</i></span>
-                            <p>Taste the best wine in the state during a tour of our finest wineries. </p>
+                            <span class="card-title grey-text text-darken-4">Baloon Trip<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
                         </div>
-                    </div>
-                </li>
+                    </li>
                 
-                <li id="offer_6" title="That thing you like!" price="100" class="ui-widget-content">
-                    <div class="card col m4 activator">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img height="220px" class="activator" src="images/events/twoTickets.jpg">
-                        </div>
-                        <div class="card-content activator">
-                            <span class="card-title activator grey-text text-darken-4">That thing you like!</span>
-                            <i class="material-icons right">more_vert</i>
-                            <p><a href="offer6Details">More Details</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">That thing you like! $100<i class="material-icons right">close</i></span>
-                            <p>Look at your man *Looks at empty wall*</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                </ul>
                 
+            </div>
             
-            <ul class="pagination center">
-                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-                <li class="active"><a href="#!">1</a></li>
-                <li class="waves-effect"><a href="#!">2</a></li>
-                <li class="waves-effect"><a href="#!">3</a></li>
-                <li class="waves-effect"><a href="#!">4</a></li>
-                <li class="waves-effect"><a href="#!">5</a></li>
-                <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-            </ul>
+            <div id="category_2" class="col s12">
+                Category_2
+            </div>
+            
+            <div id="category_3" class="col s12">
+                Category_3
+            </div>
+            
         </div>
-
-        <div id="packageInformation" class="col m3 light-blue lighten-5 container" style="height: 700px;">
+        <div id="packagePannel" style="min-height:inherit" class="col m3 container light-blue darken-1">
             <h5 class="center">Package</h5>
 
             <p class="light">Display the current events in the package and the running cost</p>
             
             <div class="divider"></div>
             
-            <ul id="addedOffers" class='gallery ui-helper-reset' style='overflow-y: scroll; height: 420px'>
+            <ul id="addedOffers" class='gallery ui-helper-reset' style="overflow-y: scroll; min-height:350px">
             </ul>
             
             <div class="divider"></div>
@@ -178,10 +136,14 @@
                 <a href="customise" class="btn tooltipped waves-effect waves-light orange" data-position="top" data-delay="50" data-tooltip="Plan your adventure">Customise</a>
             </div>
         </div>
-
-    </div>
-
-    </div>
+        
+        
+                        
+                        
+        
+        
+        
+        
   </div>
 
   <footer class="page-footer orange">
@@ -225,8 +187,6 @@
 
 
     <!--  Scripts -->
-    <!--
-    -->
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
   </body>
