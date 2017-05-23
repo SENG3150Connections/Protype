@@ -5,12 +5,35 @@ import java.util.ArrayList;
 
 public class CurrentPackageBean {
 
+    private int adultCount;
+    private int childrenCount;
     private ArrayList<Offer> offers;
 
+    public int getAdultCount() {
+        return adultCount;
+    }
 
-    public ArrayList<Offer> getOffers() { return offers; }
+    public void setAdultCount(int adultCount) {
+        this.adultCount = adultCount;
+    }
 
-    public void addOffers(Offer offer) {  this.offers.add(offer); }
+    public int getChildrenCount() {
+        return childrenCount;
+    }
 
-    public void removeOffers(Offer offer) {  this.offers.remove(offer); }
+    public void setChildrenCount(int childrenCount) {
+        this.childrenCount = childrenCount;
+    }
+
+    public ArrayList<Offer> getOffers() {
+        return offers;
+    }
+
+    public void addOffer(Offer offer) {
+        this.offers.add(offer);
+    }
+
+    public void removeOffer(Offer offer) {
+        this.offers.remove(offer);
+    }
 }
