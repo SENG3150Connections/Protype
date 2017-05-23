@@ -8,6 +8,7 @@ public class Package {
     private String title, description, location, date, imageDir;
     private BigDecimal price;
     private ArrayList<Offer> offers;
+    private ArrayList<String> tags;
 
     Package()
     {
@@ -18,6 +19,7 @@ public class Package {
         price = new BigDecimal("0.0");
         imageDir = "";
         offers = new ArrayList<Offer>();
+        tags = new ArrayList<String>();
     }
 
     public String getTitle() { return title; }
@@ -38,10 +40,14 @@ public class Package {
 
     public BigDecimal getPrice() { return price; }
 
-    public void setPrice(BigDecimal price) { this.price = price; }
+    public void setPrice(float price) { this.price = new BigDecimal(price); }
 
     public String getImageDir() { return imageDir; }
 
     public void setImageDir(String imageDir) { this.imageDir = imageDir; }
+
+    public ArrayList<String> getTags() { return tags; }
+
+    public void setTags(ArrayList<String> tags) {  this.tags = tags; }
 
 }
