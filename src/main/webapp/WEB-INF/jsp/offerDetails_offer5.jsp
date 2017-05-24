@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="col s6">
-                    <img ALIGN="right" style="margin-top:110px; width: 340px; height: 250px;" src="images/events/hunterVally.jpg">
+                    <img ALIGN="right" style="margin-top:110px; width: 340px; height: 250px;" src="images/events/HunterValleyWine.jpg">
                 </div>
 
 

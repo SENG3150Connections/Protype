@@ -65,7 +65,7 @@
                 
                     <li id="offer_5" class="card col s3" style="min-width:250px; margin:7.5px">
                         <div class="card-image">
-                            <img class="activator" src="images/events/Balloon.jpg">
+                            <img class="activator" src="images/events/BalloonRide.jpg">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Baloon Trip<i class="material-icons right">more_vert</i></span>
@@ -79,7 +79,7 @@
                     
                     <li class="card col s3" style="min-width:250px; margin:7.5px">
                         <div class="card-image">
-                            <img class="activator" src="images/events/Balloon.jpg">
+                            <img class="activator" src="images/events/BalloonRide.jpg">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Baloon Trip<i class="material-icons right">more_vert</i></span>
@@ -93,7 +93,7 @@
                     
                     <li class="card col s3" style="min-width:250px; margin:7.5px">
                         <div class="card-image">
-                            <img class="activator" src="images/events/Balloon.jpg">
+                            <img class="activator" src="images/events/BalloonRide.jpg">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Baloon Trip<i class="material-icons right">more_vert</i></span>

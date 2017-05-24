@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="col s6">
-                    <img ALIGN="right" style="margin-top:110px; width: 340px; height: 250px;" src="images/events/Fort-Scratchley.jpg">
+                    <img ALIGN="right" style="margin-top:110px; width: 340px; height: 250px;" src="images/events/FortScratchley.jpg">
                 </div>
 
 

@@ -25,7 +25,7 @@ function init() {
     
     // Add offers to the sidebar
     function addOffer( $item ) {
-        var imageSrc = "images/events/Balloon.jpg";
+        var imageSrc = "images/events/BalloonRide.jpg";
         var offerID = $item.context.getAttribute("id");
         var offerName = "Title";
         var offerPrice = "Price";
