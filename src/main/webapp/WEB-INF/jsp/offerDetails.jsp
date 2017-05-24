@@ -45,8 +45,8 @@
 
   <div id="mainContainer" class="row container" style="min-height:650px">
         
-        <div id="offerPannel" style="min-height:inherit" class="col m9 container light-blue">
-            <div style="min-height:550px" class="light-blue darken-1">
+        <div id="offerPannel" style="min-height:inherit" class="col m9 container">
+            <div style="min-height:565px">
                 <img class="col s6 right responsive-img" src=<s:property value="offer.imagePath"/>>
                 <h3 class="header"><s:property value="offer.title"/></h3>
                 <span>
@@ -55,13 +55,16 @@
                     </s:iterator>
                 </span>
             </div>
-            <div style="min-height:50px" class="light-blue darken-2">
-                <a href="offers" class="btn tooltipped waves-effect waves-light orange" data-position="top" data-delay="50" data-tooltip="Plan your adventure">Add to package!</a>
-                <a href="offers" class="btn tooltipped waves-effect waves-light orange" data-position="top" data-delay="50" data-tooltip="Plan your adventure">Back</a>
+            <div class="row" style="min-height:50px">
+                <div class="col s7"></div>
+                <div class="col s5">
+                    <a href="offers" class="btn tooltipped waves-effect waves-light orange" data-position="top" data-delay="50" data-tooltip="Plan your adventure">Add to package!</a>
+                    <a href="offers" class="btn tooltipped waves-effect waves-light orange" data-position="top" data-delay="50" data-tooltip="Plan your adventure">Back</a>
+                </div>
             </div>
         </div>
         
-        <div id="packagePannel" style="min-height:inherit" class="col m3 container light-blue darken-1">
+        <div id="packagePannel" style="min-height:inherit" class="col m3 container light-blue lighten-1">
             <h5 class="center">Package</h5>
 
             <p class="light">Display the current events in the package and the running cost</p>
@@ -72,12 +75,9 @@
             </ul>
             
             <div class="divider"></div>
-            
-            <div>
                 <h5 id="totalPrice">Total: $0.00</h5>
                 <h5 id="totalSavings">Savings: $0.00</h5>
                 <a href="customise" class="btn tooltipped waves-effect waves-light orange" data-position="top" data-delay="50" data-tooltip="Plan your adventure">Customise</a>
-            </div>
         </div>
         
   </div>
