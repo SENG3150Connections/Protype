@@ -15,7 +15,7 @@ public class OfferDetailsAction extends ActionSupport {
     public String execute() {
 
         int index = getId() - 1;
-        List<Offer> offers = new DatabaseConnector().getAllOffers();
+        List<Offer> offers = new DatabaseConnector().getAllEvents("event");
 
         if (index < 0 || index >= offers.size())
             return INPUT;

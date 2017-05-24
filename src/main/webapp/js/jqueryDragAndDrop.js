@@ -25,10 +25,10 @@ function init() {
     
     // Add offers to the sidebar
     function addOffer( $item ) {
-        var imageSrc = "images/events/BalloonRide.jpg";
+        var imageSrc = $item.context.getAttribute("imageSrc");
         var offerID = $item.context.getAttribute("id");
-        var offerName = "Title";
-        var offerPrice = "Price";
+        var offerName = $item.context.getAttribute("title");
+        var offerPrice = $item.context.getAttribute("price");
         var onclick = "removeOffer(" + '"' + offerID + '"' + ")";
         console.log("I am here talking: " + window.location.search);
         
