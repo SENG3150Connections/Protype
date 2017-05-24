@@ -34,9 +34,7 @@
                 <ul class="hide-on-med-and-down">
                     <li class="waves-effect waves-light"><a href="home"><i class="material-icons left">home</i>Home</a></li>
                     <li class="waves-effect waves-light" ><a href="survey"><i class="material-icons left">assignment</i>Survey</a></li>
-                    <li class="active waves-effect waves-light"><a href="offers"><i class="material-icons left">view_module</i>Events</a></li>
-                    <li class="waves-effect waves-light"><a href="accommodation"><i class="material-icons left">cloud</i>Accommodation</a></li>
-                    <li class="waves-effect waves-light"><a href="transport"><i class="material-icons left">language</i>Transport</a></li>
+                    <li class="active waves-effect waves-light"><a href="offers"><i class="material-icons left">view_module</i>Offers</a></li>
                     <li class="waves-effect waves-light"><a href="pay"><i class="material-icons left">payment</i>Pay</a></li>
                 </ul>
             </nav>
