@@ -193,7 +193,7 @@ public class DatabaseConnector {
         // Transport
 
         offer = new Offer();
-        offer.addTag("shuttlebus");
+        offer.setId("shuttlebus");
         offer.setTitle("Airport Shuttle Bus Service");
         offer.setType(TRANSPORT);
         offer.setImagePath("images/transport/minibus.jpg");
@@ -235,7 +235,7 @@ public class DatabaseConnector {
         offerFood.put(offer.getId(), offer);
 
         offer = new Offer();
-        offer.setId("paymasterscafé");
+        offer.setId("paymasterscafe");
         offer.setTitle("Paymasters Café");
         offer.setType(FOOD);
         offer.setImagePath("images/food/paymasterb.jpg");
