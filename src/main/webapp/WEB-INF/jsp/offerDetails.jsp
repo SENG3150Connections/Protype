@@ -49,6 +49,7 @@
             <div style="min-height:565px">
                 <img class="col s6 right responsive-img" src=<s:property value="offer.imagePath"/>>
                 <h3 class="header"><s:property value="offer.title"/></h3>
+                <h4 class="header">$<s:property value="offer.price"/></h4>
                 <span>
                     <s:iterator value="offer.description">
                         <p><s:property/></p>
@@ -58,8 +59,8 @@
             <div class="row" style="min-height:50px">
                 <div class="col s7"></div>
                 <div class="col s5">
-                    <a href="offers" class="btn tooltipped waves-effect waves-light orange" data-position="top" data-delay="50" data-tooltip="Plan your adventure">Add to package!</a>
-                    <a href="offers" class="btn tooltipped waves-effect waves-light orange" data-position="top" data-delay="50" data-tooltip="Plan your adventure">Back</a>
+                    <a href="offers" class="btn tooltipped waves-effect waves-light orange" data-position="top" data-delay="50">Add to package!</a>
+                    <a href="offers" class="btn tooltipped waves-effect waves-light orange" data-position="top" data-delay="50">Back</a>
                 </div>
             </div>
         </div>
