@@ -1,20 +1,20 @@
 package me.seng3150;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 /**
  * Created by seb on 17/5/17.
  */
 public class DatabaseConnector {
-    List<Offer> output = new ArrayList<>();
+    List<Offer> offers = new ArrayList<>();
 
     public DatabaseConnector() {
         initialiseOffers();
     }
 
     public void initialiseOffers() {
+
         Offer offer1 = new Offer();
         offer1.setTitle("Fort Scratchley Tour");
         offer1.setImagePath("images/events/FortScratchley.jpg");
@@ -29,7 +29,7 @@ public class DatabaseConnector {
         offer1.getDescription().add("Tours are available at regular intervals each day the Fort is open (6 days a week, 10am to 4pm closed Tuesdays). "
                 + "You can purchase your tour tickets at the Artillery Store on the day.");
         offer1.setPrice(36);
-        output.add(offer1);
+        offers.add(offer1);
 
         Offer offer2 = new Offer();
         offer2.setTitle("City Tram Tours");
@@ -44,7 +44,7 @@ public class DatabaseConnector {
                 + "and the Hunter Valley. It is a novel and nostalgic way to explore the city, it's beautiful beaches and historical sights. The famous tram is "
                 + "also available for Weddings, Hunter Valley wine tours, school formals, Christmas parties, birthday party transfers and other events.");
         offer2.setPrice(64);
-        output.add(offer2);
+        offers.add(offer2);
 
         Offer offer3 = new Offer();
         offer3.setTitle("Harbour Tour");
@@ -58,7 +58,7 @@ public class DatabaseConnector {
                 + "double smoked leg ham hand carved off the bone, fresh local prawns, and a selection of salads to compliment. Enjoy a selection of petit fours for "
                 + "dessert with complimentary tea & coffee or select from a full range of drinks available from our fully licensed bar.");
         offer3.setPrice(124);
-        output.add(offer3);
+        offers.add(offer3);
 
         Offer offer4 = new Offer();
         offer4.setTitle("Hunter Vally Balloon Ride");
@@ -71,7 +71,7 @@ public class DatabaseConnector {
                 + "Camden Valley (Sydney-Macarthur Region), the Hunter Valley, Mudgee, Canberra, Melbourne and the Yarra Valley. Balloon Aloft vouchers can be "
                 + "transferred between locations offering you the greatest options and flexibility.");
         offer4.setPrice(535);
-        output.add(offer4);
+        offers.add(offer4);
 
         Offer offer5 = new Offer();
         offer5.setTitle("Hunter Vally Wine Tours");
@@ -88,7 +88,7 @@ public class DatabaseConnector {
                 + "than your arm. Everything from tutored wine-tastings and boutique brews to cooking classes, championship golf and spa treatments. What are you "
                 + "waiting for? Come, discover what this magical region has to offer.");
         offer5.setPrice(150);
-        output.add(offer5);
+        offers.add(offer5);
 
         Offer offer6 = new Offer();
         offer6.setTitle("That thing you like!");
@@ -100,7 +100,38 @@ public class DatabaseConnector {
                 + "the man your man could smell like. What's in your hand, back at me. I have it, it's an oyster with two tickets to that thing you love. Look again, "
                 + "the tickets are now diamonds. Anything is possible when your man smells like Old Spice and not a lady. I'm on a horse.");
         offer6.setPrice(100000);
-        output.add(offer6);
+        offers.add(offer6);
+
+
+        // Accommodation
+
+        Offer offer7 = new Offer();
+        offer7.setTitle("The Executive Inn");
+        offer7.setType("accommodation");
+        offer7.setImagePath("images/accommodation/executiveInn.jpg");
+        offer7.addTag("hotel");
+        offer7.getDescription().add("Enjoy the health club and spa tub as well as access to bike rentals and aerobics classes." +
+                " 9688 square feet (900 square meters) of event facilities include 4 meeting rooms and conference space. Other amenities include 2 coffee shops/cafés and free WiFi in public areas." +
+                " Each morning full breakfast is available." +
+                " There's also free self parking, along with the convenience of an airport shuttle.");
+        offer7.setPrice(156);
+        offers.add(offer7);
+
+
+        Offer offer8 = new Offer();
+        offer8.setTitle("Quality Hotel NOAH'S On The Beach");
+        offer8.setType("accommodation");
+        offer8.setImagePath("images/accommodation/noahsOnTheBeach.jpg");
+        offer8.addTag("hotel");
+        offer8.getDescription().add("Quality Hotel NOAH'S On The Beach places you in the center of Newcastle East," +
+                " within a short 5-minute stroll of Newcastle Ocean Baths and Fort Scratchley." +
+                " Highlights at this beach hotel include a restaurant, free self parking, and a bar/lounge.");
+        offer8.setPrice(169);
+        offers.add(offer8);
+
+
+        // Transport
+
     }
 
     public List<Offer> getAllOffers() {
@@ -108,11 +139,56 @@ public class DatabaseConnector {
         A function that returns an array of offer objects, data is hard coded into the function.
         Hooray for super super bad practice!!
         */
+        return offers;
+    }
+
+    public List<Offer> getAllEvents() {
+        /*
+        Get events that are only events.
+        */
+        List output = new ArrayList();
+
+        for (Offer offer : offers) {
+            if (offer.getType().equals("event")) {
+                output.add(offer);
+            }
+        }
+
+        return output;
+    }
+
+    public List<Offer> getAllAccommodation() {
+        /*
+        Get events that are only events.
+        */
+        List output = new ArrayList();
+
+        for (Offer offer : offers) {
+            if (offer.getType().equals("accommodation")) {
+                output.add(offer);
+            }
+        }
+
+        return output;
+    }
+
+    public List<Offer> getAllTransport() {
+        /*
+        Get events that are only events.
+        */
+        List output = new ArrayList();
+
+        for (Offer offer : offers) {
+            if (offer.getType().equals("transport")) {
+                output.add(offer);
+            }
+        }
+
         return output;
     }
 
     public Offer getOffer(int id) {
-        return output.get(id - 1);
+        return offers.get(id - 1);
     }
 
 }
