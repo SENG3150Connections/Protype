@@ -28,50 +28,25 @@
         </ul>
     </div>
 </nav>
-<div class="section no-pad-bot">
-    <div class="row container">
-        <nav class="light-blue lighten-1">
-            <ul class="hide-on-med-and-down">
-                <li class="waves-effect waves-light"><a href="home"><i class="material-icons left">home</i>Home</a></li>
-                <li class="waves-effect waves-light" ><a href="survey"><i class="material-icons left">assignment</i>Survey</a></li>
-                <li class="active waves-effect waves-light"><a href="offers"><i class="material-icons left">view_module</i>Events</a></li>
-                <li class="waves-effect waves-light"><a href="accommodation"><i class="material-icons left">cloud</i>Accommodation</a></li>
-                <li class="waves-effect waves-light"><a href="transport"><i class="material-icons left">language</i>Transport</a></li>
-                <li class="waves-effect waves-light"><a href="pay"><i class="material-icons left">payment</i>Pay</a></li>
-            </ul>
-        </nav>
-    </div>
-</div>
 
-<div id="mainContainer" class="row container" style="min-height:650px">
-
-    <div id="offerPannel" style="min-height:inherit" class="col m9 container light-blue">
-        <div style="min-height:550px" class="light-blue darken-1">
-            <img class="col s6 right responsive-img" src=<s:property value="offer.imagePath"/>>
-            <h3 class="header"><s:property value="offer.title"/></h3>
-        </div>
-        <div style="min-height:50px" class="light-blue darken-2">
-            <a href="offers" class="btn tooltipped waves-effect waves-light orange" data-position="top" data-delay="50" data-tooltip="Plan your adventure">Add to package!</a>
-            <a href="offers" class="btn tooltipped waves-effect waves-light orange" data-position="top" data-delay="50" data-tooltip="Plan your adventure">Back</a>
-        </div>
-    </div>
-
-    <div id="packagePannel" style="min-height:inherit" class="col m3 container light-blue darken-1">
-        <h5 class="center">Package</h5>
-
-        <p class="light">Display the current events in the package and the running cost</p>
-
-        <div class="divider"></div>
-
-        <ul id="addedOffers" class='gallery ui-helper-reset' style="overflow-y: scroll; min-height:350px">
-        </ul>
-
-        <div class="divider"></div>
-
+<div id="mainContainer" class="row container">
+    <br><br>
+    <div id="offerPannel" style="min-height:inherit" class="col s6 offset-s3 container grey lighten-4">
+        <h2 class="header">Create new Offer</h2>
         <div>
-            <h5 id="totalPrice">Total: $0.00</h5>
-            <h5 id="totalSavings">Savings: $0.00</h5>
-            <a href="customise" class="btn tooltipped waves-effect waves-light orange" data-position="top" data-delay="50" data-tooltip="Plan your adventure">Customise</a>
+            Select Image
+            <input value="Image" type="file">
+            <h3 class="header"><input value="Title"type="text" class="width:100px"></h3>
+            <h4 class="header"><input value="Price"type="text" class="width:100px"></h4>
+            Offer Description
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+        </div>
+        <div class="row" style="min-height:50px">
+            <div class="col s12">
+                <a href="management" class="btn waves-effect waves-light orange">Submit Public</a>
+                <a href="management" class="btn waves-effect waves-light orange">Submit Private</a>
+                <a href="management" class="btn waves-effect waves-light orange">Back</a>
+            </div>
         </div>
     </div>
 
