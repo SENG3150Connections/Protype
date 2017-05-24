@@ -8,21 +8,13 @@ import java.util.List;
  * Created by seb on 17/5/17.
  */
 public class DatabaseConnector {
+    List<Offer> output = new ArrayList<>();
 
     public DatabaseConnector() {
-
+        initialiseOffers();
     }
 
-    public List<Offer> getAllOffers() {
-
-        /*
-        A function that returns an array of offer objects, data is hard coded into the function.
-        Hooray for super super bad practice!!
-        */
-
-        List<Offer> output = new ArrayList<>();
-
-
+    public void initialiseOffers() {
         Offer offer1 = new Offer();
         offer1.setTitle("Fort Scratchley Tour");
         offer1.setImagePath("images/events/FortScratchley.jpg");
@@ -109,10 +101,18 @@ public class DatabaseConnector {
                 + "the tickets are now diamonds. Anything is possible when your man smells like Old Spice and not a lady. I'm on a horse.");
         offer6.setPrice(100000);
         output.add(offer6);
+    }
 
+    public List<Offer> getAllOffers() {
+        /*
+        A function that returns an array of offer objects, data is hard coded into the function.
+        Hooray for super super bad practice!!
+        */
         return output;
     }
 
-
+    public Offer getOffer(int id) {
+        return output.get(id - 1);
+    }
 
 }
