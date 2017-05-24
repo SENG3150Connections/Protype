@@ -167,22 +167,28 @@ public class DatabaseConnector {
         offer11.setPrice(180);
         offers.add(offer11);
 
-
         // Transport
 
-
-
         Offer offer12 = new Offer();
-        offer12.setTitle("Shuttle Bus Service");
+        offer12.setTitle("Airport Shuttle Bus Service");
         offer12.setType("transport");
-        offer12.setImagePath("images/accommodation/apollo.jpg");
-        offer12.addTag("hotel");
-        offer12.getDescription().add("The restaurant, Babbingtons Bar and Grill, serves international cuisine and is open for breakfast, lunch, and dinner." +
-                " For a drink, you can stop by the hotel's own bar/lounge. Enjoy the outdoor swimming pool and fitness center. Business travelers can take advantage of a 24-hour business center, conference space, and meeting rooms. " +
-                "Other amenities include free WiFi in public areas, a coffee shop/café, and laundry facilities. Full breakfast is available daily between 7 AM and 10 AM. " +
-                "There's also free self parking, along with the convenience of an airport shuttle.");
-        offer12.setPrice(180);
+        offer12.setImagePath("images/accommodation/minibus.jpg");
+        offer12.addTag("bus");
+        offer12.addTag("airport");
+        offer12.getDescription().add("Airport shuttle bus service to and from Newcastle Airport.");
+        offer12.setPrice(32);
         offers.add(offer12);
+
+        Offer offer13 = new Offer();
+        offer13.setTitle("Hertz car rental");
+        offer13.setType("transport");
+        offer13.setImagePath("images/accommodation/hertz_logo.jpg");
+        offer13.addTag("rental");
+        offer13.addTag("airport");
+        offer13.addTag("car");
+        offer13.getDescription().add("Hertz rental cars are available from Newcastle Airport and the CBD.");
+        offer13.setPrice(50);
+        offers.add(offer13);
 
 
 
