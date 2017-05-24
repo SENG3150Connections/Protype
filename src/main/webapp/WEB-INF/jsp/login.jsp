@@ -16,9 +16,7 @@
     <div class="nav-wrapper container">
         <a href="home"><img style="max-height:64px" src="images/LogoBanner.png"></a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="login">Login</a></li>
             <li><a href="signup">Sign up</a></li>
-
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
