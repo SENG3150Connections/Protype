@@ -55,7 +55,7 @@
         </div>
     </div>
 
-  <div id="mainContainer" class="row container" style="min-height:750px">
+  <div id="mainContainer" class="row container" style="min-height:700px">
         
         <div id="offerPannel" style="min-height:inherit" class="col s12 m9 container light-blue">
             <div id="category_1" class="col s12">
@@ -164,7 +164,7 @@
             
             <div class="divider"></div>
             
-            <ul id="addedOffers" class='gallery ui-helper-reset' style="overflow-y: scroll; min-height:350px">
+            <ul id="addedOffers" class='gallery ui-helper-reset' style="overflow-y: scroll; min-height:400px; max-height:400px">
             </ul>
             
             <div class="divider"></div>
