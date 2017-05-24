@@ -45,7 +45,7 @@
 
 
                 <ul class="hide-on-med-and-down">
-                    <li class="col s12"><a class=" waves-effect waves-light" href="createOffer"><i class="material-icons left">web</i>Create New</a></li>
+                    <li class="col s12"><a class=" waves-effect waves-light" href="createOffer"><i class="material-icons left">web</i>Create New Offer</a></li>
                     <li class="col s12"><a class=" waves-effect waves-light" href="#"><i class="material-icons left">event</i>Events</a></li>
                     <li class="col s12"><a class="waves-effect waves-light" href="#"><i class="material-icons left">home</i>Accommodation</a></li>
                     <li class="col s12"><a class="waves-effect waves-light" href="#"><i class="material-icons left">library_books</i>Offers</a></li>
