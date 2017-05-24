@@ -44,6 +44,10 @@ public class Offer {
         return description;
     }
 
+    public String getSmallDescription() {
+        return description.get(0);
+    }
+
     public void setDescription(List<String> description) {
         this.description = description;
     }
