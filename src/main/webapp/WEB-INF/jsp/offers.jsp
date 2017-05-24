@@ -76,7 +76,7 @@
                             <div class="card-reveal">
                                 <i class="card-title material-icons right">close</i>
                                 <span class="card-title grey-text text-darken-4"><s:property value="title"/></span>
-                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                <p><s:property value="getSmallDescription" /></p>
                             </div>
                         </li>
                     </s:iterator>
