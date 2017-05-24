@@ -130,7 +130,61 @@ public class DatabaseConnector {
         offers.add(offer8);
 
 
+        Offer offer9 = new Offer();
+        offer9.setTitle("Travelodge Hotel Newcastle");
+        offer9.setType("accommodation");
+        offer9.setImagePath("images/accommodation/travelodge.jpg");
+        offer9.addTag("hotel");
+        offer9.getDescription().add("Travelodge Hotel Newcastle puts you in the center of Newcastle West, " +
+                "1.7 km (1.1 mi) from Christ Church Cathedral and 2.7 km (1.7 mi) from Dixon Park Beach. " +
+                "Highlights at this hotel include a restaurant, an outdoor swimming pool, and a bar/lounge.");
+        offer9.setPrice(119);
+        offers.add(offer9);
+
+
+        Offer offer10 = new Offer();
+        offer10.setTitle("Jesmond Executive Villas");
+        offer10.setType("accommodation");
+        offer10.setImagePath("images/accommodation/jesmond.jpg");
+        offer10.addTag("hotel");
+        offer10.getDescription().add("At Jesmond Executive Villas you'll be 2.4 km (1.5 mi) " +
+                "from University of Newcastle and 3.6 km (2.2 mi) from Hunter Wetlands Centre." +
+                " Highlights at this property include an outdoor swimming pool, and in-room kitchenettes and washers/dryers.");
+        offer10.setPrice(99);
+        offers.add(offer10);
+
+
+
+        Offer offer11 = new Offer();
+        offer11.setTitle("Best Western Plus Apollo International Hotel");
+        offer11.setType("accommodation");
+        offer11.setImagePath("images/accommodation/apollo.jpg");
+        offer11.addTag("hotel");
+        offer11.getDescription().add("The restaurant, Babbingtons Bar and Grill, serves international cuisine and is open for breakfast, lunch, and dinner." +
+                " For a drink, you can stop by the hotel's own bar/lounge. Enjoy the outdoor swimming pool and fitness center. Business travelers can take advantage of a 24-hour business center, conference space, and meeting rooms. " +
+                "Other amenities include free WiFi in public areas, a coffee shop/café, and laundry facilities. Full breakfast is available daily between 7 AM and 10 AM. " +
+                "There's also free self parking, along with the convenience of an airport shuttle.");
+        offer11.setPrice(180);
+        offers.add(offer11);
+
+
         // Transport
+
+
+
+        Offer offer12 = new Offer();
+        offer12.setTitle("Shuttle Bus Service");
+        offer12.setType("transport");
+        offer12.setImagePath("images/accommodation/apollo.jpg");
+        offer12.addTag("hotel");
+        offer12.getDescription().add("The restaurant, Babbingtons Bar and Grill, serves international cuisine and is open for breakfast, lunch, and dinner." +
+                " For a drink, you can stop by the hotel's own bar/lounge. Enjoy the outdoor swimming pool and fitness center. Business travelers can take advantage of a 24-hour business center, conference space, and meeting rooms. " +
+                "Other amenities include free WiFi in public areas, a coffee shop/café, and laundry facilities. Full breakfast is available daily between 7 AM and 10 AM. " +
+                "There's also free self parking, along with the convenience of an airport shuttle.");
+        offer12.setPrice(180);
+        offers.add(offer12);
+
+
 
     }
 
