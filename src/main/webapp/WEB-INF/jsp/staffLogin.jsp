@@ -11,6 +11,7 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
+
 <body>
 <header>
     <nav class="light-blue lighten-1" role="navigation">
@@ -31,33 +32,33 @@
         </div>
     </nav>
 </header>
-<main class="section no-pad-bot">
+<main class="section">
     <div class="container">
         <br><br>
 
         <div class="row">
-            <div class="col s6 grey lighten-4 offset-s3">
+            <a href="home">
+                <img class="hide-on-small-and-down col m12 l8 offset-l2 responsive-img" src="images/LogoBanner.png" />
+                <img class="hide-on-med-and-up col s12 responsive-img" src="images/LogoSquare.png" />
+            </a>
+        </div>
 
-        <s:form action="management-login" namespace="/" >
-            <div class="form-group">
+        <div class="row">
+            <div class="col s12 m8 l6 grey lighten-4 offset-m2 offset-l3">
+            <s:form action="management-login" namespace="/">
 
+                <h2 class="center">Staff Login</h2>
+                <p>This content is only available to Newcastle Connections administration. <br/>
+                    <a href="home">Please return</a> if you are not authorised to be here.</p>
 
                 <s:textfield id="u" key="username" label="Username" />
                 <s:password id="p" key="password" label="Password" />
-                <s:submit key="login" label="Login" class="btn btn-success right"/>
 
+                <s:submit value="Login" class="btn btn-success right"/>
 
-            </div>
-        </s:form>
-
+            </s:form>
             </div>
         </div>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
 
     </div>
 </main>
