@@ -1,6 +1,7 @@
 package me.seng3150;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -25,6 +26,10 @@ public class DatabaseConnector {
         Offer offer1 = new Offer();
         offer1.setTitle("Fort Scratchley Tour");
         offer1.setImagePath("images/events/FortScratchley.jpg");
+        offer1.setType("event");
+        offer1.addTag("heritage");
+        offer1.addTag("tour");
+        offer1.addTag("history");
         offer1.getDescription().add("Visit the historic Fort Scratchley for a guided tour. Learn about the rich history of this historic building.");
         offer1.getDescription().add("Guided tours are led by passionate Fort Scratchley Historical Society volunteers with a "
                 + "wealth of knowledge about the site. There are two types of tours: Site and full tunnel tour: Runs around 90 minutes. "
@@ -36,6 +41,10 @@ public class DatabaseConnector {
 
         Offer offer2 = new Offer();
         offer2.setTitle("City Tram Tours");
+        offer2.setType("event");
+        offer2.addTag("heritage");
+        offer2.addTag("tour");
+        offer2.addTag("history");
         offer2.setImagePath("images/events/TramTours.jpg");
         offer2.getDescription().add("A tour around the Newcastle CBD, learn about the cities rich history as you travel the streets in style!");
         offer2.getDescription().add("Everything about Newcastle's Famous Tram is unique. Built from scratch in 1994, the tram is a genuine replica of "
@@ -48,6 +57,9 @@ public class DatabaseConnector {
         Offer offer3 = new Offer();
         offer3.setTitle("Harbour Tour");
         offer3.setImagePath("images/events/HarbourTours.jpg");
+        offer3.addTag("tour");
+        offer3.addTag("harbour");
+        offer3.setType("event");
         offer3.getDescription().add("An idyllic cruse around Newcastle harbour, see our city in a whole new way from the water. Available for private events.");
         offer3.getDescription().add("Enjoy all the sights Newcastle Harbour has to offer as we cruise the working port and picturesque foreshore. See the harbours "
                 + "coal loading facilities, tug boats and big ships up-close. Indulge in our freshly prepared buffet lunch consisting of seasoned roasted chicken, "
@@ -58,6 +70,9 @@ public class DatabaseConnector {
 
         Offer offer4 = new Offer();
         offer4.setTitle("Hunter Vally Balloon Ride");
+        offer4.setType("event");
+        offer4.addTag("hunter");
+        offer4.addTag("balloon");
         offer4.setImagePath("images/events/BalloonRide.jpg");
         offer4.getDescription().add("See the beautiful Hunter Vally from above and experience flight like never before.");
         offer4.getDescription().add("Balloon Aloft sunrise hot air balloon flights depart daily from some of Australia's most spectacular locations including "
@@ -68,6 +83,11 @@ public class DatabaseConnector {
 
         Offer offer5 = new Offer();
         offer5.setTitle("Hunter Vally Wine Tours");
+        offer5.setType("event");
+        offer5.addTag("tour");
+        offer5.addTag("wine");
+        offer5.addTag("hunter");
+        offer5.addTag("wineries");
         offer5.setImagePath("images/events/HunterValleyWine.jpg");
         offer5.getDescription().add("Taste the best wine in the state during a tour of our finest wineries.");
         offer5.getDescription().add("The Hunter Valley is the perfect place to explore country byways, put up your feet and indulge in fine food and wine. "
@@ -80,7 +100,9 @@ public class DatabaseConnector {
 
         Offer offer6 = new Offer();
         offer6.setTitle("That thing you like!");
+        offer6.setType("event");
         offer6.setImagePath("images/events/twoTickets.jpg");
+        offer6.addTag("oldspice");
         offer6.getDescription().add("Hello, ladies, look at your man, now back to me, now back at your man, now back to me. Sadly, he isn't me, but if he stopped "
                 + "using ladies scented body wash and switched to Old Spice, he could smell like he's me. Look down, back up, where are you? You're on a boat with "
                 + "the man your man could smell like. What's in your hand, back at me. I have it, it's an oyster with two tickets to that thing you love. Look again, "
@@ -90,5 +112,7 @@ public class DatabaseConnector {
 
         return output;
     }
+
+
 
 }

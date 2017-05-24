@@ -9,6 +9,8 @@ public class Offer {
     private String title, location, imagePath;
     private List<String> description;
     private BigDecimal price;
+    private String type; // Valid types: event, accommodation, transport
+
     private List<String> tags;
 
     Offer() {
@@ -18,6 +20,7 @@ public class Offer {
         price = new BigDecimal("0.0");
         imagePath = "";
         tags = new ArrayList<>();
+        type = "event";
     }
 
     public String getTitle() {
@@ -70,5 +73,13 @@ public class Offer {
 
     public void removeTag(String tag) {
         this.tags.remove(tag);
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
