@@ -1,3 +1,4 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,48 +63,25 @@
             <div id="category_1" class="col s12">
                 
                 <ul id="gallery">
-                
-                    <li id="offer_5" class="card col s3" style="min-width:250px; margin:7.5px">
+
+                    <!-- Dynamically loaded offers (Every offer) -->
+                    <s:iterator value="offers" status="status">
+                    <li id="offer_<s:property value="%{#status.count}" />" class="card col s3" style="min-width:250px; margin:7.5px">
                         <div class="card-image">
-                            <img class="activator" src="images/events/BalloonRide.jpg">
+                            <img class="activator" src=<s:property value="imagePath"/>>
                         </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Baloon Trip<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">More Details</a></p>
+
+                        <div class="card-content" style="padding-left:0px;padding-right:0px;">
+                            <span class="card-title activator grey-text text-darken-4"><s:property value="title"/><i class="material-icons right">more_vert</i></span>
+                            <p><a href="offerDetails?id=<s:property value="%{#status.count}" />">More Details</a></p>
                         </div>
+
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Baloon Trip<i class="material-icons right">close</i></span>
+                            <span class="card-title grey-text text-darken-4"><s:property value="title"/><i class="material-icons right">close</i></span>
                             <p>Here is some more information about this product that is only revealed once clicked on.</p>
                         </div>
                     </li>
-                    
-                    <li class="card col s3" style="min-width:250px; margin:7.5px">
-                        <div class="card-image">
-                            <img class="activator" src="images/events/BalloonRide.jpg">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Baloon Trip<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">More Details</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Baloon Trip<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                        </div>
-                    </li>
-                    
-                    <li class="card col s3" style="min-width:250px; margin:7.5px">
-                        <div class="card-image">
-                            <img class="activator" src="images/events/BalloonRide.jpg">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Baloon Trip<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">More Details</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Baloon Trip<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                        </div>
-                    </li>
+                    </s:iterator>
                 
                 </ul>
                 

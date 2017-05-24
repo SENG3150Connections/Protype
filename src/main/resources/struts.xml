@@ -61,7 +61,7 @@
             <result>/WEB-INF/jsp/profile.jsp</result>
         </action>
 
-        <action name="offers">
+        <action name="offers" class="me.seng3150.actions.OffersAction">
             <result>/WEB-INF/jsp/offers.jsp</result>
         </action>
 
