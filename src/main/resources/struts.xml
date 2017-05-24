@@ -39,6 +39,10 @@
             <result type="redirect">management</result>
         </action>
 
+        <action name="createOffer" class="me.seng3150.actions.StaffLoginAction">
+            <result type="redirect">createOffer</result>
+        </action>
+
     </package>
 
     <package name="packages" extends="struts-default">
@@ -97,6 +101,10 @@
 
         <action name="management">
             <result>/WEB-INF/jsp/management.jsp</result>
+        </action>
+
+        <action name="createOffer">
+            <result>/WEB-INF/jsp/createOffer.jsp</result>
         </action>
     </package>
 

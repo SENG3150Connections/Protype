@@ -4,31 +4,30 @@ import com.opensymphony.xwork2.ActionSupport;
 import me.seng3150.DatabaseConnector;
 import me.seng3150.Offer;
 
-import java.util.List;
+import java.util.HashMap;
 
 public class OfferDetailsAction extends ActionSupport {
 
-    private int id;
+    private String id;
     private Offer offer;
 
     @Override
     public String execute() {
 
-        int index = getId() - 1;
-        List<Offer> offers = new DatabaseConnector().getAllOffers();
+        HashMap<String, Offer> offers = new DatabaseConnector().getOffers();
 
-        if (index < 0 || index >= offers.size())
+        if (!offers.containsKey(getId()))
             return INPUT;
 
-        setOffer(offers.get(index));
+        setOffer(offers.get(getId()));
         return SUCCESS;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

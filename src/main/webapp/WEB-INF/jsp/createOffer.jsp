@@ -1,0 +1,61 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Create Offer</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <!-- Drag and drop -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jqueryDragAndDrop.js"></script>
+    <script type="text/javascript" src="js/searchTags.js"></script>
+</head>
+
+<body onload="init(); init_tags()">
+<nav class="light-blue lighten-1">
+    <div class="container hide-on-med-and-down">
+        <a href="home"><img class="responsive-img center" style="max-height:64px" src="images/LogoBanner.png"></a>
+        <ul class="right">
+            <li><a href="login">Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div id="mainContainer" class="row container">
+    <br><br>
+    <div id="offerPannel" style="min-height:inherit" class="col s6 offset-s3 container grey lighten-4">
+        <h2 class="header">Create new Offer</h2>
+        <div>
+            Select Image
+            <input value="Image" type="file">
+            <h3 class="header"><input value="Title"type="text" class="width:100px"></h3>
+            <h4 class="header"><input value="Price"type="text" class="width:100px"></h4>
+            Offer Description
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+        </div>
+        <div class="row" style="min-height:50px">
+            <div class="col s12">
+                <a href="management" class="btn waves-effect waves-light orange">Submit Public</a>
+                <a href="management" class="btn waves-effect waves-light orange">Submit Private</a>
+                <a href="management" class="btn waves-effect waves-light orange">Back</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<jsp:include page="footer.jsp" />
+
+<!--  Scripts -->
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+</body>
+</html>

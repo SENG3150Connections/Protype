@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Offer {
 
-    private String title, location, imagePath;
+    private String id, title, location, imagePath;
     private List<String> description;
     private BigDecimal price;
     private String type; // Valid types: event, accommodation, transport
@@ -14,6 +14,7 @@ public class Offer {
     private List<String> tags;
 
     Offer() {
+        id = "";
         title = "";
         description = new ArrayList<>();
         location = "";
@@ -21,6 +22,14 @@ public class Offer {
         imagePath = "";
         tags = new ArrayList<>();
         type = "event";
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -33,6 +42,10 @@ public class Offer {
 
     public List<String> getDescription() {
         return description;
+    }
+
+    public String getSmallDescription() {
+        return description.get(0);
     }
 
     public void setDescription(List<String> description) {

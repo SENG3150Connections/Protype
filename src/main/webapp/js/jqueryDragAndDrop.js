@@ -1,6 +1,6 @@
 function init() {
     // Variables
-    var $gallery = $( "#gallery" );
+    var $gallery = $( ".gallery" );
     var $packageInformation = $( "#packagePannel" );
     
     
@@ -14,7 +14,7 @@ function init() {
     
     // Let the packageInformation be droppable, accepting the Offers
     $packageInformation.droppable({
-      accept: "#gallery > li",
+      accept: ".gallery > li",
       classes: {
         "ui-droppable-active": "ui-state-highlight"
       },
@@ -25,11 +25,12 @@ function init() {
     
     // Add offers to the sidebar
     function addOffer( $item ) {
-        var imageSrc = "images/events/BalloonRide.jpg";
+        var imageSrc = $item.context.getAttribute("imageSrc");
         var offerID = $item.context.getAttribute("id");
-        var offerName = "Title";
-        var offerPrice = "Price";
+        var offerName = $item.context.getAttribute("title");
+        var offerPrice = $item.context.getAttribute("price");
         var onclick = "removeOffer(" + '"' + offerID + '"' + ")";
+        console.log("I am here talking: " + window.location.search);
         
         Materialize.toast(offerName + " Added!", 4000) // 4000 is the duration of the toast
         
@@ -46,7 +47,6 @@ function init() {
         
         $('#addedOffers').prepend(newCard);
         newCard[0].setAttribute("offer", newCard[0]);
-        console.log( newCard[0] );
         
         updateCost();
         console.log("Added");
