@@ -39,6 +39,10 @@
             <result type="redirect">management</result>
         </action>
 
+        <action name="createOffer" class="me.seng3150.actions.StaffLoginAction">
+            <result type="redirect">createOffer</result>
+        </action>
+
     </package>
 
     <package name="packages" extends="struts-default">
