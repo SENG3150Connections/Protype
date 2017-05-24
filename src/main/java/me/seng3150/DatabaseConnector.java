@@ -172,7 +172,7 @@ public class DatabaseConnector {
         Offer offer12 = new Offer();
         offer12.setTitle("Airport Shuttle Bus Service");
         offer12.setType("transport");
-        offer12.setImagePath("images/accommodation/minibus.jpg");
+        offer12.setImagePath("images/transport/minibus.jpg");
         offer12.addTag("bus");
         offer12.addTag("airport");
         offer12.getDescription().add("Airport shuttle bus service to and from Newcastle Airport.");
@@ -182,7 +182,7 @@ public class DatabaseConnector {
         Offer offer13 = new Offer();
         offer13.setTitle("Hertz car rental");
         offer13.setType("transport");
-        offer13.setImagePath("images/accommodation/hertz_logo.jpg");
+        offer13.setImagePath("images/transport/hertz_logo.jpg");
         offer13.addTag("rental");
         offer13.addTag("airport");
         offer13.addTag("car");
