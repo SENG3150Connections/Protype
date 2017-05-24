@@ -179,7 +179,7 @@ public class DatabaseConnector {
 
         offer = new Offer();
         offer.setId("apollo");
-        offer.setTitle("Best Western Plus Apollo International Hotel");
+        offer.setTitle("Apollo International Hotel");
         offer.setType(ACCOMMODATION);
         offer.setImagePath("images/accommodation/apollo.jpg");
         offer.addTag("hotel");
@@ -214,6 +214,56 @@ public class DatabaseConnector {
         offer.getDescription().add("Hertz rental cars are available from Newcastle Airport and the CBD.");
         offer.setPrice(50);
         offerTransport.put(offer.getId(), offer);
+
+        offer = new Offer();
+        offer.setId("5sawyers");
+        offer.setTitle("5 Sawyers");
+        offer.setType(FOOD);
+        offer.setImagePath("images/food/5sawyersa.jpg");
+        offer.addTag("food");
+        offer.addTag("cafe");
+        offer.addTag("Restaurant");
+        offer.getDescription().add("Our inspiration for 5 Sawyers came from the idea of creating a place with great" +
+                " atmosphere that is deeply rooted in something authentic and what better story to tell than our past" +
+                " in this city. Together with a relaxed environment where you can enjoy the fruits of our region such" +
+                " as a glass of Hunter wine, chilled craft beer or a cheeky cocktail. The 5 Sawyers food philosophy is" +
+                " to only use in-season, fresh and where possible, local ingredients. With a nod to the past we are" +
+                " using some traditional cooking methods like slow cooking but with a modern twist. Our seafood is" +
+                " sourced locally and oysters are opened to order. We can cater to groups and we're open from Tuesday" +
+                " to Sunday 4pm till late so come and see us. We'd love to share your good times!");
+        offer.setPrice(20);
+        offerFood.put(offer.getId(), offer);
+
+        offer = new Offer();
+        offer.setId("paymasterscafé");
+        offer.setTitle("Paymasters Café");
+        offer.setType(FOOD);
+        offer.setImagePath("images/food/paymasterb.jpg");
+        offer.addTag("food");
+        offer.addTag("cafe");
+        offer.addTag("Restaurant");
+        offer.getDescription().add("Paymasters is within walking distance of the hustle and bustle of Newcastle CBD - " +
+                "a cafe restautant located on the Foreshore Park and overlooking the busy yet picteresque Newcastle " +
+                "Harbour. Next door to Customs House, the heritage-listed building is on the site of the historic Old " +
+                "Convict Lumbar Yard, and is one of Newcastle and the Hunter Valleys most delightful dining experiences.");
+        offer.setPrice(20);
+        offerFood.put(offer.getId(), offer);
+
+        offer = new Offer();
+        offer.setId("moneypenny");
+        offer.setTitle("MoneyPenny");
+        offer.setType(FOOD);
+        offer.setImagePath("images/food/moneypennya.jpg");
+        offer.addTag("food");
+        offer.addTag("cafe");
+        offer.addTag("Restaurant");
+        offer.getDescription().add("MoneyPenny is an ideal setting for a romantic evening, catching up with friends, a " +
+                "quick bite or just chilling out. Seductively lit booths, comfortable outdoor benches and bespoke bar " +
+                "seating provide plenty of options for breathing in the atmosphere. Think high tea, tapas, yum cha, bar" +
+                " snacks, boutique beer and smooth cocktails, shaken not stirred and you’ve got a pretty good idea of " +
+                "what you might find at MoneyPenny.");
+        offer.setPrice(20);
+        offerFood.put(offer.getId(), offer);
     }
 
     public HashMap<String, Offer> getOffers() {
