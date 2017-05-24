@@ -195,54 +195,17 @@ public class DatabaseConnector {
     }
 
     public List<Offer> getAllOffers() {
-        /*
-        A function that returns an array of offer objects, data is hard coded into the function.
-        Hooray for super super bad practice!!
-        */
+        // Return all offers
         return offers;
     }
 
-    public List<Offer> getAllEvents() {
-        /*
-        Get events that are only events.
-        */
+    public List<Offer> getAllEvents(String type) {
+        // Get events that are only a certain type.
         List output = new ArrayList();
 
-        for (Offer offer : offers) {
-            if (offer.getType().equals("event")) {
+        for (Offer offer : offers)
+            if (offer.getType().equals(type))
                 output.add(offer);
-            }
-        }
-
-        return output;
-    }
-
-    public List<Offer> getAllAccommodation() {
-        /*
-        Get events that are only events.
-        */
-        List output = new ArrayList();
-
-        for (Offer offer : offers) {
-            if (offer.getType().equals("accommodation")) {
-                output.add(offer);
-            }
-        }
-
-        return output;
-    }
-
-    public List<Offer> getAllTransport() {
-        /*
-        Get events that are only events.
-        */
-        List output = new ArrayList();
-
-        for (Offer offer : offers) {
-            if (offer.getType().equals("transport")) {
-                output.add(offer);
-            }
-        }
 
         return output;
     }
