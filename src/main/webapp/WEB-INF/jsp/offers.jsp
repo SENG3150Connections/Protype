@@ -66,18 +66,19 @@
 
                     <!-- Dynamically loaded offers (Every offer) -->
                     <s:iterator value="offers" status="status">
-                    <li id="offer_<s:property value="%{#status.count}" />" class="card col s3" style="min-width:250px; margin:7.5px">
+                    <li id="offer_<s:property value="%{#status.count}" />" class="card col s3" style="min-width:250px; min-height:320px; margin:7.5px">
                         <div class="card-image">
                             <img class="activator" src=<s:property value="imagePath"/>>
                         </div>
 
                         <div class="card-content" style="padding-left:0px;padding-right:0px;">
-                            <span class="card-title activator grey-text text-darken-4"><s:property value="title"/><i class="material-icons right">more_vert</i></span>
-                            <p><a href="offerDetails?id=<s:property value="%{#status.count}" />">More Details</a></p>
+                            <span class="card-title activator grey-text text-darken-4" style="min-height:64px"><s:property value="title"/></span>
+                            <p><a href="offerDetails?id=<s:property value="%{#status.count}" />">More Details</a><i class="activator material-icons right">more_vert</i></p>
                         </div>
 
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4"><s:property value="title"/><i class="material-icons right">close</i></span>
+                            <i class="card-title material-icons right">close</i>
+                            <span class="card-title grey-text text-darken-4"><s:property value="title"/></span>
                             <p>Here is some more information about this product that is only revealed once clicked on.</p>
                         </div>
                     </li>
