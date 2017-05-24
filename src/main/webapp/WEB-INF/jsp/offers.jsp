@@ -60,7 +60,7 @@
         <div id="offerPannel" style="min-height:inherit" class="col s12 m9 container light-blue">
             <div id="category_1" class="col s12">
                 
-                <ul>
+                <ul class="gallery">
                     <s:iterator value="events" status="status">
 
                         <li id="offer_<s:property value="id"/>" title="<s:property value="title"/>" price="<s:property value="price"/>" imageSrc="<s:property value="imagePath"/>" class="card col s3 m3 l3" style="min-width:250px; min-height:320px; margin:7.5px">
@@ -85,7 +85,7 @@
             </div>
             
             <div id="category_2" class="col s12">
-                <ul>
+                <ul class="gallery">
                     <s:iterator value="food" status="status">
 
                         <li id="offer_<s:property value="id"/>" title="<s:property value="title"/>" price="<s:property value="price"/>" imageSrc="<s:property value="imagePath"/>" class="card col s3 m3 l3" style="min-width:250px; min-height:320px; margin:7.5px">
@@ -109,7 +109,7 @@
             </div>
             
             <div id="category_3" class="col s12">
-                <ul>
+                <ul class="gallery">
                     <s:iterator value="accommodation" status="status">
 
                         <li id="offer_<s:property value="id"/>" title="<s:property value="title"/>" price="<s:property value="price"/>" imageSrc="<s:property value="imagePath"/>" class="card col s3 m3 l3" style="min-width:250px; min-height:320px; margin:7.5px">
@@ -133,7 +133,7 @@
             </div>
 
             <div id="category_4" class="col s12">
-                <ul>
+                <ul class="gallery">
                     <s:iterator value="transport" status="status">
 
                         <li id="offer_<s:property value="id"/>" title="<s:property value="title"/>" price="<s:property value="price"/>" imageSrc="<s:property value="imagePath"/>" class="card col s3 m3 l3" style="min-width:250px; min-height:320px; margin:7.5px">

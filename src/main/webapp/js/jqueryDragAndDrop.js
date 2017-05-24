@@ -1,6 +1,6 @@
 function init() {
     // Variables
-    var $gallery = $( "#gallery" );
+    var $gallery = $( ".gallery" );
     var $packageInformation = $( "#packagePannel" );
     
     
@@ -14,7 +14,7 @@ function init() {
     
     // Let the packageInformation be droppable, accepting the Offers
     $packageInformation.droppable({
-      accept: "#gallery > li",
+      accept: ".gallery > li",
       classes: {
         "ui-droppable-active": "ui-state-highlight"
       },
