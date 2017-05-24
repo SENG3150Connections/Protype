@@ -59,8 +59,8 @@
             <div class="row" style="min-height:50px">
                 <div class="col s7"></div>
                 <div class="col s5">
-                    <a href="offers" class="btn tooltipped waves-effect waves-light orange" data-position="top" data-delay="50">Add to package!</a>
-                    <a href="offers" class="btn tooltipped waves-effect waves-light orange" data-position="top" data-delay="50">Back</a>
+                    <a href="offers" class="btn waves-effect waves-light orange">Add to package!</a>
+                    <a href="offers" class="btn waves-effect waves-light orange">Back</a>
                 </div>
             </div>
         </div>
