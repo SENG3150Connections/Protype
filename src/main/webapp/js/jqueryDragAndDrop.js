@@ -30,6 +30,7 @@ function init() {
         var offerName = "Title";
         var offerPrice = "Price";
         var onclick = "removeOffer(" + '"' + offerID + '"' + ")";
+        console.log("I am here talking: " + window.location.search);
         
         Materialize.toast(offerName + " Added!", 4000) // 4000 is the duration of the toast
         
@@ -46,7 +47,6 @@ function init() {
         
         $('#addedOffers').prepend(newCard);
         newCard[0].setAttribute("offer", newCard[0]);
-        console.log( newCard[0] );
         
         updateCost();
         console.log("Added");

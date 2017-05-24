@@ -56,9 +56,9 @@
         </div>
     </div>
 
-  <div id="mainContainer" class="row container" style="min-height:650px">
+  <div id="mainContainer" class="row container" style="min-height:750px">
         
-        <div id="offerPannel" style="min-height:inherit" class="col m9 container light-blue">
+        <div id="offerPannel" style="min-height:inherit" class="col s12 m9 container light-blue">
             <p> Drag and drop Offers you like from the pannel into the side bar </p>
             <div id="category_1" class="col s12">
                 
@@ -66,7 +66,7 @@
 
                     <!-- Dynamically loaded offers (Every offer) -->
                     <s:iterator value="offers" status="status">
-                    <li id="offer_<s:property value="%{#status.count}" />" class="card col s3" style="min-width:250px; min-height:320px; margin:7.5px">
+                    <li id="offer_<s:property value="%{#status.count}" />" class="card col s3 m3 l3" style="min-width:250px; min-height:320px; margin:7.5px">
                         <div class="card-image">
                             <img class="activator" src=<s:property value="imagePath"/>>
                         </div>
@@ -97,7 +97,7 @@
             </div>
             
         </div>
-        <div id="packagePannel" style="min-height:inherit" class="col m3 container light-blue darken-1">
+        <div id="packagePannel" style="min-height:inherit" class="col s12 m3 container light-blue darken-1">
             <h5 class="center">Package</h5>
 
             <p class="light">Display the current events in the package and the running cost</p>
