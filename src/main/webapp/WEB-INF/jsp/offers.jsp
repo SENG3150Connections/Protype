@@ -33,9 +33,7 @@
                 <ul class="hide-on-med-and-down">
                     <li class="waves-effect waves-light"><a href="home"><i class="material-icons left">home</i>Home</a></li>
                     <li class="waves-effect waves-light" ><a href="survey"><i class="material-icons left">assignment</i>Survey</a></li>
-                    <li class="active waves-effect waves-light"><a href="offers"><i class="material-icons left">view_module</i>Events</a></li>
-                    <li class="waves-effect waves-light"><a href="accommodation"><i class="material-icons left">cloud</i>Accommodation</a></li>
-                    <li class="waves-effect waves-light"><a href="transport"><i class="material-icons left">language</i>Transport</a></li>
+                    <li class="active waves-effect waves-light"><a href="offers"><i class="material-icons left">view_module</i>Offers</a></li>
                     <li class="waves-effect waves-light"><a href="pay"><i class="material-icons left">payment</i>Pay</a></li>
                 </ul>
             </nav>
@@ -43,8 +41,9 @@
                 <div>
                   <ul class="tabs tabs-transparent">
                     <li class="tab"><a class="active" href="#category_1">Event</a></li>
-                    <li class="tab"><a href="#category_2">Entertainment</a></li>
-                    <li class="tab"><a href="#category_3">Sight seeing</a></li>
+                    <li class="tab"><a href="#category_2">Food</a></li>
+                    <li class="tab"><a href="#category_3">Accommodation</a></li>
+                    <li class="tab"><a href="#category_4">Transport</a></li>
                     <li class="tab">
                         <i class="material-icons left">search</i>
                         <div class="chips chips-initial"></div>
@@ -61,19 +60,17 @@
         <div id="offerPannel" style="min-height:inherit" class="col s12 m9 container light-blue">
             <div id="category_1" class="col s12">
                 
-                <ul id="gallery">
+                <ul>
+                    <s:iterator value="events" status="status">
 
-                    <!-- Dynamically loaded offers (Every offer) -->
-                    <s:iterator value="offers" status="status">
-
-                        <li id="offer_<s:property value="%{#status.count}"/>" title="<s:property value="title"/>" price="<s:property value="price"/>" imageSrc="<s:property value="imagePath"/>" class="card col s3 m3 l3" style="min-width:250px; min-height:320px; margin:7.5px">
+                        <li id="offer_<s:property value="id"/>" title="<s:property value="title"/>" price="<s:property value="price"/>" imageSrc="<s:property value="imagePath"/>" class="card col s3 m3 l3" style="min-width:250px; min-height:320px; margin:7.5px">
                             <div class="card-image">
                                 <img class="activator" src=<s:property value="imagePath"/>>
                             </div>
 
                             <div class="card-content" style="padding-left:0px;padding-right:0px;">
                                 <span class="card-title activator grey-text text-darken-4" style="min-height:64px"><s:property value="title"/></span>
-                                <p><a href="offerDetails?id=<s:property value="%{#status.count}" />">More Details</a><i class="activator material-icons right">more_vert</i></p>
+                                <p><a href="offerDetails?id=<s:property value="id" />">More Details</a><i class="activator material-icons right">more_vert</i></p>
                             </div>
 
                             <div class="card-reveal">
@@ -83,17 +80,80 @@
                             </div>
                         </li>
                     </s:iterator>
-                
                 </ul>
                 
             </div>
             
             <div id="category_2" class="col s12">
-                Category_2
+                <ul>
+                    <s:iterator value="food" status="status">
+
+                        <li id="offer_<s:property value="id"/>" title="<s:property value="title"/>" price="<s:property value="price"/>" imageSrc="<s:property value="imagePath"/>" class="card col s3 m3 l3" style="min-width:250px; min-height:320px; margin:7.5px">
+                            <div class="card-image">
+                                <img class="activator" src=<s:property value="imagePath"/>>
+                            </div>
+
+                            <div class="card-content" style="padding-left:0px;padding-right:0px;">
+                                <span class="card-title activator grey-text text-darken-4" style="min-height:64px"><s:property value="title"/></span>
+                                <p><a href="offerDetails?id=<s:property value="id" />">More Details</a><i class="activator material-icons right">more_vert</i></p>
+                            </div>
+
+                            <div class="card-reveal">
+                                <i class="card-title material-icons right">close</i>
+                                <span class="card-title grey-text text-darken-4"><s:property value="title"/></span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </li>
+                    </s:iterator>
+                </ul>
             </div>
             
             <div id="category_3" class="col s12">
-                Category_3
+                <ul>
+                    <s:iterator value="accommodation" status="status">
+
+                        <li id="offer_<s:property value="id"/>" title="<s:property value="title"/>" price="<s:property value="price"/>" imageSrc="<s:property value="imagePath"/>" class="card col s3 m3 l3" style="min-width:250px; min-height:320px; margin:7.5px">
+                            <div class="card-image">
+                                <img class="activator" src=<s:property value="imagePath"/>>
+                            </div>
+
+                            <div class="card-content" style="padding-left:0px;padding-right:0px;">
+                                <span class="card-title activator grey-text text-darken-4" style="min-height:64px"><s:property value="title"/></span>
+                                <p><a href="offerDetails?id=<s:property value="id" />">More Details</a><i class="activator material-icons right">more_vert</i></p>
+                            </div>
+
+                            <div class="card-reveal">
+                                <i class="card-title material-icons right">close</i>
+                                <span class="card-title grey-text text-darken-4"><s:property value="title"/></span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </li>
+                    </s:iterator>
+                </ul>
+            </div>
+
+            <div id="category_4" class="col s12">
+                <ul>
+                    <s:iterator value="transport" status="status">
+
+                        <li id="offer_<s:property value="id"/>" title="<s:property value="title"/>" price="<s:property value="price"/>" imageSrc="<s:property value="imagePath"/>" class="card col s3 m3 l3" style="min-width:250px; min-height:320px; margin:7.5px">
+                            <div class="card-image">
+                                <img class="activator" src=<s:property value="imagePath"/>>
+                            </div>
+
+                            <div class="card-content" style="padding-left:0px;padding-right:0px;">
+                                <span class="card-title activator grey-text text-darken-4" style="min-height:64px"><s:property value="title"/></span>
+                                <p><a href="offerDetails?id=<s:property value="id" />">More Details</a><i class="activator material-icons right">more_vert</i></p>
+                            </div>
+
+                            <div class="card-reveal">
+                                <i class="card-title material-icons right">close</i>
+                                <span class="card-title grey-text text-darken-4"><s:property value="title"/></span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </li>
+                    </s:iterator>
+                </ul>
             </div>
             
         </div>
