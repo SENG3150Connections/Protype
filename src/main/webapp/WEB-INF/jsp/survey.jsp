@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <header>
     <nav class="light-blue lighten-1" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container" href="#" class="brand-logo">Logo</a>
@@ -20,7 +21,9 @@
             </ul>
         </div>
     </nav>
-    
+    </header>
+
+    <main>
     <div class="section no-pad-bot" id="index-banner">
         <div class="container col m12">
             <nav class="light-blue lighten-1" role="navigation">
@@ -160,8 +163,7 @@
             </button>
         </form>
     </div>
-    
-    <br><br>
+    </main>
 
     <jsp:include page="footer.jsp" />
 

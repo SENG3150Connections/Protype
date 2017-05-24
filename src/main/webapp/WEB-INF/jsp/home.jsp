@@ -20,6 +20,8 @@
 </style>
 
 <body>
+
+  <header>
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
 
@@ -34,7 +36,9 @@
 
     </div>
   </nav>
+  </header>
 
+  <main>
   <div class="section">
     <div class="container center">
       <br><br>
@@ -133,6 +137,7 @@
 
     </div>
   </div>
+  </main>
 
   <jsp:include page="footer.jsp" />
 
