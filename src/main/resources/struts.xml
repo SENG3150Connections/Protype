@@ -102,6 +102,10 @@
         <action name="management">
             <result>/WEB-INF/jsp/management.jsp</result>
         </action>
+
+        <action name="createOffer">
+            <result>/WEB-INF/jsp/createOffer.jsp</result>
+        </action>
     </package>
 
 </struts>
