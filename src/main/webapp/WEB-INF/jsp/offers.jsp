@@ -1,3 +1,4 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,48 +63,25 @@
             <div id="category_1" class="col s12">
                 
                 <ul id="gallery">
-                
-                    <li id="offer_5" class="card col s3" style="min-width:250px; margin:7.5px">
+
+                    <!-- Dynamically loaded offers (Every offer) -->
+                    <s:iterator value="offers" status="status">
+                    <li id="offer_<s:property value="%{#status.count}" />" class="card col s3" style="min-width:250px; margin:7.5px">
                         <div class="card-image">
-                            <img class="activator" src="images/events/Balloon.jpg">
+                            <img class="activator" src=<s:property value="imagePath"/>>
                         </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Baloon Trip<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">More Details</a></p>
+
+                        <div class="card-content" style="padding-left:0px;padding-right:0px;">
+                            <span class="card-title activator grey-text text-darken-4"><s:property value="title"/><i class="material-icons right">more_vert</i></span>
+                            <p><a href="offerDetails?id=<s:property value="%{#status.count}" />">More Details</a></p>
                         </div>
+
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Baloon Trip<i class="material-icons right">close</i></span>
+                            <span class="card-title grey-text text-darken-4"><s:property value="title"/><i class="material-icons right">close</i></span>
                             <p>Here is some more information about this product that is only revealed once clicked on.</p>
                         </div>
                     </li>
-                    
-                    <li class="card col s3" style="min-width:250px; margin:7.5px">
-                        <div class="card-image">
-                            <img class="activator" src="images/events/Balloon.jpg">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Baloon Trip<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">More Details</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Baloon Trip<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                        </div>
-                    </li>
-                    
-                    <li class="card col s3" style="min-width:250px; margin:7.5px">
-                        <div class="card-image">
-                            <img class="activator" src="images/events/Balloon.jpg">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Baloon Trip<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">More Details</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Baloon Trip<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                        </div>
-                    </li>
+                    </s:iterator>
                 
                 </ul>
                 
@@ -136,55 +114,10 @@
                 <a href="customise" class="btn tooltipped waves-effect waves-light orange" data-position="top" data-delay="50" data-tooltip="Plan your adventure">Customise</a>
             </div>
         </div>
-        
-        
-                        
-                        
-        
-        
-        
-        
+
   </div>
 
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 m9 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">Newcastle Connections is a dedicated airport shuttle bus service running 12 trips daily between
-            Newcastle Airport, Newcastle CBD and major Newcastle Hotels. Our professional drivers are available for private and combined bookings,
-            from as early as necessary to meet primary flights arriving at, and departing from, Newcastle Airport.</p>
-
-
-        </div>
-
-        <div class="col offset-l3 l3 m3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="https://www.facebook.com/newcastleconnections/">
-              <i class="material-icons">account_box</i> Facebook
-            </a></li>
-            <li><a class="white-text" href="https://www.instagram.com/newcastleconnections/">
-              <i class="material-icons">photo_camera</i> Instagram
-            </a></li>
-            <li><a class="white-text" href="mailto:bookings@newcastleconnections.com.au">
-              <i class="material-icons">email</i> E-Mail
-            </a></li>
-            <li><a class="white-text" href="tel:1300715552">
-              <i class="material-icons">phone</i> Call Now
-            </a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-copyright">
-      <div class="container">
-      Copyright &copy; SENG3150 Group 1 2017
-      </div>
-    </div>
-  </footer>
-
+    <jsp:include page="footer.jsp" />
 
     <!--  Scripts -->
     <script src="js/materialize.js"></script>

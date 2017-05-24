@@ -35,6 +35,10 @@
             <result name="input" type="redirect">survey</result>
         </action>
 
+        <action name="management-login" class="me.seng3150.actions.StaffLoginAction">
+            <result type="redirect">management</result>
+        </action>
+
     </package>
 
     <package name="packages" extends="struts-default">
@@ -49,7 +53,6 @@
 
         <default-interceptor-ref name="surveyStack"/>
 
-        <!-- TODO: Global result for survey-->
         <global-results>
             <result name="surveyrequired" type="redirect">survey</result>
         </global-results>
@@ -58,36 +61,13 @@
             <result>/WEB-INF/jsp/profile.jsp</result>
         </action>
 
-        <action name="offers">
+        <action name="offers" class="me.seng3150.actions.OffersAction">
             <result>/WEB-INF/jsp/offers.jsp</result>
         </action>
 
-        <action name="offerDetails">
-            <result>/WEB-INF/jsp/offerDetails.jsp</result>
-        </action>
-
-        <action name="offer1Details">
-            <result>/WEB-INF/jsp/offerDetails_offer1.jsp</result>
-        </action>
-
-        <action name="offer2Details">
-            <result>/WEB-INF/jsp/offerDetails_offer2.jsp</result>
-        </action>
-
-        <action name="offer3Details">
-            <result>/WEB-INF/jsp/offerDetails_offer3.jsp</result>
-        </action>
-
-        <action name="offer4Details">
-            <result>/WEB-INF/jsp/offerDetails_offer4.jsp</result>
-        </action>
-
-        <action name="offer5Details">
-            <result>/WEB-INF/jsp/offerDetails_offer5.jsp</result>
-        </action>
-
-        <action name="offer6Details">
-            <result>/WEB-INF/jsp/offerDetails_twoTickets.jsp</result>
+        <action name="offerDetails" class="me.seng3150.actions.OfferDetailsAction">
+            <result name="input" type="redirect">offers</result>
+            <result name="success">/WEB-INF/jsp/offerDetails.jsp</result>
         </action>
 
         <action name="customise">
@@ -101,10 +81,19 @@
 
     <package name="management" extends="struts-default">
 
-        <!-- TODO: Global result for non-staff and interceptors -->
-        <!-- <global-results>
-            <result name="stafflogin" type="dispatcher">/WEB-INF/jsp/staffLogin.jsp</result>
-        </global-results> -->
+        <interceptors>
+            <interceptor name="login" class="me.seng3150.interceptors.StaffLoginInterceptor" />
+            <interceptor-stack name="loginStack">
+                <interceptor-ref name="defaultStack"/>
+                <interceptor-ref name="login"/>
+            </interceptor-stack>
+        </interceptors>
+
+        <default-interceptor-ref name="loginStack"/>
+
+        <global-results>
+            <result name="login" type="dispatcher">/WEB-INF/jsp/staffLogin.jsp</result>
+        </global-results>
 
         <action name="management">
             <result>/WEB-INF/jsp/management.jsp</result>
