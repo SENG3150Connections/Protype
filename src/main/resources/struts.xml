@@ -35,6 +35,10 @@
             <result name="input" type="redirect">survey</result>
         </action>
 
+        <action name="management-login" class="me.seng3150.actions.StaffLoginAction">
+            <result type="redirect">management</result>
+        </action>
+
     </package>
 
     <package name="packages" extends="struts-default">
@@ -101,10 +105,19 @@
 
     <package name="management" extends="struts-default">
 
-        <!-- TODO: Global result for non-staff and interceptors -->
-        <!-- <global-results>
-            <result name="stafflogin" type="dispatcher">/WEB-INF/jsp/staffLogin.jsp</result>
-        </global-results> -->
+        <interceptors>
+            <interceptor name="login" class="me.seng3150.interceptors.StaffLoginInterceptor" />
+            <interceptor-stack name="loginStack">
+                <interceptor-ref name="defaultStack"/>
+                <interceptor-ref name="login"/>
+            </interceptor-stack>
+        </interceptors>
+
+        <default-interceptor-ref name="loginStack"/>
+
+        <global-results>
+            <result name="login" type="dispatcher">/WEB-INF/jsp/staffLogin.jsp</result>
+        </global-results>
 
         <action name="management">
             <result>/WEB-INF/jsp/management.jsp</result>
