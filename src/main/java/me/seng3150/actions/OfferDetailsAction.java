@@ -4,6 +4,8 @@ import com.opensymphony.xwork2.ActionSupport;
 import me.seng3150.DatabaseConnector;
 import me.seng3150.Offer;
 
+import java.util.List;
+
 public class OfferDetailsAction extends ActionSupport {
 
     private int id;
@@ -13,7 +15,12 @@ public class OfferDetailsAction extends ActionSupport {
     public String execute() {
 
         int index = getId() - 1;
-        setOffer(new DatabaseConnector().getAllOffers().get(index));
+        List<Offer> offers = new DatabaseConnector().getAllOffers();
+
+        if (index < 0 || index >= offers.size())
+            return INPUT;
+
+        setOffer(offers.get(index));
         return SUCCESS;
     }
 

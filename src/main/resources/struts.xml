@@ -62,7 +62,8 @@
         </action>
 
         <action name="offerDetails" class="me.seng3150.actions.OfferDetailsAction">
-            <result>/WEB-INF/jsp/offerDetails.jsp</result>
+            <result name="input" type="redirect">offers</result>
+            <result name="success">/WEB-INF/jsp/offerDetails.jsp</result>
         </action>
 
         <action name="offer1Details">
