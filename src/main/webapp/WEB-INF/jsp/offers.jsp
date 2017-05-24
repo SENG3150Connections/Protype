@@ -76,7 +76,7 @@
                             <div class="card-reveal">
                                 <i class="card-title material-icons right">close</i>
                                 <span class="card-title grey-text text-darken-4"><s:property value="title"/></span>
-                                <p><s:property value="getSmallDescription" /></p>
+                                <p class="truncate"><s:property value="smallDescription" /></p>
                             </div>
                         </li>
                     </s:iterator>
