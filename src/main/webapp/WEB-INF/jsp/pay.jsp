@@ -132,9 +132,9 @@
                 <br>
 
                 <a href="customise" class="btn tooltipped waves-effect waves-light col s6" data-position="top" data-delay="50" data-tooltip="Cancel payment">Return</a>
-                <button type="submit" class="waves-effect waves-light btn col s6">
+                <a href="complete" class="waves-effect waves-light btn col s6">
                     Pay Now
-                </button>
+                </a>
 
             </form>
 

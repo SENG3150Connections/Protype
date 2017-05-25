@@ -81,6 +81,10 @@
         <action name="pay">
             <result>/WEB-INF/jsp/pay.jsp</result>
         </action>
+
+        <action name="complete">
+            <result>/WEB-INF/jsp/complete.jsp</result>
+        </action>
     </package>
 
     <package name="management" extends="struts-default">
