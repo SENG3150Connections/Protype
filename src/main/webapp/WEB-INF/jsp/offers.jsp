@@ -55,11 +55,7 @@
         </div>
     </div>
 
-<<<<<<< HEAD
-  <div id="mainContainer" class="row container" style="min-height:650px;margin-top:-20px;">
-=======
   <div id="mainContainer" class="row container" style="min-height:700px">
->>>>>>> master
         
         <div id="offerPannel" style="min-height:inherit" class="col s12 m9 container light-blue">
             <div id="category_1" class="col s12">
