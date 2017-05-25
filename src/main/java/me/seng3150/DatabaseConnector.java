@@ -129,8 +129,8 @@ public class DatabaseConnector {
         offer.setType(ACCOMMODATION);
         offer.setImagePath("images/accommodation/executiveInn.jpg");
         offer.addTag("hotel");
-        offer.getDescription().add("Enjoy the health club and spa tub as well as access to bike rentals and aerobics classes." +
-                " 9688 square feet (900 square meters) of event facilities include 4 meeting rooms and conference space. Other amenities include 2 coffee shops/cafés and free WiFi in public areas." +
+        offer.getDescription().add("Enjoy the health club and spa tub as well as access to bike rentals and aerobics classes.");
+        offer.getDescription().add("9688 square feet (900 square meters) of event facilities include 4 meeting rooms and conference space. Other amenities include 2 coffee shops/cafés and free WiFi in public areas." +
                 " Each morning full breakfast is available." +
                 " There's also free self parking, along with the convenience of an airport shuttle.");
         offer.setPrice(156);
@@ -183,8 +183,8 @@ public class DatabaseConnector {
         offer.setType(ACCOMMODATION);
         offer.setImagePath("images/accommodation/apollo.jpg");
         offer.addTag("hotel");
-        offer.getDescription().add("The restaurant, Babbingtons Bar and Grill, serves international cuisine and is open for breakfast, lunch, and dinner." +
-                " For a drink, you can stop by the hotel's own bar/lounge. Enjoy the outdoor swimming pool and fitness center. Business travelers can take advantage of a 24-hour business center, conference space, and meeting rooms. " +
+        offer.getDescription().add("The restaurant, Babbingtons Bar and Grill, serves international cuisine and is open for breakfast, lunch, and dinner.");
+        offer.getDescription().add(" For a drink, you can stop by the hotel's own bar/lounge. Enjoy the outdoor swimming pool and fitness center. Business travelers can take advantage of a 24-hour business center, conference space, and meeting rooms. " +
                 "Other amenities include free WiFi in public areas, a coffee shop/café, and laundry facilities. Full breakfast is available daily between 7 AM and 10 AM. " +
                 "There's also free self parking, along with the convenience of an airport shuttle.");
         offer.setPrice(180);
@@ -224,8 +224,8 @@ public class DatabaseConnector {
         offer.addTag("cafe");
         offer.addTag("Restaurant");
         offer.getDescription().add("Our inspiration for 5 Sawyers came from the idea of creating a place with great" +
-                " atmosphere that is deeply rooted in something authentic and what better story to tell than our past" +
-                " in this city. Together with a relaxed environment where you can enjoy the fruits of our region such" +
+                " atmosphere that is deeply rooted in something authentic and what better story to tell than our past in this city.");
+        offer.getDescription().add("Together with a relaxed environment where you can enjoy the fruits of our region such" +
                 " as a glass of Hunter wine, chilled craft beer or a cheeky cocktail. The 5 Sawyers food philosophy is" +
                 " to only use in-season, fresh and where possible, local ingredients. With a nod to the past we are" +
                 " using some traditional cooking methods like slow cooking but with a modern twist. Our seafood is" +
@@ -243,8 +243,8 @@ public class DatabaseConnector {
         offer.addTag("cafe");
         offer.addTag("Restaurant");
         offer.getDescription().add("Paymasters is within walking distance of the hustle and bustle of Newcastle CBD - " +
-                "a cafe restautant located on the Foreshore Park and overlooking the busy yet picteresque Newcastle " +
-                "Harbour. Next door to Customs House, the heritage-listed building is on the site of the historic Old " +
+                "a cafe restautant located on the Foreshore Park and overlooking the busy yet picteresque Newcastle Harbour.");
+        offer.getDescription().add("Next door to Customs House, the heritage-listed building is on the site of the historic Old " +
                 "Convict Lumbar Yard, and is one of Newcastle and the Hunter Valleys most delightful dining experiences.");
         offer.setPrice(20);
         offerFood.put(offer.getId(), offer);
@@ -258,7 +258,8 @@ public class DatabaseConnector {
         offer.addTag("cafe");
         offer.addTag("Restaurant");
         offer.getDescription().add("MoneyPenny is an ideal setting for a romantic evening, catching up with friends, a " +
-                "quick bite or just chilling out. Seductively lit booths, comfortable outdoor benches and bespoke bar " +
+                "quick bite or just chilling out.");
+        offer.getDescription().add("Seductively lit booths, comfortable outdoor benches and bespoke bar " +
                 "seating provide plenty of options for breathing in the atmosphere. Think high tea, tapas, yum cha, bar" +
                 " snacks, boutique beer and smooth cocktails, shaken not stirred and you’ve got a pretty good idea of " +
                 "what you might find at MoneyPenny.");
