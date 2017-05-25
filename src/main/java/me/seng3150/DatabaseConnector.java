@@ -139,7 +139,7 @@ public class DatabaseConnector {
 
         offer = new Offer();
         offer.setId("noahsbeach");
-        offer.setTitle("Quality Hotel NOAH'S On The Beach");
+        offer.setTitle("Noah's On The Beach");
         offer.setType(ACCOMMODATION);
         offer.setImagePath("images/accommodation/noahsOnTheBeach.jpg");
         offer.addTag("hotel");
