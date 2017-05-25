@@ -34,9 +34,9 @@
     <div class="row">
 
         <div class="container col s3">
-            <div class="nav-content light-blue lighten-1" style="height: 900px;">
-                <ul>
-                    <li class="col s12"><a class="waves-effect waves-light" href="createOffer"><i class="material-icons left">web</i>Create New Offer</a></li>
+            <nav class="nav-content light-blue lighten-1 col s12" style="height: 900px;">
+                <ul class="col s12">
+                    <li class="col s12"><a class="col s12 waves-effect waves-light" href="createOffer"><i class="material-icons left">web</i>Create New Offer</a></li>
                 </ul>
                 <ul class="tabs tabs-transparent" style="overflow: visible";>
                     <li class="tab col s12"><a class="active waves-effect waves-light" href="#category_1"><i class="material-icons left">event</i>Events</a></li>
@@ -44,7 +44,7 @@
                     <li class="tab col s12"><a class="waves-effect waves-light" href="#category_3"><i class="material-icons left">home</i>Accommodation</a></li>
                     <li class="tab col s12"><a class="waves-effect waves-light" href="#category_4"><i class="material-icons left">directions_bus</i>Transport</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
 
         <!-- Grid -->
