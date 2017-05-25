@@ -78,49 +78,9 @@
     </div>
   </div>
 
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 m9 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">Newcastle Connections is a dedicated airport shuttle bus service running 12 trips daily between
-            Newcastle Airport, Newcastle CBD and major Newcastle Hotels. Our professional drivers are available for private and combined bookings,
-            from as early as necessary to meet primary flights arriving at, and departing from, Newcastle Airport.</p>
-
-
-        </div>
-
-        <div class="col offset-l3 l3 m3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="https://www.facebook.com/newcastleconnections/">
-              <i class="material-icons">account_box</i> Facebook
-            </a></li>
-            <li><a class="white-text" href="https://www.instagram.com/newcastleconnections/">
-              <i class="material-icons">photo_camera</i> Instagram
-            </a></li>
-            <li><a class="white-text" href="mailto:bookings@newcastleconnections.com.au">
-              <i class="material-icons">email</i> E-Mail
-            </a></li>
-            <li><a class="white-text" href="tel:1300715552">
-              <i class="material-icons">phone</i> Call Now
-            </a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-copyright">
-      <div class="container">
-      Copyright &copy; SENG3150 Group 1 2017
-      </div>
-    </div>
-  </footer>
-
+    <jsp:include page="footer.jsp" />
 
     <!--  Scripts -->
-    <!--
-    -->
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
   </body>
