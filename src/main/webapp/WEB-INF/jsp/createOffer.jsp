@@ -36,8 +36,12 @@
         <div>
             Select Image
             <input value="Image" type="file">
-            <h3 class="header"><input value="Title"type="text" class="width:100px"></h3>
-            <h4 class="header"><input value="Price"type="text" class="width:100px"></h4>
+            <h5 class="header">
+                Title<input type="text" class="width:100px">
+            </h5>
+            <h5 class="header">
+                Price<input type="text" class="width:100px">
+            </h5>
             Offer Description
             <textarea id="textarea1" class="materialize-textarea"></textarea>
         </div>
