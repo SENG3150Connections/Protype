@@ -28,7 +28,7 @@ $(document).ready(function() {
             },
             {
                 title: 'EVENT - click for details',
-                url: 'http://google.com/', // LINK TO OFFER PAGE
+                url: 'offerDetails?id=winetour', // LINK TO OFFER PAGE
                 start: '2017-06-07',
                 end: '2017-06-10'
             },
