@@ -61,20 +61,35 @@
                 </div>
             </div>
         </div>
-        
-        <div id="packagePannel" style="min-height:inherit" class="col m3 container light-blue lighten-1">
-            <h5 class="center">Package</h5>
-            
-            <div class="divider"></div>
-            
-            <ul id="addedOffers" class='gallery ui-helper-reset' style="overflow-y: scroll; min-height:350px">
-            </ul>
-            
-            <div class="divider"></div>
-                <h5 id="totalPrice">Total: $0.00</h5>
-                <h5 id="totalSavings">Savings: $0.00</h5>
-                <a href="customise" class="btn tooltipped waves-effect waves-light orange" data-position="top" data-delay="50" data-tooltip="Plan your adventure">Customise</a>
-        </div>
+
+      <div id="packagePannel" style="min-height:inherit; padding:8px" class="col s12 m3 container">
+          <div class="light-blue darken-1" style="padding:2px">
+              <div class="light-blue lighten-1" style="padding:8px">
+                  <h5 class="center">Package</h5>
+
+                  <p class="light">Drag and drop packages here:</p>
+
+                  <div class="divider"></div>
+
+                  <ul id="addedOffers" class='gallery ui-helper-reset' style="overflow-y: scroll; min-height:400px; max-height:400px; padding:4px">
+                  </ul>
+
+                  <div class="divider"></div>
+
+                  <div style="padding:8px;">
+                      <h5 id="totalPrice">Total: $0.00</h5>
+                      <h5 id="totalSavings">Savings: $0.00</h5>
+                      <a href="customise" class="btn tooltipped waves-effect waves-light orange" data-position="top" data-delay="50" data-tooltip="Plan your adventure">Customise</a>
+                  </div>
+              </div>
+          </div>
+          <br>
+          <div class="row col s12">
+              <div class="col s4"><img class="hoverable" src="images/icons/twitter.png" style="height:48px; width:48px"></div>
+              <div class="col s4"><img class="hoverable" src="images/icons/facebook.png" style="height:48px; width:48px"></div>
+              <div class="col s4"><img class="hoverable" src="images/icons/instagram.png" style="height:48px; width:48px"></div>
+          </div>
+      </div>
         
   </div>
 
