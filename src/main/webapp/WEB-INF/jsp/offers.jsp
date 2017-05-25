@@ -63,7 +63,7 @@
                 <ul class="gallery">
                     <s:iterator value="events" status="status">
 
-                        <li id="offer_<s:property value="id"/>" title="<s:property value="title"/>" price="<s:property value="price"/>" imageSrc="<s:property value="imagePath"/>" class="card col s3 m3 l3" style="min-width:250px; min-height:320px; margin:7.5px">
+                        <li id="offer_<s:property value="id"/>" title="<s:property value="title"/>" price="<s:property value="price"/>" imageSrc="<s:property value="imagePath"/>" class="card col s3 m3 l3" style="min-width:230px; min-height:320px; margin:7.5px">
                             <div class="card-image">
                                 <img class="activator" src=<s:property value="imagePath"/>>
                             </div>
@@ -88,7 +88,7 @@
                 <ul class="gallery">
                     <s:iterator value="food" status="status">
 
-                        <li id="offer_<s:property value="id"/>" title="<s:property value="title"/>" price="<s:property value="price"/>" imageSrc="<s:property value="imagePath"/>" class="card col s3 m3 l3" style="min-width:250px; min-height:320px; margin:7.5px">
+                        <li id="offer_<s:property value="id"/>" title="<s:property value="title"/>" price="<s:property value="price"/>" imageSrc="<s:property value="imagePath"/>" class="card col s3 m3 l3" style="min-width:230px; min-height:320px; margin:7.5px">
                             <div class="card-image">
                                 <img class="activator" src=<s:property value="imagePath"/>>
                             </div>
@@ -112,7 +112,7 @@
                 <ul class="gallery">
                     <s:iterator value="accommodation" status="status">
 
-                        <li id="offer_<s:property value="id"/>" title="<s:property value="title"/>" price="<s:property value="price"/>" imageSrc="<s:property value="imagePath"/>" class="card col s3 m3 l3" style="min-width:250px; min-height:320px; margin:7.5px">
+                        <li id="offer_<s:property value="id"/>" title="<s:property value="title"/>" price="<s:property value="price"/>" imageSrc="<s:property value="imagePath"/>" class="card col s3 m3 l3" style="min-width:230px; min-height:320px; margin:7.5px">
                             <div class="card-image">
                                 <img class="activator" src=<s:property value="imagePath"/>>
                             </div>
@@ -136,7 +136,7 @@
                 <ul class="gallery">
                     <s:iterator value="transport" status="status">
 
-                        <li id="offer_<s:property value="id"/>" title="<s:property value="title"/>" price="<s:property value="price"/>" imageSrc="<s:property value="imagePath"/>" class="card col s3 m3 l3" style="min-width:250px; min-height:320px; margin:7.5px">
+                        <li id="offer_<s:property value="id"/>" title="<s:property value="title"/>" price="<s:property value="price"/>" imageSrc="<s:property value="imagePath"/>" class="card col s3 m3 l3" style="min-width:230px; min-height:320px; margin:7.5px">
                             <div class="card-image">
                                 <img class="activator" src=<s:property value="imagePath"/>>
                             </div>
