@@ -12,6 +12,8 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+
+<header>
 <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
         <a href="home"><img style="max-height:64px" src="images/LogoBanner.png"></a>
@@ -29,12 +31,15 @@
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
 </nav>
+</header>
+
+<main>
 <div class="section no-pad-bot" id="index-banner">
     <div class="container">
         <br><br>
 
         <div class="row">
-            <div class="col s6 offset-s3">
+            <div class="col s6 offset-s3 grey lighten-4 ">
 
         <s:form action="home" namespace="/" >
             <div class="form-group">
@@ -43,6 +48,7 @@
                 <s:textfield key="username" label="Choose a username" />
                 <s:textfield key="email" label="Enter your email address" />
                 <s:password key="password" label="Set a password" />
+                <s:password key="password" label="Re-enter your password" />
                 <s:submit key="signup" label="Sign up" class="btn btn-success right"/>
 
             </div>
@@ -50,18 +56,9 @@
 
             </div>
         </div>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
 </div>
 </div>
-
-
-
+</main>
 
 <jsp:include page="footer.jsp" />
 

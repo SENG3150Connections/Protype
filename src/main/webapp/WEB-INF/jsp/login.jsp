@@ -12,6 +12,8 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+
+<header>
 <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
         <a href="home"><img style="max-height:64px" src="images/LogoBanner.png"></a>
@@ -27,6 +29,9 @@
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
 </nav>
+</header>
+
+<main>
 <div class="section no-pad-bot" id="index-banner">
     <div class="container">
         <br><br>
@@ -37,11 +42,9 @@
         <s:form action="home" namespace="/" >
             <div class="form-group">
 
-
                 <s:textfield id="u" key="username" label="Username" />
                 <s:password id="p" key="password" label="Password" />
                 <s:submit key="login" label="Login" class="btn btn-success right"/>
-
 
             </div>
         </s:form>
@@ -49,17 +52,9 @@
             </div>
         </div>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
 </div>
 </div>
-
-
-
+</main>
 
 <jsp:include page="footer.jsp" />
 
