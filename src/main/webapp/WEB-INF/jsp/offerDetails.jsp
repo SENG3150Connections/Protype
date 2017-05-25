@@ -47,7 +47,7 @@
             <div style="min-height:565px">
                 <img class="col s6 right responsive-img" src=<s:property value="offer.imagePath"/>>
                 <h3 class="header"><s:property value="offer.title"/></h3>
-                <h4 class="header">$<s:property value="offer.price"/></h4>
+                <h4 class="header">Price: $<s:property value="offer.price"/>pp</h4>
                 <span>
                     <s:iterator value="offer.description">
                         <p><s:property/></p>
@@ -55,8 +55,7 @@
                 </span>
             </div>
             <div class="row" style="min-height:50px">
-                <div class="col s7"></div>
-                <div class="col s5">
+                <div class="col offset-s7 s5">
                     <a href="offers" class="btn waves-effect waves-light orange">Add to package!</a>
                     <a href="offers" class="btn waves-effect waves-light orange">Back</a>
                 </div>
@@ -65,8 +64,6 @@
         
         <div id="packagePannel" style="min-height:inherit" class="col m3 container light-blue lighten-1">
             <h5 class="center">Package</h5>
-
-            <p class="light">Display the current events in the package and the running cost</p>
             
             <div class="divider"></div>
             

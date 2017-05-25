@@ -77,7 +77,7 @@ public class DatabaseConnector {
 
         offer = new Offer();
         offer.setId("balloonride");
-        offer.setTitle("Hunter Vally Balloon Ride");
+        offer.setTitle("Hunter Valley Balloon Ride");
         offer.setType(EVENT);
         offer.addTag("hunter");
         offer.addTag("balloon");
@@ -91,7 +91,7 @@ public class DatabaseConnector {
 
         offer = new Offer();
         offer.setId("winetour");
-        offer.setTitle("Hunter Vally Wine Tours");
+        offer.setTitle("Hunter Valley Wine Tours");
         offer.setType(EVENT);
         offer.addTag("tour");
         offer.addTag("wine");

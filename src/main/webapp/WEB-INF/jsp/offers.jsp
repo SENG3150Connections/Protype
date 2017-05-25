@@ -160,7 +160,7 @@
         <div id="packagePannel" style="min-height:inherit" class="col s12 m3 container light-blue darken-1">
             <h5 class="center">Package</h5>
 
-            <p class="light">Display the current events in the package and the running cost</p>
+            <p class="light">Drag and drop packages here:</p>
             
             <div class="divider"></div>
             
