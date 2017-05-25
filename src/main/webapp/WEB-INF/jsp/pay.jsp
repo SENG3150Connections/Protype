@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>Survey</title>
+    <title>Payment</title>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -11,6 +11,7 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
     <script src="card/dist/card.js"></script>
+
 
 
 
@@ -55,18 +56,18 @@
                 <div class="row">
                     <div class="input-field col s6">
                         <input id="first_name" type="text" class="validate">
-                        <label for="first_name">First Name</label>
+                        <label for="first_name" style="color: #000000">First Name</label>
                     </div>
                     <div class="input-field col s6">
                         <input id="last_name" type="text" class="validate">
-                        <label for="last_name">Last Name</label>
+                        <label for="last_name" style="color: #000000">Last Name</label>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="input-field col s12">
                         <input id="email" type="email" class="validate">
-                        <label for="email">Email</label>
+                        <label for="email" style="color: #000000">Email</label>
                     </div>
                 </div>
 
@@ -77,10 +78,28 @@
                     <h5> Credit card details: </h5>
 
                     <form>
-                        <input id="cardNumber" placeholder="Card Number" type="text" class="col s6" name="number">
-                        <input id="name" placeholder="Name on card" type="text"  class="col s6" name="name"/>
-                        <input id="date" placeholder="Expiry date" type="text" class="col s6" name="expiry"/>
-                        <input id="cvc" placeholder="CVC" type="text" class="col s6" name="cvc"/>
+                        <div class="input-field col s6">
+                            <input id="cardNumber" type="text"  name="number">
+                            <label for="cardNumber" style="color: #000000">Card Number</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="name" type="text"  name="name"/>
+                            <label for="name" style="color: #000000" >Name on card</label>
+                        </div>
+
+                        <div class="input-field col s6">
+                            <input id="date" type="text"   name="expiry"/>
+                            <label for="date" style="color: #000000" >Expiry Date</label>
+
+                        </div>
+
+                        <div class="input-field col s6">
+                            <input id="cvc" type="text"  name="cvc"/>
+                            <label for="cvc" style="color: #000000" >CVC</label>
+
+                        </div>
+
+
 
                     </form>
 
