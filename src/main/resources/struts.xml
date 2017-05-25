@@ -99,7 +99,7 @@
             <result name="login" type="dispatcher">/WEB-INF/jsp/staffLogin.jsp</result>
         </global-results>
 
-        <action name="management">
+        <action name="management" class="me.seng3150.actions.OffersAction">
             <result>/WEB-INF/jsp/management.jsp</result>
         </action>
 
