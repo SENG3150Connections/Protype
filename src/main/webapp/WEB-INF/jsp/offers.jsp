@@ -57,7 +57,7 @@
 
   <div id="mainContainer" class="row container" style="min-height:700px">
         
-        <div id="offerPannel" style="min-height:inherit" class="col s12 m9 container light-blue">
+        <div id="offerPannel" style="min-height:inherit" class="col s12 m9 container">
             <div id="category_1" class="col s12">
                 
                 <ul class="gallery">
@@ -157,7 +157,7 @@
             </div>
             
         </div>
-        <div id="packagePannel" style="min-height:inherit" class="col s12 m3 container light-blue darken-1">
+        <div id="packagePannel" style="min-height:inherit" class="col s12 m3 container light-blue lighten-4">
             <h5 class="center">Package</h5>
 
             <p class="light">Drag and drop packages here:</p>
