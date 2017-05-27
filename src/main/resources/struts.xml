@@ -61,10 +61,6 @@
             <result name="surveyrequired" type="redirect">survey</result>
         </global-results>
 
-        <action name="profile">
-            <result>/WEB-INF/jsp/profile.jsp</result>
-        </action>
-
         <action name="offers" class="me.seng3150.actions.OffersAction">
             <result>/WEB-INF/jsp/offers.jsp</result>
         </action>
