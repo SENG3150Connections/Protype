@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>Survey</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>Survey</title>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,17 +13,21 @@
 </head>
 
 <body>
-    <jsp:include page="header.jsp" />
+<jsp:include page="header.jsp"/>
 
-    <main>
+<main>
     <div class="section no-pad-bot" id="index-banner">
         <div class="container col m12">
             <nav class="light-blue lighten-1" role="navigation">
                 <ul class="hide-on-med-and-down">
-                    <li class="waves-effect waves-light"><a href="home"><i class="material-icons left">home</i>Home</a></li>
-                    <li class="active waves-effect waves-light" ><a href="survey"><i class="material-icons left">assignment</i>Survey</a></li>
-                    <li class="waves-effect waves-light"><a href="offers"><i class="material-icons left">view_module</i>Offers</a></li>
-                    <li class="waves-effect waves-light"><a href="pay"><i class="material-icons left">payment</i>Pay</a></li>
+                    <li class="waves-effect waves-light"><a href="home"><i class="material-icons left">home</i>Home</a>
+                    </li>
+                    <li class="active waves-effect waves-light"><a href="survey"><i class="material-icons left">assignment</i>Survey</a>
+                    </li>
+                    <li class="waves-effect waves-light"><a href="offers"><i class="material-icons left">view_module</i>Offers</a>
+                    </li>
+                    <li class="waves-effect waves-light"><a href="pay"><i class="material-icons left">payment</i>Pay</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -31,11 +36,12 @@
     <!-- Survey body -->
     <div class="container">
         <h2>Survey</h2>
-        <p>This survey is used to determine general information about yourself to greater help us understand your estimated wants and needs.
-        You may skip the survey and return later.</p>
+        <p>This survey is used to determine general information about yourself to greater help us understand your
+            estimated wants and needs.
+            You may skip the survey and return later.</p>
         <div class="divider"></div>
         <br>
-        
+
         <form action="survey-submit" class="form-pad">
 
             <button type="submit" class="waves-effect waves-light btn">
@@ -152,18 +158,18 @@
             </button>
         </form>
     </div>
-    </main>
+</main>
 
-    <jsp:include page="footer.jsp" />
+<jsp:include page="footer.jsp"/>
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-          $('select').material_select();
-        });
-    </script>
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('select').material_select();
+    });
+</script>
 </body>
 </html>
