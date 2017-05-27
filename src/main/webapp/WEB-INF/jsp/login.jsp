@@ -1,7 +1,11 @@
+<%--
+  File: login.jsp
+  Role: Login form page
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
-<!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
     <title>Login</title>
     <jsp:include page="helpers/headcss.jsp"/>

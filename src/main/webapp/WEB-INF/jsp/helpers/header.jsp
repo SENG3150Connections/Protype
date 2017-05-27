@@ -1,11 +1,9 @@
 <%--
-  Created by IntelliJ IDEA.
-  User: Scott
-  Date: 27/05/2017
-  Time: 6:03 PM
-  To change this template use File | Settings | File Templates.
+  File: header.jsp
+  Role: Blue header at top of all non-management pages.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <header>
     <nav class="light-blue lighten-1">
         <div class="nav-wrapper container">

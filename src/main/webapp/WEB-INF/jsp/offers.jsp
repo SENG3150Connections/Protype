@@ -1,8 +1,11 @@
+<%--
+  File: offers.jsp
+  Role: Display all available offers in four distinct categories, with drag-n-drop capabilities.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Offers</title>
     <jsp:include page="helpers/headcss.jsp"/>

@@ -1,20 +1,17 @@
+<%--
+  File: offerDetails.jsp
+  Role: Details page for a particular offer, as specified by ?id=<offerID>
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Offers</title>
     <jsp:include page="helpers/headcss.jsp"/>
-
-    <!-- Drag and drop -->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script type="text/javascript" src="js/jqueryDragAndDrop.js"></script>
-    <script type="text/javascript" src="js/searchTags.js"></script>
 </head>
 
-<body onload="init(); init_tags()">
+<body>
 <jsp:include page="helpers/header.jsp"/>
 
 <main>

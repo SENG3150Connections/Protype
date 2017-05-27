@@ -1,16 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<%--
+  File: home.jsp
+  Role: Landing page for everyone accessing the website.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 
+<html lang="en">
 <head>
     <title>Home</title>
     <jsp:include page="helpers/headcss.jsp"/>
-</head>
 
-<style>
-    .column {
-        min-height: 360px;
-    }
-</style>
+    <style>
+        .column {
+            min-height: 360px;
+        }
+    </style>
+</head>
 
 <body>
 

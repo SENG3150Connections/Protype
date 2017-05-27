@@ -1,8 +1,11 @@
+<%--
+  File: staffLogin.jsp
+  Role: Landing page when a user attempts to access the management portals without being logged in.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Login</title>
     <jsp:include page="helpers/headcss.jsp"/>

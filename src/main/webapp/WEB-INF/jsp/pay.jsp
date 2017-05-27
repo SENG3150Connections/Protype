@@ -1,10 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<%--
+  File: pay.jsp
+  Role: The payment page once a package is created and customised.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 
+<html lang="en">
 <head>
     <title>Payment</title>
     <jsp:include page="helpers/headcss.jsp"/>
 
+    <!-- js for credit card panel -->
     <script src="card/dist/card.js"></script>
 </head>
 

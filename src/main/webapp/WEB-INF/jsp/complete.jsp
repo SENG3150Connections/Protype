@@ -1,6 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<%--
+  File: complete.jsp
+  Role: Page to display when payment is complete.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 
+<html lang="en">
 <head>
     <title>Complete</title>
     <jsp:include page="helpers/headcss.jsp"/>

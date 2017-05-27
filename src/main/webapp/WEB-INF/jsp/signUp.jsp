@@ -1,8 +1,11 @@
+<%--
+  File: signUp.jsp
+  Role: Page where users may sign up to the system
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Sign up</title>
     <jsp:include page="helpers/headcss.jsp"/>

@@ -1,6 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<%--
+  File: customise.jsp
+  Role: Page where customers can customise their package with calendar and itinerary views
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 
+<html lang="en">
 <head>
     <title>Customise Package</title>
     <jsp:include page="helpers/headcss.jsp"/>

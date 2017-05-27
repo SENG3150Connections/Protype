@@ -1,6 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<%--
+  File: survey.jsp
+  Role: Page to gather basic user data without being intrusive.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 
+<html lang="en">
 <head>
     <title>Survey</title>
     <jsp:include page="helpers/headcss.jsp"/>

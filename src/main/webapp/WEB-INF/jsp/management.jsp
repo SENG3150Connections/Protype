@@ -1,9 +1,11 @@
-<%@ taglib prefix="s" uri="/struts-tags" %>
+<%--
+  File: management.jsp
+  Role: Homepage for the management portal
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Management</title>
     <jsp:include page="helpers/headcss.jsp"/>

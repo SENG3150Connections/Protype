@@ -1,10 +1,9 @@
 <%--
-  Created by IntelliJ IDEA.
-  User: Scott
-  Date: 24/05/2017
-  Time: 10:39 AM
+  File: footer.jsp
+  Role: Separate the footer tags from all other pages, to be included with jsp:include.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <footer class="page-footer orange">
     <div class="container">
         <div class="row">
