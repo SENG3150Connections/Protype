@@ -20,6 +20,7 @@
 </head>
 
 <body onload="init(); init_tags()">
+<header>
 <nav class="light-blue lighten-1">
     <div class="container hide-on-med-and-down">
         <a href="home"><img class="responsive-img center" style="max-height:64px" src="images/LogoBanner.png"></a>
@@ -28,7 +29,9 @@
         </ul>
     </div>
 </nav>
+</header>
 
+<main>
 <div id="mainContainer" class="row container">
     <br><br>
     <div id="offerPannel" style="min-height:inherit" class="col s6 offset-s3 container grey lighten-4">
@@ -55,6 +58,7 @@
     </div>
 
 </div>
+</main>
 
 <jsp:include page="footer.jsp" />
 

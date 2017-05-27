@@ -11,13 +11,10 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
     <script src="card/dist/card.js"></script>
-
-
-
-
 </head>
 
 <body>
+<header>
 <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
         <a href="home"><img style="max-height:64px" src="images/LogoBanner.png"></a>
@@ -26,7 +23,9 @@
         </ul>
     </div>
 </nav>
+</header>
 
+<main>
 <div class="section no-pad-bot" id="index-banner">
     <div class="container col m12">
         <nav class="light-blue lighten-1" role="navigation">
@@ -98,16 +97,10 @@
                             <label for="cvc" style="color: #000000" >CVC</label>
 
                         </div>
-
-
-
                     </form>
 
                     <div style="padding-top: 150px;">
-
-
                     </div>
-
 
                     <script>
 
@@ -123,14 +116,9 @@
                             }
                         });
                     </script>
-
-
                 </div>
 
-
-                <br>
-                <br>
-
+                <br><br>
                 <a href="customise" class="btn tooltipped waves-effect waves-light col s6" data-position="top" data-delay="50" data-tooltip="Cancel payment">Return</a>
                 <a href="complete" class="waves-effect waves-light btn col s6">
                     Pay Now
@@ -142,14 +130,11 @@
 
         <div class="row s2" style="padding-bottom: 50px;"></div>
 
-
     </div>
 </div>
-
-
+</main>
 
 <jsp:include page="footer.jsp" />
-
 
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

@@ -11,13 +11,10 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
     <script src="card/dist/card.js"></script>
-
-
-
-
 </head>
 
 <body>
+<header>
 <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
         <a href="home"><img style="max-height:64px" src="images/LogoBanner.png"></a>
@@ -26,7 +23,9 @@
         </ul>
     </div>
 </nav>
+</header>
 
+<main>
 <div class="section no-pad-bot" id="index-banner">
     <div class="container col m12">
         <nav class="light-blue lighten-1" role="navigation">
@@ -42,7 +41,6 @@
 
 <div class="container col m12">
 
-
     <div style="padding-top: 80px; padding-bottom: 100px;" class="row">
         <div class="col s2"></div>
 
@@ -57,16 +55,12 @@
         </div>
         <div class="col s2"></div>
 
-
     </div>
 
-
 </div>
-
-
+</main>
 
 <jsp:include page="footer.jsp" />
-
 
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

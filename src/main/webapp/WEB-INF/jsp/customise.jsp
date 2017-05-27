@@ -30,6 +30,7 @@
 </head>
 
 <body onload="init()">
+  <header>
     <nav class="light-blue lighten-1" role="navigation">
         <div class="nav-wrapper container">
             <a href="home"><img height="32px" src="images/LogoBanner.png"></a>
@@ -38,6 +39,9 @@
             </ul>
         </div>
     </nav>
+  </header>
+
+  <main>
     <div class="section no-pad-bot" id="index-banner">
         <div class="container col m12">
             <nav class="light-blue lighten-1">
@@ -88,6 +92,7 @@
         </div>
     </div>
   </div>
+  </main>
 
     <jsp:include page="footer.jsp" />
 
