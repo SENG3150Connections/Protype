@@ -1,3 +1,8 @@
+/*
+Class:  StaffLoginInterceptor.java
+Role:   Send users trying to access management pages to the login page if they are not verified.
+ */
+
 package me.seng3150.interceptors;
 
 import com.opensymphony.xwork2.ActionInvocation;
@@ -16,10 +21,12 @@ public class StaffLoginInterceptor extends AbstractInterceptor {
         HttpServletRequest request = ServletActionContext.getRequest();
         HttpSession session = request.getSession();
 
+        // If user is not logged in, return LOGIN code.
         Boolean loggedIn = (Boolean) session.getAttribute("loggedIn");
         if (loggedIn == null || !loggedIn)
             return LOGIN;
 
+        // If user is logged in, continue executing the stack.
         return invocation.invoke();
     }
 }

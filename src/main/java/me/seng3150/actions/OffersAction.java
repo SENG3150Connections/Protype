@@ -1,3 +1,8 @@
+/*
+Class:  OffersAction.java
+Role:   Send all offers in their appropriate categories to the JSP
+ */
+
 package me.seng3150.actions;
 
 import com.opensymphony.xwork2.ActionSupport;
@@ -8,6 +13,7 @@ import java.util.List;
 
 public class OffersAction extends ActionSupport {
 
+    // All output parameters sent to the JSP
     private List<Offer> accommodation;
     private List<Offer> events;
     private List<Offer> food;
@@ -16,13 +22,16 @@ public class OffersAction extends ActionSupport {
     @Override
     public String execute() {
 
+        // Get the db class
         DatabaseConnector db = new DatabaseConnector();
 
+        // Set the four output parameters
         setAccommodation(db.getAccommodation());
         setEvents(db.getEvents());
         setFood(db.getFood());
         setTransport(db.getTransport());
 
+        // Forward to the appropriate JSP
         return SUCCESS;
     }
 
