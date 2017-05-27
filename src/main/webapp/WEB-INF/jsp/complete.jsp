@@ -3,19 +3,13 @@
 
 <head>
     <title>Complete</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <jsp:include page="helpers/headcss.jsp"/>
 
     <script src="card/dist/card.js"></script>
 </head>
 
 <body>
-<jsp:include page="header.jsp"/>
+<jsp:include page="helpers/header.jsp"/>
 
 <main>
     <div class="section no-pad-bot" id="index-banner">
@@ -56,7 +50,7 @@
     </div>
 </main>
 
-<jsp:include page="footer.jsp"/>
+<jsp:include page="helpers/footer.jsp"/>
 
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

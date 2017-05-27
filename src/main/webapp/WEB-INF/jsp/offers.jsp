@@ -5,13 +5,7 @@
 
 <head>
     <title>Offers</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <jsp:include page="helpers/headcss.jsp"/>
 
     <!-- Drag and drop -->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -21,7 +15,7 @@
 </head>
 
 <body onload="init(); init_tags()">
-<jsp:include page="header.jsp"/>
+<jsp:include page="helpers/header.jsp"/>
 
 <main>
     <div class="section no-pad-bot">
@@ -211,7 +205,7 @@
     </div>
 </main>
 
-<jsp:include page="footer.jsp"/>
+<jsp:include page="helpers/footer.jsp"/>
 
 <!--  Scripts -->
 <script src="js/materialize.js"></script>
