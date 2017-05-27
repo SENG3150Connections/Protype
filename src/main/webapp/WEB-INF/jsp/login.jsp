@@ -11,25 +11,9 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
+
 <body>
-
-<header>
-<nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container">
-        <a href="home"><img style="max-height:64px" src="images/LogoBanner.png"></a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="signup">Sign up</a></li>
-        </ul>
-
-        <ul id="nav-mobile" class="side-nav">
-            <li><a href="login">Login</a></li>
-            <li><a href="signup">Sign up</a></li>
-
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-</nav>
-</header>
+    <jsp:include page="header.jsp" />
 
 <main>
 <div class="section no-pad-bot" id="index-banner">

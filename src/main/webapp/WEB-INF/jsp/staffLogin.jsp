@@ -13,13 +13,8 @@
 </head>
 
 <body>
-<header>
-    <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container">
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-        </div>
-    </nav>
-</header>
+    <jsp:include page="header.jsp" />
+    
 <main class="section">
     <div class="container">
         <br><br>

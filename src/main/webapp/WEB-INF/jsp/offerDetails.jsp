@@ -20,16 +20,7 @@
 </head>
 
 <body onload="init(); init_tags()">
-  <header>
-    <nav class="light-blue lighten-1">
-        <div class="container hide-on-med-and-down">
-            <a href="home"><img class="responsive-img center" style="max-height:64px" src="images/LogoBanner.png"></a>
-            <ul class="right">
-                <li><a href="login">Login</a></li>
-            </ul>
-        </div>
-    </nav>
-  </header>
+    <jsp:include page="header.jsp" />
 
   <main>
     <div class="section no-pad-bot">

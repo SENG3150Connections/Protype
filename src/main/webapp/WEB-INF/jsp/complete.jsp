@@ -14,16 +14,7 @@
 </head>
 
 <body>
-<header>
-<nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container">
-        <a href="home"><img style="max-height:64px" src="images/LogoBanner.png"></a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="#">Login</a></li>
-        </ul>
-    </div>
-</nav>
-</header>
+    <jsp:include page="header.jsp" />
 
 <main>
 <div class="section no-pad-bot" id="index-banner">

@@ -18,16 +18,7 @@
 </head>
 
 <body>
-
-<!-- Global header -->
-
-<header>
-    <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container">
-            <a href="home"><img style="max-height:64px" src="images/LogoBanner.png"></a>
-        </div>
-    </nav>
-</header>
+    <jsp:include page="header-management.jsp" />
 
 <main>
 <div class="container col">
