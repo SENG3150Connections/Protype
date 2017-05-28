@@ -11,16 +11,19 @@ import java.util.List;
 
 public class DatabaseConnector {
 
+    // static types simply to avoid typos (Prototype only)
     public static final String ACCOMMODATION = "accommodation";
     public static final String EVENT = "event";
     public static final String FOOD = "food";
     public static final String TRANSPORT = "transport";
 
+    // Maps storing offers of 4 distinct types
     HashMap<String, Offer> offerAccommodation;
     HashMap<String, Offer> offerEvents;
     HashMap<String, Offer> offerFood;
     HashMap<String, Offer> offerTransport;
 
+    // Constructor initialising everything
     public DatabaseConnector() {
         offerAccommodation = new HashMap<>();
         offerEvents = new HashMap<>();
@@ -30,6 +33,7 @@ public class DatabaseConnector {
         initialiseOffers();
     }
 
+    // Create all dummy offers and add them to their respective maps.
     public void initialiseOffers() {
 
         Offer offer = new Offer();

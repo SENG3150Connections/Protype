@@ -1,3 +1,9 @@
+/*
+Class:  User.java
+Role:   Class which will store information about the user as defined by the survey that undertook (or skipped, in which
+        case these values will not be read-in)
+ */
+
 package me.seng3150;
 
 public class User {

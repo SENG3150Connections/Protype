@@ -1,3 +1,8 @@
+/*
+Class:  Package.java
+Role:   Pre-defined package containing offers as defined by a staff member.
+ */
+
 package me.seng3150;
 
 import java.util.ArrayList;
@@ -10,8 +15,7 @@ public class Package {
     private ArrayList<Offer> offers;
     private ArrayList<String> tags;
 
-    Package()
-    {
+    Package() {
         title = "";
         description = "";
         location = "";

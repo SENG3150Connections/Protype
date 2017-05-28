@@ -1,6 +1,11 @@
+/*
+Class:  CurrentPackageBean.java
+Role:   Bean class which will be used to store the users current package selection throughout their
+        duration spent on the website.
+ */
+
 package me.seng3150;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 
 public class CurrentPackageBean {

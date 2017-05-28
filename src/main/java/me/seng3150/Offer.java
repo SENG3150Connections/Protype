@@ -1,3 +1,8 @@
+/*
+Class:  Offer.java
+Role:   Class for every offer regardless of their type.
+ */
+
 package me.seng3150;
 
 import java.util.ArrayList;
@@ -9,7 +14,7 @@ public class Offer {
     private String id, title, location, imagePath;
     private List<String> description;
     private BigDecimal price;
-    private String type; // Valid types: event, accommodation, transport
+    private String type; // Valid types: event, accommodation, transport, food
 
     private List<String> tags;
 
