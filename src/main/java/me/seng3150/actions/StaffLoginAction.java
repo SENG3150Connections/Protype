@@ -1,3 +1,8 @@
+/*
+Class:  StaffLoginAction.java
+Role:   Set the logged-in status for a user to true in the current session
+ */
+
 package me.seng3150.actions;
 
 import com.opensymphony.xwork2.ActionSupport;
@@ -13,6 +18,7 @@ public class StaffLoginAction extends ActionSupport {
         HttpServletRequest request = ServletActionContext.getRequest();
         HttpSession session = request.getSession();
 
+        // Set loggedIn to true for session
         session.setAttribute("loggedIn", true);
         return SUCCESS;
     }

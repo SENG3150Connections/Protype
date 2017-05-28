@@ -1,6 +1,10 @@
+/*
+Class:  SurveyInterceptor.java
+Role:   If a user has no completed the survey or skipped it, send them to the survey page.
+ */
+
 package me.seng3150.interceptors;
 
-import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionInvocation;
 import com.opensymphony.xwork2.inject.Inject;
 import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
@@ -10,7 +14,7 @@ public class SurveryInterceptor extends AbstractInterceptor {
 
     public final static String SURVEYREQUIRED = "surveyrequired";
 
-    private User user;
+    private User user; // Injected user bean
 
     @Override
     public String intercept(ActionInvocation invocation) throws Exception {

@@ -1,3 +1,8 @@
+/*
+Class:  DatabaseConnector.java
+Role:   Dummy static DB class for the purposes of prototyping. Add in all sorts of offers into four categories.
+ */
+
 package me.seng3150;
 
 import java.util.ArrayList;

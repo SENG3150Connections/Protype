@@ -6,13 +6,14 @@
 
 <struts>
 
-    <!-- Verbose errors are cool -->
+    <!-- Verbose errors -->
     <constant name="struts.devMode" value="true" />
 
     <bean name="user"
           class="me.seng3150.User"
           scope="default" />
 
+    <!-- Default package -->
     <package name="default" extends="struts-default">
         <action name="home">
             <result>/WEB-INF/jsp/home.jsp</result>
@@ -30,22 +31,21 @@
             <result>/WEB-INF/jsp/survey.jsp</result>
         </action>
 
+        <!-- url to submit survey results to -->
         <action name="survey-submit" class="me.seng3150.actions.SurveyAction">
             <result name="success" type="redirect">offers</result>
             <result name="input" type="redirect">survey</result>
         </action>
 
+        <!-- url to submit staff logins to -->
         <action name="management-login" class="me.seng3150.actions.StaffLoginAction">
             <result type="redirect">management</result>
         </action>
-
-        <action name="createOffer" class="me.seng3150.actions.StaffLoginAction">
-            <result type="redirect">createOffer</result>
-        </action>
-
     </package>
 
-    <package name="packages" extends="struts-default">
+    <!-- Packages for pages when building a customised package.
+        Users must have completed or skipped the survey to view these pages. -->
+    <package name="offers" extends="struts-default">
 
         <interceptors>
             <interceptor name="survey" class="me.seng3150.interceptors.SurveryInterceptor" />
@@ -57,19 +57,17 @@
 
         <default-interceptor-ref name="surveyStack"/>
 
+        <!-- If survey has no been done or skipped, redirect to survey -->
         <global-results>
             <result name="surveyrequired" type="redirect">survey</result>
         </global-results>
-
-        <action name="profile">
-            <result>/WEB-INF/jsp/profile.jsp</result>
-        </action>
 
         <action name="offers" class="me.seng3150.actions.OffersAction">
             <result>/WEB-INF/jsp/offers.jsp</result>
         </action>
 
         <action name="offerDetails" class="me.seng3150.actions.OfferDetailsAction">
+            <!-- If ID is not found, redirect to offers -->
             <result name="input" type="redirect">offers</result>
             <result name="success">/WEB-INF/jsp/offerDetails.jsp</result>
         </action>
@@ -87,6 +85,7 @@
         </action>
     </package>
 
+    <!-- Management portal pages, users must be logged in as a staff -->
     <package name="management" extends="struts-default">
 
         <interceptors>
@@ -99,6 +98,7 @@
 
         <default-interceptor-ref name="loginStack"/>
 
+        <!-- If not logged in, show the login page instead. -->
         <global-results>
             <result name="login" type="dispatcher">/WEB-INF/jsp/staffLogin.jsp</result>
         </global-results>
